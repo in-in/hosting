@@ -1,0 +1,7 @@
+*node_modules/
+*bower_components/
+#build/
+.idea
+.grunt/
+#.csscomb.json
+#.editorconfig

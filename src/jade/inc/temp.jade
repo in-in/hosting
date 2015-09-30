@@ -1,0 +1,38 @@
+block var
+    include var
+
+include mixin
+
+doctype html
+
+html(lang="en")
+
+    head
+        block meta
+            meta(charset="utf-8")
+            meta(http-equiv="X-UA-Compatible", content="IE=edge")
+            meta(name="viewport", content="width=device-width, initial-scale=1")
+            meta(name="description", content="Desctiption of #{thisPage.toLowerCase()} page")
+
+        title
+            block title
+                | #{pageTitle}
+
+        block favicon
+            if (favicon.showFavicon)
+                +favicon(favicon.path)
+
+        block link
+            link(rel="stylesheet", href="css/style.css")
+
+    body
+        block index
+
+        if svgSprite
+            block svgsrite
+                // svgsrite
+                include svgsprite
+
+        //script
+        block script
+            script(src="js/analytics.js")

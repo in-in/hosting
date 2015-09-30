@@ -1,0 +1,16 @@
+// SUSY CONFIG
+$susy: (
+  columns: 12,
+  gutters: 0,
+  container: 60rem,
+  math: fluid,
+  output: float,
+  gutter-position: after,
+  global-box-sizing: border-box,
+);
+
+.container {
+  min-width: 320px;
+
+  @include container();
+}

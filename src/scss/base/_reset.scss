@@ -1,0 +1,76 @@
+/* RESET */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #fff;
+
+  font-size-adjust: 100%;
+
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-size: inherit;
+}
+
+main {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  overflow: visible;
+
+  cursor: pointer;
+  letter-spacing: inherit;
+
+  border: 0;
+  outline: 0;
+
+  background: none;
+
+  font: inherit;
+
+  -webkit-font-smoothing: inherit;
+}
+
+::-moz-focus-inner {
+  padding: 0;
+
+  border: 0;
+}
+
+/* RESET ends */

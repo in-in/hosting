@@ -1,0 +1,38 @@
+// FONT
+
+$font-stack: (
+  group: ubuntu,
+  id: light,
+  font: ('Ubuntu', san-serif ),
+  weight: 300,
+  style: normal
+),
+(
+  group: ubuntu,
+  id: regular,
+  font: ('Ubuntu', san-serif ),
+  weight: 400,
+  style: normal
+),
+(
+  group: ubuntu,
+  id: bold,
+  font: ('Ubuntu', san-serif ),
+  weight: 700,
+  style: normal
+);
+
+//  Mixin
+@mixin font($group, $id: regular) {
+  @each $font in $font-stack {
+    @if($group == map-get($font, group) and $id == map-get($font, id)) {
+      font-family: map-get($font, font);
+      font-weight: map-get($font, weight);
+      font-style: map-get($font, style);
+    }
+  }
+}
+
+//@include font(ubuntu);
+//@include font(ubuntu, light);
+//@include font(ubuntu, bold);
