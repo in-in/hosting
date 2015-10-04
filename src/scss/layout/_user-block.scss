@@ -1,0 +1,43 @@
+.user-links {
+  width: 100%;
+  height: rem(46);
+
+  list-style: none;
+
+  text-align: right;
+
+  border-top: 1px solid #e1e9f2;
+  border-bottom: 1px solid #e1e9f2;
+}
+
+.user-links--item {
+  display: inline-block;
+
+  color: #484e57;
+
+  font-size: rem(14);
+  line-height: rem(46);
+
+  @include font(opensans);
+}
+
+.user-links--item::after {
+  margin-right: rem(5);
+  margin-left: rem(10);
+
+  content: '|';
+
+  color: #9ba4b0;
+}
+
+.user-links--item:last-child::after {
+  display: none;
+}
+
+.user-links--item a {
+  color: #9ba4b0;
+
+  font-size: rem(14);
+
+  @include font(opensans);
+}

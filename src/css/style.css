@@ -68,8 +68,12 @@ body {
 }
 
 .container {
-  min-width: 320px;
-  max-width: 60rem;
+  min-width: 20rem;
+  max-width: 73.125rem;
+  margin: 0 auto;
+  padding: 0 0.9375rem;
+  outline: 1px dotted red;
+  max-width: 73.125rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -78,5 +82,87 @@ body {
   content: " ";
   display: block;
   clear: both;
+}
+
+.top-header {
+  height: 6.25rem;
+  outline: 1px dotted black;
+}
+
+.header--logo,
+.header--links {
+  padding-top: 1.6875rem;
+}
+
+.header--logo {
+  width: 25%;
+  float: left;
+}
+
+.header--links {
+  width: 41.6666666667%;
+  float: left;
+  margin-left: 33.3333333333%;
+}
+
+.user-links {
+  width: 100%;
+  height: 2.875rem;
+  list-style: none;
+  text-align: right;
+  border-top: 1px solid #e1e9f2;
+  border-bottom: 1px solid #e1e9f2;
+}
+
+.user-links--item {
+  display: inline-block;
+  color: #484e57;
+  font-size: 0.875rem;
+  line-height: 2.875rem;
+  font-family: "Open Sans", san-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.user-links--item::after {
+  margin-right: 0.3125rem;
+  margin-left: 0.625rem;
+  content: '|';
+  color: #9ba4b0;
+}
+
+.user-links--item:last-child::after {
+  display: none;
+}
+
+.user-links--item a {
+  color: #9ba4b0;
+  font-size: 0.875rem;
+  font-family: "Open Sans", san-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.logo {
+  height: 2.875rem;
+}
+
+.logo--icon {
+  display: inline-block;
+  width: 3.0625rem;
+  height: 1.9375rem;
+  margin-right: 0.5625rem;
+  vertical-align: middle;
+}
+
+.logo--text {
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #161920;
+  font-size: 1.25rem;
+  line-height: 220%;
+  font-family: "Open Sans", san-serif;
+  font-weight: 800;
+  font-style: normal;
 }
 /*# sourceMappingURL=style.css.map */

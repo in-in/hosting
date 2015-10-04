@@ -2,7 +2,7 @@
 $susy: (
   columns: 12,
   gutters: 0,
-  container: 60rem,
+  container: 73.125rem,
   math: fluid,
   output: float,
   gutter-position: after,
@@ -10,7 +10,12 @@ $susy: (
 );
 
 .container {
-  min-width: 320px;
+  min-width: 20rem; //320
+  max-width: 73.125rem; //1170
+  margin: 0 auto;
+  padding: 0 rem(15);
+
+  outline: 1px dotted red;
 
   @include container();
 }

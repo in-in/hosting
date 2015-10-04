@@ -1,0 +1,25 @@
+.logo {
+  height: rem(46);
+}
+
+.logo--icon {
+  display: inline-block;
+
+  width: rem(49);
+  height: rem(31);
+  margin-right: rem(9);
+
+  vertical-align: middle;
+}
+
+.logo--text {
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  color: $logo-text;
+
+  font-size: rem(20);
+  line-height: 220%;
+
+  @include font(opensans, extrabold);
+}

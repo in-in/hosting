@@ -4,6 +4,26 @@ module.exports = function (grunt) {
   require('jit-grunt')(grunt);
 
   grunt.initConfig({
+
+    watch: {
+      sass: {
+        files: "src/scss/**/*.scss",
+        tasks: ['sass:dev', 'postcss']
+      },
+      jade: {
+        files: "src/jade/**/*.jade",
+        tasks: ['jade:dev']
+      },
+      js: {
+        files: 'src/js/dev/index.js',
+        tasks: ['concat']
+      },
+      svg: {
+        files: 'src/img/svg/*.svg',
+        tasks: ['newer:svgmin', 'svgstore']
+      }
+    },
+
     sass: {
       dev: {
         options: {
@@ -67,22 +87,22 @@ module.exports = function (grunt) {
     },
 
     browserSync: {
-      default_options: {
+      dev: {
         bsFiles: {
-          src: [
-            "src/*.html",
-            "src/css/*.css",
-            "src/js/*.js"
+          src : [
+            'src/css/*.css',
+            'src/*.html',
+            'src/js/*.js'
           ]
         },
         options: {
           watchTask: true,
+          server: 'src',
           port: 3008,
           browser: 'chromium-browser',
-          server: {baseDir: "src"},
+          ui: false,
           notify: false,
-          injectChanges: true,
-          ui: false
+          injectChanges: true
         }
       }
     },
@@ -93,8 +113,9 @@ module.exports = function (grunt) {
       options: {
         plugins: [
           {removeViewBox: false},
-          {removeUselessStrokeAndFill: true},
-          {removeMetadata: true}
+          {removeUselessStrokeAndFill: false},
+          {removeMetadata: true},
+          {removeTitle: false}
         ]
       },
       dev: {
@@ -114,10 +135,15 @@ module.exports = function (grunt) {
       options: {
         //cleanup: ['fill', 'stroke'],
         inheritviewbox: true,
+        includeTitleElement: false,
         prefix: 'icon-',
         svg: {
           //xmlns: 'http://www.w3.org/2000/svg',
-          style: "display: none;"
+          style: '' +
+          'position: absolute; ' +
+          'width: 0; ' +
+          'height: 0; ' +
+          'visibility: hidden;'
         }
       },
       dev: {
@@ -145,27 +171,6 @@ module.exports = function (grunt) {
           dest: 'src/scss/',
           ext: '.scss'
         }]
-      }
-    },
-
-//WATCH
-
-    watch: {
-      sass: {
-        files: "src/scss/**/*.scss",
-        tasks: ['newer:csscomb:dev', 'sass:dev', 'postcss']
-      },
-      jade: {
-        files: "src/jade/**/*.jade",
-        tasks: ['newer:jade:dev']
-      },
-      js: {
-        files: 'src/js/dev/index.js',
-        tasks: ['concat']
-      },
-      svg: {
-        files: 'src/img/svg/*.svg',
-        tasks: ['newer:svgmin', 'svgstore']
       }
     },
 
@@ -256,6 +261,9 @@ module.exports = function (grunt) {
     }
   });
 
+  grunt.registerTask('comb', [
+    'newer:csscomb:dev'
+  ]);
   
   grunt.registerTask('svg', [
     'clean:svg',
@@ -273,7 +281,7 @@ module.exports = function (grunt) {
   ]);
   
   grunt.registerTask('default', [
-    'browserSync',
+    'browserSync:dev',
     'watch'
   ]);
 };

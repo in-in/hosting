@@ -1,24 +1,31 @@
 // FONT
 
 $font-stack: (
-  group: ubuntu,
+  group: opensans,
   id: light,
-  font: ('Ubuntu', san-serif ),
+  font: ('Open Sans', sans-serif),
   weight: 300,
   style: normal
 ),
 (
-  group: ubuntu,
+  group: opensans,
   id: regular,
-  font: ('Ubuntu', san-serif ),
+  font: ('Open Sans', san-serif ),
   weight: 400,
   style: normal
 ),
 (
-  group: ubuntu,
-  id: bold,
-  font: ('Ubuntu', san-serif ),
-  weight: 700,
+  group: opensans,
+  id: semibold,
+  font: ('Open Sans', san-serif ),
+  weight: 600,
+  style: normal
+),
+(
+  group: opensans,
+  id: extrabold,
+  font: ('Open Sans', san-serif ),
+  weight: 800,
   style: normal
 );
 
@@ -33,6 +40,7 @@ $font-stack: (
   }
 }
 
-//@include font(ubuntu);
-//@include font(ubuntu, light);
-//@include font(ubuntu, bold);
+//@include font(opensans);
+//@include font(opensans, light);
+//@include font(opensans, semibold);
+//@include font(opensans, extrabold);
