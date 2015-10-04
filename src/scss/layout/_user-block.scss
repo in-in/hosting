@@ -8,6 +8,15 @@
 
   border-top: 1px solid #e1e9f2;
   border-bottom: 1px solid #e1e9f2;
+
+  @include breakpoint($m) {
+    height: auto;
+  }
+  @include breakpoint($s) {
+    text-align: center;
+
+    border-bottom: none;
+  }
 }
 
 .user-links--item {
@@ -19,6 +28,24 @@
   line-height: rem(46);
 
   @include font(opensans);
+  @include breakpoint($m) {
+    line-height: rem(35);
+  }
+}
+
+.user-links--item:first-child {
+  @include breakpoint($m) {
+    display: block;
+    &::after {
+      display: none;
+    }
+  }
+  @include breakpoint($s) {
+    display: inline-block;
+    &::after {
+      display: inline-block;
+    }
+  }
 }
 
 .user-links--item::after {

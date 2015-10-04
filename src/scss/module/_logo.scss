@@ -1,6 +1,13 @@
 .logo {
+  display: block;
+
   height: rem(46);
+
+  @include breakpoint($m) {
+    height: auto;
+  }
 }
+
 
 .logo--icon {
   display: inline-block;
@@ -10,6 +17,13 @@
   margin-right: rem(9);
 
   vertical-align: middle;
+
+  @include breakpoint($m) {
+    display: block;
+  }
+  @include breakpoint($s) {
+    display: inline-block;
+  }
 }
 
 .logo--text {
@@ -22,4 +36,7 @@
   line-height: 220%;
 
   @include font(opensans, extrabold);
+  @include breakpoint($s) {
+    font-size: rem(18);
+  }
 }

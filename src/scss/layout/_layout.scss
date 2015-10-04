@@ -15,7 +15,5 @@ $susy: (
   margin: 0 auto;
   padding: 0 rem(15);
 
-  outline: 1px dotted red;
-
   @include container();
 }

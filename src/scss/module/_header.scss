@@ -2,20 +2,36 @@
   height: rem(100);
 
   outline: 1px dotted black;
+
+  @include breakpoint($s) {
+    height: auto;
+  }
 }
 
-.header--logo,
-.header--links {
+.header-logo,
+.header-links {
   padding-top: rem(27);
+
+  @include breakpoint($m) {
+    padding-top: rem(15);
+  }
 }
 
-.header--logo {
+.header-logo {
   @include span(3);
+  @include breakpoint($s) {
+    @include span(full);
+  }
 }
 
+.header-links {
+  width: rem(455);
 
-.header--links {
-  @include span(5);
-  @include push(4);
-  //padding-left: 9.912280702%; // 113 (originally 113) / 1140
+  @include span(last);
+  @include breakpoint($m) {
+    width: rem(260);
+  }
+  @include breakpoint($s) {
+    @include span(full);
+  }
 }

@@ -261,6 +261,9 @@ module.exports = function (grunt) {
     }
   });
 
+
+  grunt.loadNpmTasks('grunt-notify');
+
   grunt.registerTask('comb', [
     'newer:csscomb:dev'
   ]);

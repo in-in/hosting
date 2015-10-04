@@ -72,7 +72,6 @@ body {
   max-width: 73.125rem;
   margin: 0 auto;
   padding: 0 0.9375rem;
-  outline: 1px dotted red;
   max-width: 73.125rem;
   margin-left: auto;
   margin-right: auto;
@@ -89,20 +88,57 @@ body {
   outline: 1px dotted black;
 }
 
-.header--logo,
-.header--links {
+@media (max-width: 30rem) {
+  .top-header {
+    height: auto;
+  }
+}
+
+.header-logo,
+.header-links {
   padding-top: 1.6875rem;
 }
 
-.header--logo {
+@media (max-width: 40rem) {
+  .header-logo,
+  .header-links {
+    padding-top: 0.9375rem;
+  }
+}
+
+.header-logo {
   width: 25%;
   float: left;
 }
 
-.header--links {
-  width: 41.6666666667%;
-  float: left;
-  margin-left: 33.3333333333%;
+@media (max-width: 30rem) {
+  .header-logo {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.header-links {
+  width: 28.4375rem;
+  float: right;
+  margin-right: 0;
+}
+
+@media (max-width: 40rem) {
+  .header-links {
+    width: 16.25rem;
+  }
+}
+
+@media (max-width: 30rem) {
+  .header-links {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .user-links {
@@ -114,6 +150,19 @@ body {
   border-bottom: 1px solid #e1e9f2;
 }
 
+@media (max-width: 40rem) {
+  .user-links {
+    height: auto;
+  }
+}
+
+@media (max-width: 30rem) {
+  .user-links {
+    text-align: center;
+    border-bottom: none;
+  }
+}
+
 .user-links--item {
   display: inline-block;
   color: #484e57;
@@ -122,6 +171,30 @@ body {
   font-family: "Open Sans", san-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+@media (max-width: 40rem) {
+  .user-links--item {
+    line-height: 2.1875rem;
+  }
+}
+
+@media (max-width: 40rem) {
+  .user-links--item:first-child {
+    display: block;
+  }
+  .user-links--item:first-child::after {
+    display: none;
+  }
+}
+
+@media (max-width: 30rem) {
+  .user-links--item:first-child {
+    display: inline-block;
+  }
+  .user-links--item:first-child::after {
+    display: inline-block;
+  }
 }
 
 .user-links--item::after {
@@ -144,7 +217,14 @@ body {
 }
 
 .logo {
+  display: block;
   height: 2.875rem;
+}
+
+@media (max-width: 40rem) {
+  .logo {
+    height: auto;
+  }
 }
 
 .logo--icon {
@@ -153,6 +233,18 @@ body {
   height: 1.9375rem;
   margin-right: 0.5625rem;
   vertical-align: middle;
+}
+
+@media (max-width: 40rem) {
+  .logo--icon {
+    display: block;
+  }
+}
+
+@media (max-width: 30rem) {
+  .logo--icon {
+    display: inline-block;
+  }
 }
 
 .logo--text {
@@ -164,5 +256,11 @@ body {
   font-family: "Open Sans", san-serif;
   font-weight: 800;
   font-style: normal;
+}
+
+@media (max-width: 30rem) {
+  .logo--text {
+    font-size: 1.125rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
