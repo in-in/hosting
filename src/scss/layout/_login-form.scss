@@ -1,0 +1,55 @@
+.auth {
+  width: 500px;
+  height: 300px;
+  padding: rem(20);
+  margin: 0 auto;
+
+  border: 1px solid #000;
+}
+
+.auth--title {
+  text-transform: uppercase;
+
+  color: $bold-text;
+
+  font-size: rem(30);
+
+  @include font(opensans, extrabold);
+}
+
+.auth--field {
+  margin-bottom: rem(10);
+}
+
+.auth--field input {
+  width: 100%;
+  height: rem(46);
+  line-height: rem(46);
+  padding: 0 rem(15);
+  color: $placeholder-text-color;
+  border: 1px solid $contact-border-color;
+  outline: none;
+
+  font-size: rem(14);
+
+  @include font(opensans);
+}
+
+.auth--btn {
+  height: rem(44);
+  padding: 0 rem(32);
+  float: right;
+
+  text-transform: uppercase;
+
+  color: #fff;
+  border: none;
+  outline: none;
+
+  background-color: $submit-bgc;
+
+  font-size: rem(13);
+  line-height: rem(44);
+
+  @include font(opensans, extrabold);
+}
