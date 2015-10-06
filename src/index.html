@@ -37,28 +37,94 @@
               <use xlink:href="#icon-logo"></use>
             </svg><span class="logo--text">Hosting</span></a></div>
         <div class="header-links">
-          <ul class="user-links">
+          <ul class="user-links js-modal-open">
             <li class="user-links--item">Support :&nbsp;<a href="mailto:info@example.com?subject=Mail%20from%20Our%20Site">info@example.com</a></li>
-            <li class="user-links--item"><a href="#">Register</a></li>
-            <li class="user-links--item"><a href="#">Login</a></li>
+            <li class="user-links--item js-modal-open"><a href="#0" class="cd-signup">Register</a></li>
+            <li class="user-links--item js-modal-open"><a href="#0" class="cd-signin">Login</a></li>
           </ul>
         </div>
       </div>
     </header>
-    <div class="login-form">
-      <form class="auth">
-        <h3 class="auth--title">Login</h3>
-        <div class="auth--field">
-          <input type="email" placeholder="Email *">
+    <!--.login-form-->
+    <!--    form.auth-->
+    <!--        h3.auth--title Login-->
+    <!--        .auth--field-->
+    <!--            input(type='email', placeholder='Email *')-->
+    <!--        .auth--field-->
+    <!--            input(type='password', placeholder='Password *')-->
+    <!---->
+    <!--        input(type='submit', value='Send').auth--btn-->
+    
+    <div class="cd-user-modal">
+      <div class="cd-user-modal-container">
+        <ul class="cd-switcher">
+          <li><a href="#0">Sign in</a></li>
+          <li><a href="#0">New account</a></li>
+        </ul>
+        <div id="cd-login">
+          <form class="cd-form">
+            <p class="fieldset">
+              <label for="signin-email" class="image-replace cd-email">E-mail</label>
+              <input id="signin-email" type="email" placeholder="E-mail" class="full-width has-padding has-border"><span class="cd-error-message">Error message here!</span>
+            </p>
+            <p class="fieldset">
+              <label for="signin-password" class="image-replace cd-password">Password</label>
+              <input id="signin-password" type="text" placeholder="Password" class="full-width has-padding has-border"><a href="#0" class="hide-password">Hide</a><span class="cd-error-message">Error message here!</span>
+            </p>
+            <p class="fieldset">
+              <input id="remember-me" type="checkbox" checked="">
+              <label for="remember-me">Remember me</label>
+            </p>
+            <p class="fieldset">
+              <input type="submit" value="Login" class="full-width">
+            </p>
+          </form>
+          <p class="cd-form-bottom-message"><a href="#0">Forgot your password?</a></p><a href="#0" class="cd-close-form">Close</a>
         </div>
-        <div class="auth--field">
-          <input type="password" placeholder="Password *">
+        <div id="cd-signup">
+          <form class="cd-form">
+            <p class="fieldset">
+              <label for="signup-username" class="image-replace cd-username">Username</label>
+              <input id="signup-username" type="text" placeholder="Username" class="full-width has-padding has-border"><span class="cd-error-message">Error message here!</span>
+            </p>
+            <p class="fieldset">
+              <label for="signup-email" class="image-replace cd-email">E-mail</label>
+              <input id="signup-email" type="email" placeholder="E-mail" class="full-width has-padding has-border"><span class="cd-error-message">Error message here!</span>
+            </p>
+            <p class="fieldset">
+              <label for="signup-password" class="image-replace cd-password">Password</label>
+              <input id="signup-password" type="text" placeholder="Password" class="full-width has-padding has-border"><a href="#0" class="hide-password">Hide</a><span class="cd-error-message">Error message here!</span>
+            </p>
+            <p class="fieldset">
+              <input id="accept-terms" type="checkbox">
+              <label for="accept-terms">I agree to the<a href="#0">Terms</a></label>
+            </p>
+            <p class="fieldset">
+              <input type="submit" value="Create account" class="full-width has-padding">
+            </p>
+          </form>
+          <!-- <a href="#0" class="cd-close-form">Close</a>-->
         </div>
-        <input type="submit" value="Send" class="auth--btn">
-      </form>
+        <div id="cd-reset-password">
+          <p class="cd-form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
+          <form class="cd-form">
+            <p class="fieldset">
+              <label for="reset-email" class="image-replace cd-email">E-mail</label>
+              <input id="reset-email" type="email" placeholder="E-mail" class="full-width has-padding has-border"><span class="cd-error-message">Error message here!</span>
+            </p>
+            <p class="fieldset">
+              <input type="submit" value="Reset password" class="full-width has-padding">
+            </p>
+          </form>
+          <p class="cd-form-bottom-message"><a href="#0">Back to log-in</a></p>
+        </div><a href="#0" class="cd-close-form">Close</a>
+      </div>
     </div>
-    <!-- svgsrite--><svg style="position: absolute; width: 0; height: 0; visibility: hidden;"><defs><linearGradient id="logo-a" y2="34.35" gradientUnits="userSpaceOnUse" x2="104" y1="33.475" x1="-1.375"><stop offset="0" stop-color="#ff8261"/><stop offset="1" stop-color="#52cbf8"/></linearGradient></defs><symbol viewBox="0 0 97.172997 66.849998" id="icon-logo"><path d="M33.426 0C14.996 0 0 14.995 0 33.426 0 51.856 14.995 66.85 33.426 66.85h38.19c14.09 0 25.558-11.463 25.558-25.555S85.71 15.738 71.617 15.738l-.002 9c9.13 0 16.557 7.428 16.557 16.557 0 9.13-7.427 16.557-16.557 16.557h-38.19C19.96 57.852 9 46.894 9 33.426 9 19.956 19.958 9 33.426 9c10.172 0 19.37 6.28 22.902 15.816l6.397-7.484C56.917 6.798 45.683 0 33.425 0z" fill="url(#logo-a)"/></symbol></svg>
+    <!-- svgsrite--><svg style="position: absolute; width: 0; height: 0; visibility: hidden;"><defs><linearGradient id="logo-a" y2="34.35" gradientUnits="userSpaceOnUse" x2="104" y1="33.475" x1="-1.375"><stop offset="0" stop-color="#ff8261"/><stop offset="1" stop-color="#52cbf8"/></linearGradient></defs><symbol viewBox="0 0 86.467499 86.466751" id="icon-close"><path d="M55.38 43.232l30.218-30.22c1.16-1.158 1.16-3.036 0-4.194l-7.95-7.95C76.49-.29 74.612-.29 73.453.868l-30.22 30.22L13.016.867C11.857-.29 9.978-.29 8.82.868L.87 8.818c-1.16 1.158-1.16 3.036 0 4.195l30.218 30.22L.87 73.452c-1.16 1.158-1.16 3.036 0 4.194l7.95 7.95c1.158 1.16 3.037 1.16 4.195 0l30.22-30.218L73.45 85.596c1.16 1.16 3.037 1.16 4.195 0l7.95-7.95c1.16-1.158 1.16-3.036 0-4.195L55.38 43.232z"/></symbol><symbol viewBox="0 0 97.172997 66.849998" id="icon-logo"><path d="M33.426 0C14.996 0 0 14.995 0 33.426 0 51.856 14.995 66.85 33.426 66.85h38.19c14.09 0 25.558-11.463 25.558-25.555S85.71 15.738 71.617 15.738l-.002 9c9.13 0 16.557 7.428 16.557 16.557 0 9.13-7.427 16.557-16.557 16.557h-38.19C19.96 57.852 9 46.894 9 33.426 9 19.956 19.958 9 33.426 9c10.172 0 19.37 6.28 22.902 15.816l6.397-7.484C56.917 6.798 45.683 0 33.425 0z" fill="url(#logo-a)"/></symbol></svg>
     <!--script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!--script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js")-->
+    <script src="js/login.js"></script>
     <script src="js/analytics.js"></script>
   </body>
 </html>
