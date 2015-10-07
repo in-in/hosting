@@ -1,74 +1,36 @@
-//.login-form
-//    form.auth
-//        h3.auth--title Login
-//        .auth--field
-//            input(type='email', placeholder='Email *')
-//        .auth--field
-//            input(type='password', placeholder='Password *')
-//
-//        input(type='submit', value='Send').auth--btn
+.login-form-modal
+    a.login-form--close(href='#0') Close
 
-
-.cd-user-modal
-    .cd-user-modal-container
-        ul.cd-switcher
+    .login-form-modal--container
+        ul.form-switcher
             li
-                a(href='#0') Sign in
+                a(href='#0').form-switcher--title Login
             li
-                a(href='#0') New account
+                a(href='#0').form-switcher--title Register
         #cd-login
-            form.cd-form
-                p.fieldset
-                    label.image-replace.cd-email(for='signin-email') E-mail
-                    input#signin-email.full-width.has-padding.has-border(type='email', placeholder='E-mail')
-                    span.cd-error-message Error message here!
-                p.fieldset
-                    label.image-replace.cd-password(for='signin-password') Password
-                    input#signin-password.full-width.has-padding.has-border(type='text', placeholder='Password')
-                    a.hide-password(href='#0') Hide
-                    span.cd-error-message Error message here!
-                p.fieldset
+            form.login-form(method='POST')
+                .login-form--fieldset
+                    input#signin-email(type='email', placeholder='E-mail*', required='').login-form--input
+                .login-form--fieldset
+                    input#signin-password(type='text', placeholder='Password*', required='').login-form--input
+                .login-form--fieldset
                     input#remember-me(type='checkbox', checked='')
-                    label(for='remember-me') Remember me
-                p.fieldset
-                    input.full-width(type='submit', value='Login')
-            p.cd-form-bottom-message
-                a(href='#0') Forgot your password?
-            a(href="#0").cd-close-form Close
+                    label(for='remember-me').checkbox-title Remember me
+                .login-form--fieldset
+                    input(type='submit', value='Send').login-form--submit
         #cd-signup
-            form.cd-form
-                p.fieldset
-                    label.image-replace.cd-username(for='signup-username') Username
-                    input#signup-username.full-width.has-padding.has-border(type='text', placeholder='Username')
-                    span.cd-error-message Error message here!
-                p.fieldset
-                    label.image-replace.cd-email(for='signup-email') E-mail
-                    input#signup-email.full-width.has-padding.has-border(type='email', placeholder='E-mail')
-                    span.cd-error-message Error message here!
-                p.fieldset
-                    label.image-replace.cd-password(for='signup-password') Password
-                    input#signup-password.full-width.has-padding.has-border(type='text', placeholder='Password')
-                    a.hide-password(href='#0') Hide
-                    span.cd-error-message Error message here!
-                p.fieldset
+            form.login-form(method='POST')
+                .login-form--fieldset
+                    input#signup-username(type='text', placeholder='Username*', required='').login-form--input
+                .login-form--fieldset
+                    input#signup-email(type='email', placeholder='E-mail*', required='').login-form--input
+                .login-form--fieldset
+                    input#signup-password(type='text', placeholder='Password*', required='').login-form--input
+                .login-form--fieldset
                     input#accept-terms(type='checkbox')
-                    label(for='accept-terms')
-                        | I agree to the
+                    label(for='accept-terms').checkbox-title
+                        | I agree to the &nbsp;
                         a(href='#0') Terms
-                p.fieldset
-                    input.full-width.has-padding(type='submit', value='Create account')
-            // <a href="#0" class="cd-close-form">Close</a>
-        #cd-reset-password
-            p.cd-form-message
-                | Lost your password? Please enter your email address. You will receive a link to create a new password.
-            form.cd-form
-                p.fieldset
-                    label.image-replace.cd-email(for='reset-email') E-mail
-                    input#reset-email.full-width.has-padding.has-border(type='email', placeholder='E-mail')
-                    span.cd-error-message Error message here!
-                p.fieldset
-                    input.full-width.has-padding(type='submit', value='Reset password')
-            p.cd-form-bottom-message
-                a(href='#0') Back to log-in
+                .login-form--fieldset
+                    input(type='submit', value='Create account').login-form--submit
 
-        a.cd-close-form(href='#0') Close
