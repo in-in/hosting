@@ -12,12 +12,12 @@
                 .login-form--fieldset
                     input#signin-email(type='email', placeholder='E-mail*', required='').login-form--input
                 .login-form--fieldset
-                    input#signin-password(type='text', placeholder='Password*', required='').login-form--input
+                    input#signin-password(type='password', placeholder='Password*', required='').login-form--input
                 .login-form--fieldset
                     input#remember-me(type='checkbox', checked='')
                     label(for='remember-me').checkbox-title Remember me
                 .login-form--fieldset
-                    input(type='submit', value='Send').login-form--submit
+                    input(type='submit', value='Send').login-form--btn
         #cd-signup
             form.login-form(method='POST')
                 .login-form--fieldset
@@ -25,12 +25,12 @@
                 .login-form--fieldset
                     input#signup-email(type='email', placeholder='E-mail*', required='').login-form--input
                 .login-form--fieldset
-                    input#signup-password(type='text', placeholder='Password*', required='').login-form--input
+                    input#signup-password(type='password', placeholder='Password*', required='').login-form--input
                 .login-form--fieldset
                     input#accept-terms(type='checkbox')
                     label(for='accept-terms').checkbox-title
                         | I agree to the &nbsp;
                         a(href='#0') Terms
                 .login-form--fieldset
-                    input(type='submit', value='Create account').login-form--submit
+                    input(type='submit', value='Create account').login-form--btn
 

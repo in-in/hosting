@@ -11,7 +11,7 @@
   height: 100%;
 
   cursor: pointer;
-  transition: opacity .3s 0, visibility 0 .3s;
+  transition: opacity .3s, visibility 0.3s;
 
   opacity: 0;
 
@@ -21,7 +21,7 @@
 .login-form-modal.is-visible {
   visibility: visible;
 
-  transition: opacity .3s 0, visibility 0 0;
+  transition: opacity .3s, visibility 0s;
 
   opacity: 1;
 }
@@ -30,12 +30,17 @@
   position: relative;
 
   width: 90%;
+  min-width: 20rem; //320
   max-width: rem(500);
   margin: rem(100) auto 4rem;
 
   cursor: auto;
 
   background: #fff;
+
+  @include breakpoint($s) {
+    margin-top: rem(50);
+  }
 }
 
 .form-switcher {
@@ -53,7 +58,7 @@
   text-align: center;
 }
 
-.form-switcher a {
+.form-switcher--title {
   display: block;
 
   width: 100%;
@@ -114,6 +119,10 @@
   @include font(opensans);
 }
 
+.login-form--input:focus {
+  border: 1px solid $bold-text;
+}
+
 .checkbox-title,
 .checkbox-title a {
   @include font(opensans);
@@ -122,10 +131,10 @@
 }
 
 .checkbox-title a {
-  text-decoration: underline;
+  border-bottom: 1px solid $placeholder-text-color;
 }
 
-.login-form--submit {
+.login-form--btn {
   float: right;
 
   height: rem(44);
@@ -138,7 +147,7 @@
   border: none;
   outline: none;
 
-  background-color: $submit-bgc;
+  background-color: $form-btn;
 
   font-size: rem(13);
   line-height: rem(44);
@@ -146,6 +155,14 @@
   @include font(opensans, extrabold);
 
   appearance: none;
+
+  &:hover {
+    background-color: darken($form-btn, 5%);
+  }
+
+  &:active {
+    background-color: darken($form-btn, 15%);
+  }
 }
 
 .login-form--close {
@@ -167,6 +184,11 @@
   background-image: svg('close.min', '[fill]: #161920');
   background-repeat: no-repeat;
   background-size: cover;
+
+  @include breakpoint($s) {
+    width:  rem(25);
+    height: rem(25);
+  }
 }
 
 #cd-login,

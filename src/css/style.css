@@ -158,24 +158,31 @@ body {
   width: 100%;
   height: 100%;
   cursor: pointer;
-  transition: opacity 0.3s 0, visibility 0 0.3s;
+  transition: opacity 0.3s, visibility 0.3s;
   opacity: 0;
   background: rgba(0, 0, 0, 0.3);
 }
 
 .login-form-modal.is-visible {
   visibility: visible;
-  transition: opacity 0.3s 0, visibility 0 0;
+  transition: opacity 0.3s, visibility 0s;
   opacity: 1;
 }
 
 .login-form-modal--container {
   position: relative;
   width: 90%;
+  min-width: 20rem;
   max-width: 31.25rem;
   margin: 6.25rem auto 4rem;
   cursor: auto;
   background: #fff;
+}
+
+@media (max-width: 30rem) {
+  .login-form-modal--container {
+    margin-top: 3.125rem;
+  }
 }
 
 .form-switcher {
@@ -194,7 +201,7 @@ body {
   text-align: center;
 }
 
-.form-switcher a {
+.form-switcher--title {
   display: block;
   width: 100%;
   height: 3.125rem;
@@ -250,6 +257,10 @@ body {
   font-style: normal;
 }
 
+.login-form--input:focus {
+  border: 1px solid #556b72;
+}
+
 .checkbox-title,
 .checkbox-title a {
   font-family: "Open Sans", san-serif;
@@ -260,10 +271,10 @@ body {
 }
 
 .checkbox-title a {
-  text-decoration: underline;
+  border-bottom: 1px solid #a0a9b6;
 }
 
-.login-form--submit {
+.login-form--btn {
   float: right;
   height: 2.75rem;
   padding: 0 2rem;
@@ -283,6 +294,14 @@ body {
           appearance: none;
 }
 
+.login-form--btn:hover {
+  background-color: #fa572c;
+}
+
+.login-form--btn:active {
+  background-color: #ee3605;
+}
+
 .login-form--close {
   position: absolute;
   top: 0;
@@ -298,6 +317,13 @@ body {
   background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%2286.467%22%20width%3D%2286.467%22%20viewBox%3D%220%200%2086.467499%2086.466751%22%20style%3D%22fill%3A%23161920%3B%22%3E%3Cpath%20d%3D%22M55.38%2043.232l30.218-30.22c1.16-1.158%201.16-3.036%200-4.194l-7.95-7.95C76.49-.29%2074.612-.29%2073.453.868l-30.22%2030.22L13.016.867C11.857-.29%209.978-.29%208.82.868L.87%208.818c-1.16%201.158-1.16%203.036%200%204.195l30.218%2030.22L.87%2073.452c-1.16%201.158-1.16%203.036%200%204.194l7.95%207.95c1.158%201.16%203.037%201.16%204.195%200l30.22-30.218L73.45%2085.596c1.16%201.16%203.037%201.16%204.195%200l7.95-7.95c1.16-1.158%201.16-3.036%200-4.195L55.38%2043.232z%22%2F%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media (max-width: 30rem) {
+  .login-form--close {
+    width: 1.5625rem;
+    height: 1.5625rem;
+  }
 }
 
 #cd-login,
