@@ -1,10 +1,14 @@
-.top-header {
-  height: rem(100);
+.top-header--wrap {
+  &:last-child {
+    padding-top: rem(25);
 
-  outline: 1px dotted black;
+    @include breakpoint($m) {
+      padding-top: rem(15);
+    }
+  }
 
-  @include breakpoint($s) {
-    height: auto;
+  &::after {
+    @include cf;
   }
 }
 
@@ -20,6 +24,8 @@
 .header-logo {
   @include span(3);
   @include breakpoint($s) {
+    text-align: center;
+
     @include span(full);
   }
 }

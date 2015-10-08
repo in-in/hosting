@@ -79,6 +79,7 @@ body {
   max-width: 73.125rem;
   margin: 0 auto;
   padding: 0 0.9375rem;
+  outline: 1px dotted red;
   max-width: 73.125rem;
   margin-left: auto;
   margin-right: auto;
@@ -90,15 +91,20 @@ body {
   clear: both;
 }
 
-.top-header {
-  height: 6.25rem;
-  outline: 1px dotted black;
+.top-header--wrap:last-child {
+  padding-top: 1.5625rem;
 }
 
-@media (max-width: 30rem) {
-  .top-header {
-    height: auto;
+@media (max-width: 40rem) {
+  .top-header--wrap:last-child {
+    padding-top: 0.9375rem;
   }
+}
+
+.top-header--wrap::after {
+  display: table;
+  clear: both;
+  content: '';
 }
 
 .header-logo,
@@ -120,6 +126,7 @@ body {
 
 @media (max-width: 30rem) {
   .header-logo {
+    text-align: center;
     width: 100%;
     float: left;
     margin-left: 0;
@@ -263,11 +270,11 @@ body {
 
 .checkbox-title,
 .checkbox-title a {
+  color: #a0a9b6;
+  font-size: 0.875rem;
   font-family: "Open Sans", san-serif;
   font-weight: 400;
   font-style: normal;
-  color: #a0a9b6;
-  font-size: 0.875rem;
 }
 
 .checkbox-title a {
@@ -409,6 +416,76 @@ body {
   font-family: "Open Sans", san-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.top-menu {
+  margin-right: -0.9375rem;
+  margin-left: -0.9375rem;
+}
+
+.top-menu::after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
+.menu-item {
+  text-align: center;
+  width: 10%;
+  float: left;
+}
+
+@media (max-width: 60rem) {
+  .menu-item {
+    width: 50%;
+    float: left;
+  }
+  .menu-item:nth-child(even) {
+    text-align: left;
+  }
+  .menu-item:nth-child(even) .menu-link {
+    padding-left: 5%;
+  }
+  .menu-item:nth-child(odd) {
+    text-align: right;
+    border-right: 1px solid #fff;
+  }
+  .menu-item:nth-child(odd) .menu-link {
+    padding-right: 5%;
+  }
+}
+
+.menu-link {
+  display: block;
+  height: 3.5rem;
+  transition: background-color 0.2s ease;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #ff8261;
+  font-size: 0.8125rem;
+  line-height: 3.5rem;
+  font-family: "Open Sans", san-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media (max-width: 60rem) {
+  .menu-link {
+    height: 2.5rem;
+    line-height: 2.5rem;
+  }
+}
+
+.menu-link:hover {
+  background-color: #52cbf8;
+}
+
+.menu-link:active {
+  background-color: #21bcf6;
+}
+
+.menu-link__active {
+  background-color: #52cbf8;
 }
 
 .logo {

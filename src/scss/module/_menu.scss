@@ -1,0 +1,68 @@
+.top-menu {
+  margin-right: rem(-15);
+  margin-left: rem(-15);
+
+  &::after {
+    @include cf;
+  }
+}
+
+.menu-item {
+  text-align: center;
+
+  @include span(1 of 10);
+  @include breakpoint($l) {
+    @include span(6);
+    &:nth-child(even) {
+      text-align: left;
+
+      .menu-link {
+        padding-left: 5%;
+      }
+    }
+    &:nth-child(odd) {
+      text-align: right;
+
+      border-right: 1px solid #fff;
+
+      .menu-link {
+        padding-right: 5%;
+      }
+    }
+  }
+}
+
+.menu-link {
+  display: block;
+
+  height: rem(56);
+
+  transition: background-color .2s ease;
+  text-transform: uppercase;
+
+  color: #fff;
+
+  background-color: $accent;
+
+  font-size: rem(13);
+  line-height: rem(56);
+
+  @include font(opensans);
+  @include breakpoint($l) {
+    height: rem(40);
+
+    line-height: rem(40);
+  }
+
+  &:hover {
+    background-color: $active;
+  }
+
+  &:active {
+    background-color: darken($active, 10%);
+  }
+}
+
+.menu-link__active {
+  background-color: $active;
+}

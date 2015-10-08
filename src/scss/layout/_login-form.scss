@@ -11,7 +11,7 @@
   height: 100%;
 
   cursor: pointer;
-  transition: opacity .3s, visibility 0.3s;
+  transition: opacity .3s, visibility .3s;
 
   opacity: 0;
 
@@ -101,7 +101,6 @@
 
 .login-form--fieldset:last-child {
   margin-bottom: 0;
-
 }
 
 .login-form--input {
@@ -125,9 +124,11 @@
 
 .checkbox-title,
 .checkbox-title a {
-  @include font(opensans);
   color: $placeholder-text-color;
+
   font-size: rem(14);
+
+  @include font(opensans);
 }
 
 .checkbox-title a {
@@ -186,7 +187,7 @@
   background-size: cover;
 
   @include breakpoint($s) {
-    width:  rem(25);
+    width: rem(25);
     height: rem(25);
   }
 }
