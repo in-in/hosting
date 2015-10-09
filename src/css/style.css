@@ -192,6 +192,12 @@ body {
   }
 }
 
+@media (max-width: 20rem) {
+  .login-form-modal--container {
+    width: 100%;
+  }
+}
+
 .form-switcher {
   margin-bottom: 1rem;
 }
@@ -387,15 +393,6 @@ body {
   }
   .user-links--item:first-child::after {
     display: none;
-  }
-}
-
-@media (max-width: 30rem) {
-  .user-links--item:first-child {
-    display: inline-block;
-  }
-  .user-links--item:first-child::after {
-    display: inline-block;
   }
 }
 

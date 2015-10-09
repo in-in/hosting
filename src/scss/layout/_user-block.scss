@@ -40,12 +40,6 @@
       display: none;
     }
   }
-  @include breakpoint($s) {
-    display: inline-block;
-    &::after {
-      display: inline-block;
-    }
-  }
 }
 
 .user-links--item::after {

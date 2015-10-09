@@ -41,6 +41,10 @@
   @include breakpoint($s) {
     margin-top: rem(50);
   }
+
+  @include breakpoint($xs) {
+    width: 100%;
+  }
 }
 
 .form-switcher {
