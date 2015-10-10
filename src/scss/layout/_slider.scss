@@ -1,0 +1,65 @@
+.top-slider {
+  background-color: $section-bg-dark;
+  height: rem(570);
+}
+
+.slide {
+  width: 100%;
+  position: relative;
+}
+
+.slide--img img{
+  display: block;
+  width: 100%;
+  height: rem(570);
+}
+
+.slide--inner {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: red;
+  text-align: center;
+  padding-top: rem(375);
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 60%,rgba(30,30,30,1) 110%);
+  height: 100%;
+
+}
+
+.slide--title {
+  @include font(opensans, extrabold);
+  font-size: rem(40);
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 1px 1px 1px #333;
+}
+
+.slide--subtitle {
+  @include font(opensans, light);
+  font-size: rem(20);
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 1px 1px 1px #333;
+}
+
+.flickity-page-dots {
+  bottom: rem(60);
+  left: 0;
+  text-align: center;
+}
+
+.flickity-page-dots .dot {
+  width: rem(13);
+  height: rem(13);
+  margin: 0 rem(5);
+  opacity: 1;
+  background-color: transparent;
+  border: 2px solid $accent;
+}
+
+.flickity-page-dots .dot.is-selected {
+  background: inherit;
+  border: 2px solid #5278db;
+}

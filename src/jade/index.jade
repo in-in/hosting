@@ -4,4 +4,21 @@ append var
     - var thisPage = 'Home'
     - var pageTitle = pageTitle.concat(' | ' + thisPage)
 
-- var active = 'Home'
+prepend link
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.1/flickity.min.css')
+
+append main
+    main
+        include inc/slider
+
+prepend script
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.1/flickity.pkgd.min.js")
+    script.
+        var elem = document.querySelector('.slider');
+        var flkty = new Flickity(elem, {
+            cellAlign: 'center',
+            contain: true,
+            prevNextButtons: true,
+            lazyLoad: true,
+            initialIndex: 2
+        });

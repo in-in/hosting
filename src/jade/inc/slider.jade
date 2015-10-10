@@ -1,0 +1,30 @@
+mixin slider(items)
+    each item in items
+        - var atts = {'data-flickity-lazyload': item.img,'alt': 'image'}
+        .slider--item.slide
+            .slide--img
+                img&attributes(atts)
+            .slide--inner
+                h2.slide--title= item.title
+                p.slide--subtitle= item.subtitle
+
+section.top-slider
+    .container
+        .slider
+            +slider([
+                {
+                    'img': 'img/slide11.jpg',
+                    'title': 'Awesome hosting',
+                    'subtitle': 'With unlimited features',
+                },
+                {
+                    'img': 'img/slide13.jpg',
+                    'title': 'Daily Backups',
+                    'subtitle': 'We can roll it back'
+                },
+                {
+                    'img': 'img/slide19.jpg',
+                    'title': 'Managed services',
+                    'subtitle': 'Hosting without the worries'
+                }
+            ])
