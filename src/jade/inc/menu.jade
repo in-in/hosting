@@ -10,7 +10,7 @@ mixin list(items, liclass)
                     a(href=item.link, class=item.class)
                         = item.title
 
-nav(role='navigation').top-menu
+nav(role='navigation')#js-top-menu.top-menu
     +list([
         {'title': 'Home', 'link': 'index.html', 'class': 'menu-link'},
         {'title': 'About us', 'link': 'about.html', 'class': 'menu-link'},

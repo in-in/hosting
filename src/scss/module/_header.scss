@@ -1,20 +1,16 @@
-.top-header--wrap {
-  &:last-child {
-    padding-top: rem(25);
-
-    @include breakpoint($m) {
-      padding-top: rem(15);
-    }
-  }
-
+.top-header--wrap,
+.top-header--menu {
   &::after {
     @include cf;
   }
 }
 
-.header-logo,
-.header-links {
+.top-header--wrap {
   padding-top: rem(27);
+}
+
+.top-header--menu {
+  padding-top: rem(25);
 
   @include breakpoint($m) {
     padding-top: rem(15);
@@ -23,10 +19,8 @@
 
 .header-logo {
   @include span(3);
-  @include breakpoint($s) {
-    text-align: center;
-
-    @include span(full);
+  @include breakpoint($l) {
+    @include span(9);
   }
 }
 
@@ -34,10 +28,16 @@
   width: rem(455);
 
   @include span(last);
-  @include breakpoint($m) {
-    width: rem(260);
-  }
-  @include breakpoint($s) {
+  @include breakpoint($l) {
     @include span(full);
+  }
+}
+
+.header-trigger {
+  display: none;
+  @include breakpoint($l) {
+    display: block;
+    @include span(3);
+    text-align: right;
   }
 }

@@ -4,10 +4,13 @@ header.top-header
             .header-logo
                 block logo
                     include logo
+            .header-trigger
+                a(href="#")#js-nav-trigger.nav-trigger
+                    | Menu
             .header-links
                 block user-block
                     include user-block
-        .top-header--wrap
+        .top-header--menu
             block menu
                 include menu
 

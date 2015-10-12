@@ -9,13 +9,11 @@
   border-top: 1px solid #e1e9f2;
   border-bottom: 1px solid #e1e9f2;
 
-  @include breakpoint($m) {
-    height: auto;
-  }
-  @include breakpoint($s) {
+  @include breakpoint($l) {
     text-align: center;
-
-    border-bottom: none;
+    height: auto;
+    border-top: none;
+    padding-top: rem(20);
   }
 }
 
@@ -28,13 +26,13 @@
   line-height: rem(46);
 
   @include font(opensans);
-  @include breakpoint($m) {
+  @include breakpoint($l) {
     line-height: rem(35);
   }
 }
 
 .user-links--item:first-child {
-  @include breakpoint($m) {
+  @include breakpoint($s) {
     display: block;
     &::after {
       display: none;

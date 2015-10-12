@@ -91,30 +91,23 @@ body {
   clear: both;
 }
 
-.top-header--wrap:last-child {
-  padding-top: 1.5625rem;
-}
-
-@media (max-width: 40rem) {
-  .top-header--wrap:last-child {
-    padding-top: 0.9375rem;
-  }
-}
-
-.top-header--wrap::after {
+.top-header--wrap::after,
+.top-header--menu::after {
   display: table;
   clear: both;
   content: '';
 }
 
-.header-logo,
-.header-links {
+.top-header--wrap {
   padding-top: 1.6875rem;
 }
 
+.top-header--menu {
+  padding-top: 1.5625rem;
+}
+
 @media (max-width: 40rem) {
-  .header-logo,
-  .header-links {
+  .top-header--menu {
     padding-top: 0.9375rem;
   }
 }
@@ -124,13 +117,10 @@ body {
   float: left;
 }
 
-@media (max-width: 30rem) {
+@media (max-width: 60rem) {
   .header-logo {
-    text-align: center;
-    width: 100%;
+    width: 75%;
     float: left;
-    margin-left: 0;
-    margin-right: 0;
   }
 }
 
@@ -140,18 +130,25 @@ body {
   margin-right: 0;
 }
 
-@media (max-width: 40rem) {
-  .header-links {
-    width: 16.25rem;
-  }
-}
-
-@media (max-width: 30rem) {
+@media (max-width: 60rem) {
   .header-links {
     width: 100%;
     float: left;
     margin-left: 0;
     margin-right: 0;
+  }
+}
+
+.header-trigger {
+  display: none;
+}
+
+@media (max-width: 60rem) {
+  .header-trigger {
+    display: block;
+    width: 25%;
+    float: left;
+    text-align: right;
   }
 }
 
@@ -358,16 +355,12 @@ body {
   border-bottom: 1px solid #e1e9f2;
 }
 
-@media (max-width: 40rem) {
-  .user-links {
-    height: auto;
-  }
-}
-
-@media (max-width: 30rem) {
+@media (max-width: 60rem) {
   .user-links {
     text-align: center;
-    border-bottom: none;
+    height: auto;
+    border-top: none;
+    padding-top: 1.25rem;
   }
 }
 
@@ -381,13 +374,13 @@ body {
   font-style: normal;
 }
 
-@media (max-width: 40rem) {
+@media (max-width: 60rem) {
   .user-links--item {
     line-height: 2.1875rem;
   }
 }
 
-@media (max-width: 40rem) {
+@media (max-width: 30rem) {
   .user-links--item:first-child {
     display: block;
   }
@@ -426,14 +419,21 @@ body {
   content: '';
 }
 
+.top-menu.is-visible .menu-item {
+  height: 2.5rem;
+  transition: height 0.3s ease-in;
+}
+
 .menu-item {
   text-align: center;
+  height: 3.5rem;
   width: 10%;
   float: left;
 }
 
 @media (max-width: 60rem) {
   .menu-item {
+    height: 0;
     width: 50%;
     float: left;
   }
@@ -454,7 +454,7 @@ body {
 
 .menu-link {
   display: block;
-  height: 3.5rem;
+  height: inherit;
   transition: background-color 0.2s ease;
   text-transform: uppercase;
   color: #fff;
@@ -468,7 +468,7 @@ body {
 
 @media (max-width: 60rem) {
   .menu-link {
-    height: 2.5rem;
+    height: inherit;
     line-height: 2.5rem;
   }
 }
@@ -485,15 +485,19 @@ body {
   background-color: #52cbf8;
 }
 
-.logo {
-  display: block;
-  height: 2.875rem;
-}
-
-@media (max-width: 40rem) {
-  .logo {
-    height: auto;
-  }
+.nav-trigger {
+  display: inline-block;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  padding: 0 0.9375rem;
+  background-color: #ff8261;
+  font-family: "Open Sans", san-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
 }
 
 .logo--icon {
@@ -502,18 +506,6 @@ body {
   height: 1.9375rem;
   margin-right: 0.5625rem;
   vertical-align: middle;
-}
-
-@media (max-width: 40rem) {
-  .logo--icon {
-    display: block;
-  }
-}
-
-@media (max-width: 30rem) {
-  .logo--icon {
-    display: inline-block;
-  }
 }
 
 .logo--text {
@@ -538,6 +530,12 @@ body {
   height: 35.625rem;
 }
 
+@media (max-width: 30rem) {
+  .top-slider {
+    display: none;
+  }
+}
+
 .slide {
   width: 100%;
   position: relative;
@@ -558,7 +556,7 @@ body {
   color: red;
   text-align: center;
   padding-top: 23.4375rem;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, #1e1e1e 110%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, #1e1e1e 110%);
   height: 100%;
 }
 
@@ -600,5 +598,27 @@ body {
 .flickity-page-dots .dot.is-selected {
   background: inherit;
   border: 2px solid #5278db;
+}
+
+.flickity-prev-next-button {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid #fff;
+}
+
+.flickity-prev-next-button:hover {
+  border: 1px solid #ff8261;
+  background: none;
+}
+
+.flickity-prev-next-button:hover .arrow {
+  fill: #ff8261;
+}
+
+.flickity-prev-next-button:focus {
+  box-shadow: none;
+}
+
+.flickity-prev-next-button .arrow {
+  fill: #fff;
 }
 /*# sourceMappingURL=style.css.map */

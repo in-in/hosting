@@ -7,12 +7,24 @@
   }
 }
 
+.top-menu.is-visible {
+
+  .menu-item {
+    height: rem(40);
+    transition: height .3s ease-in;
+  }
+}
+
 .menu-item {
   text-align: center;
+  height: rem(56);
 
   @include span(1 of 10);
+
   @include breakpoint($l) {
+    height: 0;
     @include span(6);
+
     &:nth-child(even) {
       text-align: left;
 
@@ -20,6 +32,7 @@
         padding-left: 5%;
       }
     }
+
     &:nth-child(odd) {
       text-align: right;
 
@@ -35,7 +48,7 @@
 .menu-link {
   display: block;
 
-  height: rem(56);
+  height: inherit;
 
   transition: background-color .2s ease;
   text-transform: uppercase;
@@ -49,9 +62,10 @@
 
   @include font(opensans);
   @include breakpoint($l) {
-    height: rem(40);
+    height: inherit;
 
     line-height: rem(40);
+    //transition: height .3s ease-in;
   }
 
   &:hover {
@@ -65,4 +79,17 @@
 
 .menu-link__active {
   background-color: $active;
+}
+
+.nav-trigger {
+  display: inline-block;
+  height: rem(40);
+  line-height: rem(40);
+  padding: 0 rem(15);
+  background-color: $accent;
+  @include font(opensans);
+  font-size: rem(13);
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
 }
