@@ -10,10 +10,12 @@
   border-bottom: 1px solid #e1e9f2;
 
   @include breakpoint($l) {
-    text-align: center;
     height: auto;
-    border-top: none;
     padding-top: rem(20);
+
+    text-align: center;
+
+    border-top: none;
   }
 }
 

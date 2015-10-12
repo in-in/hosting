@@ -20,3 +20,16 @@ mixin favicon(path)
     meta(name="msapplication-TileColor", content="#2b5797")
     meta(name="msapplication-TileImage", content="/mstile-144x144.png")
     meta(name="theme-color", content="#ffffff")
+
+
+// - Title Block
+mixin title-block(items)
+    .title-block
+        each item in items
+            if item.icon
+                svg.title-block--icon
+                    use(xlink:href="#icon-#{item.icon}")
+            else
+                .title-block--underscore
+            span.heading-high= item.high
+            h2.heading-low= item.low

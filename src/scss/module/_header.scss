@@ -35,9 +35,12 @@
 
 .header-trigger {
   display: none;
+
   @include breakpoint($l) {
     display: block;
-    @include span(3);
+
     text-align: right;
+
+    @include span(3);
   }
 }

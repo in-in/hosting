@@ -8,21 +8,22 @@
 }
 
 .top-menu.is-visible {
-
   .menu-item {
     height: rem(40);
+
     transition: height .3s ease-in;
   }
 }
 
 .menu-item {
-  text-align: center;
   height: rem(56);
 
-  @include span(1 of 10);
+  text-align: center;
 
+  @include span(1 of 10);
   @include breakpoint($l) {
     height: 0;
+
     @include span(6);
 
     &:nth-child(even) {
@@ -52,8 +53,9 @@
 
   transition: background-color .2s ease;
   text-transform: uppercase;
+  //color: #fff;
 
-  color: #fff;
+  color: red;
 
   background-color: $accent;
 
@@ -83,13 +85,19 @@
 
 .nav-trigger {
   display: inline-block;
+
   height: rem(40);
-  line-height: rem(40);
   padding: 0 rem(15);
-  background-color: $accent;
-  @include font(opensans);
-  font-size: rem(13);
-  text-transform: uppercase;
-  color: #fff;
+
   text-align: center;
+  text-transform: uppercase;
+
+  color: #fff;
+
+  background-color: $accent;
+
+  font-size: rem(13);
+  line-height: rem(40);
+
+  @include font(opensans);
 }

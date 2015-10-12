@@ -122,9 +122,9 @@ module.exports = function (grunt) {
       options: {
         plugins: [
           {removeViewBox: false},
-          {removeUselessStrokeAndFill: false},
+          {removeUselessStrokeAndFill: true},
           {removeMetadata: true},
-          {removeTitle: false}
+          {removeTitle: true}
         ]
       },
       dev: {

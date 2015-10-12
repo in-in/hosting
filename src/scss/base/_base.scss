@@ -7,3 +7,56 @@
 body {
   font-size: 16px;
 }
+
+//TITLE-BLOCK
+.title-block--icon {
+  display: block;
+
+  width: rem(24);
+  height: rem(24);
+
+  fill: $icon-bright;
+}
+
+.title-block--underscore {
+  width: rem(24);
+  height: rem(24);
+  border-bottom: 2px solid $icon-bright;
+}
+
+.heading-high {
+  text-transform: uppercase;
+
+  color: $heading-light;
+
+  font-size: rem(18);
+  line-height: rem(30);
+
+  @include font(opensans);
+}
+
+.heading-low {
+  text-transform: uppercase;
+
+  color: $bold-text;
+
+  font-size: rem(30);
+
+  @include font(opensans, extrabold);
+}
+
+
+//FORM STYLE
+
+.textInput {
+  width: 100%;
+  height: rem(55);
+  padding: 0 rem(18);
+  line-height: rem(55);
+  background-color: #fff;
+  outline: none;
+  border: 1px solid $input-border;
+  @include font(opensans);
+  font-size: rem(14);
+  color: $placeholder-text-color;
+}
