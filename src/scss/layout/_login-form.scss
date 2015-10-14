@@ -21,7 +21,7 @@
 .login-form-modal.is-visible {
   visibility: visible;
 
-  transition: opacity .3s, visibility 0s;
+  transition: opacity .3s, visibility .3s;
 
   opacity: 1;
 }

@@ -23,6 +23,13 @@ $font-stack: (
 ),
 (
   group: opensans,
+  id: bold,
+  font: ('Open Sans', san-serif ),
+  weight: 700,
+  style: normal
+),
+(
+  group: opensans,
   id: extrabold,
   font: ('Open Sans', san-serif ),
   weight: 800,
@@ -43,4 +50,5 @@ $font-stack: (
 //@include font(opensans);
 //@include font(opensans, light);
 //@include font(opensans, semibold);
+//@include font(opensans, bold);
 //@include font(opensans, extrabold);

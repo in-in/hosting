@@ -1,25 +1,27 @@
 section.srh-domain
     .container
         .srh-domain--wrap
-            +title-block([
-                {
-                    'icon': 'search',
-                    'high': 'Search your',
-                    'low': 'Domain'
-                }
-            ])
-            form(method='get', action="").domainSearch
-                .domainSearch--field
-                    input(type='text', placeholder='Enter your domain name').textInput
-                .domainSearch--field
-                    select.textInput
-                        option Year (0-1 year)
-                        option Year (1-3 years)
-                        option Year (3-5 years)
-                .domainSearch--field
-                    select.textInput
-                        option .com
-                        option .org
-                        option .net
-                .domainSearch--field
-                    button(type='submit').btn Search
+            .srh-domain--title
+                +title-block([
+                    {
+                        'icon': 'search',
+                        'high': 'Search your',
+                        'low': 'Domain'
+                    }
+                ])
+            .srh-domain--form
+                form(method='get', action="").domainSearch
+                    .domainSearch--field
+                        input(type='text', placeholder='Enter your domain name').textInput
+                    .domainSearch--field.domainSearch--select
+                        select.textInput
+                            option Year (0-1 year)
+                            option Year (1-3 years)
+                            option Year (3-5 years)
+                    .domainSearch--field.domainSearch--select
+                        select.textInput
+                            option .com
+                            option .org
+                            option .net
+                    .domainSearch--field.domainSearch--btn
+                        button(type='submit').btn Search
