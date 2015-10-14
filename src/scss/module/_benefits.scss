@@ -1,0 +1,67 @@
+.benefits--wrap {
+  padding-top: rem(50);
+}
+
+.benefits-list {
+  padding-top: rem(30);
+}
+
+.benefits-item {
+  margin-bottom: rem(70);
+
+  @include gallery(4 of 12 1/4 after);
+  @include suffix(1/4);
+  @include breakpoint($l) {
+    @include gallery(6 of 12 1/4 after);
+  }
+  @include breakpoint($m) {
+    clear: both !important;
+
+    margin-bottom: rem(30);
+
+    @include gallery(12 of 12);
+    @include suffix(0);
+  }
+}
+
+.benefits-item--icon {
+  @include span(3);
+}
+
+.benefits-item--text {
+  @include span(9);
+}
+
+.benefits-item--icon svg {
+  width: rem(69);
+  height: rem(58);
+
+  fill: $icon-bright;
+}
+
+.benefits-item:nth-child(4) .benefits-item--icon svg,
+.benefits-item:last-child .benefits-item--icon svg {
+  fill: transparent;
+  stroke: $icon-bright;
+  stroke-width: rem(2);
+}
+
+.benefits-item--title {
+  text-transform: uppercase;
+
+  color: $bold-text;
+
+  font-size: rem(16);
+  line-height: rem(31);
+
+  @include font(opensans, bold);
+}
+
+.benefits-item--desc {
+  color: $light-text-color;
+
+  font-size: rem(14);
+  line-height: rem(24);
+
+  @include font(opensans);
+}

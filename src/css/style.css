@@ -842,4 +842,113 @@ select.textInput {
     float: left;
   }
 }
+
+.benefits--wrap {
+  padding-top: 3.125rem;
+}
+
+.benefits-list {
+  padding-top: 1.875rem;
+}
+
+.benefits-item {
+  width: 32.2033898305%;
+  float: left;
+  padding-right: 2.0833333333%;
+  margin-bottom: 4.375rem;
+}
+
+.benefits-item:nth-child(3n + 1) {
+  margin-left: 0;
+  margin-right: -100%;
+  clear: both;
+  margin-left: 0;
+}
+
+.benefits-item:nth-child(3n + 2) {
+  margin-left: 33.8983050847%;
+  margin-right: -100%;
+  clear: none;
+}
+
+.benefits-item:nth-child(3n + 3) {
+  margin-left: 67.7966101695%;
+  margin-right: -100%;
+  clear: none;
+}
+
+@media (max-width: 60rem) {
+  .benefits-item {
+    width: 49.1525423729%;
+    float: left;
+  }
+  .benefits-item:nth-child(2n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+  }
+  .benefits-item:nth-child(2n + 2) {
+    margin-left: 50.8474576271%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+
+@media (max-width: 40rem) {
+  .benefits-item {
+    width: 100%;
+    float: left;
+    clear: both !important;
+    margin-bottom: 1.875rem;
+    padding-right: 0%;
+  }
+  .benefits-item:nth-child(1n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+
+.benefits-item--icon {
+  width: 25%;
+  float: left;
+}
+
+.benefits-item--text {
+  width: 75%;
+  float: left;
+}
+
+.benefits-item--icon svg {
+  width: 4.3125rem;
+  height: 3.625rem;
+  fill: #fb6b45;
+}
+
+.benefits-item:nth-child(4) .benefits-item--icon svg,
+.benefits-item:last-child .benefits-item--icon svg {
+  fill: transparent;
+  stroke: #fb6b45;
+  stroke-width: 0.125rem;
+}
+
+.benefits-item--title {
+  font-family: "Open Sans", san-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.9375rem;
+  color: #556b72;
+  text-transform: uppercase;
+}
+
+.benefits-item--desc {
+  font-family: "Open Sans", san-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: #a0a9b6;
+}
 /*# sourceMappingURL=style.css.map */

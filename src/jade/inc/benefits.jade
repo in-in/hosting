@@ -1,0 +1,53 @@
+mixin benefits(items)
+    each item in items
+        .benefits-item
+            .benefits-item--icon
+                svg
+                    use(xlink:href="#icon-#{item.icon}")
+            .benefits-item--text
+                .benefits-item--title= item.title
+                .benefits-item--desc= item.desc
+
+
+section.benefits
+    .container
+        .benefits--wrap
+            +title-block([
+                {
+                    'high': 'Our',
+                    'low': 'Benefits'
+                }
+            ])
+            .benefits-list
+                +benefits([
+                    {
+                        'icon': 'uptime',
+                        'title': '99.9% Uptime',
+                        'desc': 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.'
+                    },
+                    {
+                        'icon': 'bubble',
+                        'title': '24/7/365 Support',
+                        'desc': 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.'
+                    },
+                    {
+                        'icon': 'laptop',
+                        'title': 'Protect your pc',
+                        'desc': 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.'
+                    },
+                    {
+                        'icon': 'gear',
+                        'title': 'DNS control',
+                        'desc': 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.'
+                    },
+                    {
+                        'icon': 'mail',
+                        'title': 'Domain transfer',
+                        'desc': 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.'
+                    },
+                    {
+                        'icon': 'lock',
+                        'title': 'Domain transfer',
+                        'desc': 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.'
+                    }
+                ])

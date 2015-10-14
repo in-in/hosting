@@ -34,7 +34,6 @@ body {
   line-height: rem(30);
 
   @include font(opensans);
-  
   @include breakpoint($s) {
     font-size: rem(16);
     line-height: 1.5;
@@ -49,7 +48,6 @@ body {
   font-size: rem(30);
 
   @include font(opensans, extrabold);
-
   @include breakpoint($s) {
     font-size: rem(28);
   }
@@ -63,7 +61,7 @@ body {
   height: rem(55);
   padding: 0 rem(18);
 
-  color: $placeholder-text-color;
+  color: $light-text-color;
   border: 1px solid $input-border;
   outline: none;
 
@@ -84,6 +82,7 @@ select.textInput {
 
 .btn {
   display: block;
+
   width: 100%;
   height: rem(55);
   padding: 0 rem(25);

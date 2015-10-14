@@ -10,23 +10,27 @@
 .top-menu.is-visible {
   @include breakpoint($l) {
     .menu-link {
-      height: rem(40);
       visibility: visible;
+
+      height: rem(40);
+
       transition: height .2s ease;
     }
   }
 }
 
 .menu-item {
+  overflow: hidden;
+
   height: rem(56);
 
   text-align: center;
   white-space: nowrap;
-  overflow: hidden;
 
   @include span(1 of 10);
   @include breakpoint($l) {
     height: (inherit);
+
     @include span(6);
 
     &:nth-child(even) {
@@ -56,17 +60,21 @@
 
   transition: background-color .2s ease;
   text-transform: uppercase;
+
   color: #fff;
 
   background-color: $accent;
 
   font-size: rem(13);
   line-height: rem(56);
+
   @include font(opensans);
   @include breakpoint($l) {
-    height: rem(0);
-    line-height: rem(40);
     visibility: hidden;
+
+    height: rem(0);
+
+    line-height: rem(40);
   }
 
   &:hover {

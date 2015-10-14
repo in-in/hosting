@@ -22,7 +22,7 @@ mixin favicon(path)
     meta(name="theme-color", content="#ffffff")
 
 
-// - Title Block
+//- Title Block
 mixin title-block(items)
     .title-block
         each item in items
@@ -33,3 +33,10 @@ mixin title-block(items)
                 .title-block--underscore
             span.heading-high= item.high
             h2.heading-low= item.low
+//- +title-block([
+//-     {
+//-         'icon': 'search',
+//-         'high': 'Search your',
+//-         'low': 'Domain'
+//-     }
+//- ])

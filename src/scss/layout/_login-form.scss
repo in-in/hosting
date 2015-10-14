@@ -111,7 +111,7 @@
   height: rem(46);
   padding: 0 rem(15);
 
-  color: $placeholder-text-color;
+  color: $light-text-color;
   border: 1px solid $contact-border-color;
   outline: none;
 
@@ -127,7 +127,7 @@
 
 .checkbox-title,
 .checkbox-title a {
-  color: $placeholder-text-color;
+  color: $light-text-color;
 
   font-size: rem(14);
 
@@ -135,7 +135,7 @@
 }
 
 .checkbox-title a {
-  border-bottom: 1px solid $placeholder-text-color;
+  border-bottom: 1px solid $light-text-color;
 }
 
 .login-form--btn {
