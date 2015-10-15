@@ -1,0 +1,39 @@
+.home-services {
+  background-color: $section-bg-hot;
+}
+
+.home-services--hot {
+  @include span(5);
+}
+
+.home-services--banner {
+  margin-top: rem(30);
+}
+
+.home-services--features {
+  @include span(7);
+}
+
+
+//list
+.features-list {
+}
+
+.features-list li {
+  @include font(opensans);
+  font-size: rem(18);
+  color: $text-hot;
+  &::before {
+    content: '';
+    display: inline-block;
+    width: rem(8);
+    height: rem(12);
+    margin-right: rem(15);
+    background-image: svg("list-right.min", "[fill]: #4c515b");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    vertical-align: baseline;
+  }
+
+}

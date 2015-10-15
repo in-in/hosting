@@ -31,8 +31,8 @@ mixin title-block(items)
                     use(xlink:href="#icon-#{item.icon}")
             else
                 .title-block--underscore
-            span.heading-high= item.high
-            h2.heading-low= item.low
+            span(class=item.highClass).heading-high= item.high
+            h2(class=item.lowClass).heading-low= item.low
 //- +title-block([
 //-     {
 //-         'icon': 'search',
