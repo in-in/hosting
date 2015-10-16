@@ -97,9 +97,19 @@ select.textInput {
   color: #fff;
 
   background-color: $accent;
+  text-align: center;
 
   font-size: rem(14);
   line-height: rem(55);
+  white-space: nowrap;
 
   @include font(opensans, bold);
+
+  &:hover {
+    background-color: darken($accent, 5%);
+  }
+
+  &:active {
+    background-color: darken($accent, 10%);
+  }
 }
