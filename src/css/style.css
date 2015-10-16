@@ -173,6 +173,7 @@ select.textInput {
   max-width: 73.125rem;
   margin: 0 auto;
   padding: 0 0.9375rem;
+  outline: 1px dotted red;
   max-width: 73.125rem;
   margin-left: auto;
   margin-right: auto;
@@ -989,13 +990,6 @@ select.textInput {
 
 @media (max-width: 60rem) {
   .home-services--hot {
-    width: 50%;
-    float: left;
-  }
-}
-
-@media (max-width: 50rem) {
-  .home-services--hot {
     width: 100%;
     float: left;
     margin-left: 0;
@@ -1004,58 +998,17 @@ select.textInput {
 }
 
 .home-services--features {
-  width: 41.6666666667%;
+  width: 58.3333333333%;
   float: left;
 }
 
 @media (max-width: 60rem) {
-  .home-services--features {
-    width: 50%;
-    float: left;
-  }
-}
-
-@media (max-width: 50rem) {
-  .home-services--features {
-    padding-top: 50px;
-    width: 83.3333333333%;
-    float: left;
-  }
-}
-
-@media (max-width: 40rem) {
   .home-services--features {
     width: 100%;
     float: left;
     margin-left: 0;
     margin-right: 0;
-  }
-}
-
-.home-services--btn {
-  width: 16.6666666667%;
-  float: left;
-  padding-top: 10.9375rem;
-}
-
-@media (max-width: 60rem) {
-  .home-services--btn {
-    padding-top: 1.25rem;
-    width: 25%;
-    float: left;
-    margin-left: 75%;
-  }
-}
-
-@media (max-width: 50rem) {
-  .home-services--btn {
-    padding-top: 10.9375rem;
-  }
-}
-
-@media (max-width: 40rem) {
-  .home-services--btn {
-    padding-top: 1.25rem;
+    padding-top: 1.875rem;
   }
 }
 
@@ -1069,10 +1022,16 @@ select.textInput {
 
 .features-list--col {
   float: left;
+  margin-right: 5%;
 }
 
-.features-list--col:first-child {
-  margin-right: 3.4375rem;
+.features-list--col:last-child {
+  margin-right: 0;
+  padding-top: 3.75rem;
+}
+
+.features-list--col .btn {
+  width: 10.25rem;
 }
 
 .features-list li {
@@ -1098,12 +1057,19 @@ select.textInput {
 }
 
 .hot-banner {
-  width: 22.3125rem;
-  height: 7.25rem;
-  padding: 1.5625rem;
-  outline: 0.125rem solid #fffbde;
-  outline-offset: -0.625rem;
+  width: 21.0625rem;
+  height: 6rem;
+  padding: 0.9375rem;
+  outline: 10px solid #fff;
+  border: 2px solid #fffbde;
   background-color: #fff;
+}
+
+@media (max-width: 20rem) {
+  .hot-banner {
+    width: 17.5rem;
+    padding-top: 1.5625rem;
+  }
 }
 
 .hot-banner--top {
@@ -1125,6 +1091,13 @@ select.textInput {
   font-style: normal;
 }
 
+@media (max-width: 20rem) {
+  .hot-banner--price,
+  .hot-banner--off {
+    font-size: 2.375rem;
+  }
+}
+
 .hot-banner--price {
   color: #ff8261;
 }
@@ -1141,6 +1114,12 @@ select.textInput {
   text-transform: uppercase;
   font-size: 1.0625rem;
   line-height: 1.3;
+}
+
+@media (max-width: 20rem) {
+  .hot-banner--details p {
+    font-size: 0.875rem;
+  }
 }
 
 .hot-banner--details p:first-child {

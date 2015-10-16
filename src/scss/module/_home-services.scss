@@ -14,47 +14,16 @@
   @include span(5);
 
   @include breakpoint($l) {
-    @include span(6)
-  }
-
-  @include breakpoint($xm) {
-    @include span(12)
+    @include span(12);
   }
 }
 
 .home-services--features {
-  @include span(5);
+  @include span(7);
 
   @include breakpoint($l) {
-    @include span(6)
-  }
-
-  @include breakpoint($xm) {
-    padding-top: 50px;
-    @include span(10)
-  }
-
-  @include breakpoint($m) {
-    @include span(12)
-  }
-}
-
-.home-services--btn {
-  @include span(2);
-  padding-top: rem(175);
-
-  @include breakpoint($l) {
-    padding-top: rem(20);
-    @include span(3);
-    @include push(9);
-  }
-
-  @include breakpoint($xm) {
-    padding-top: rem(175);
-  }
-
-  @include breakpoint($m) {
-    padding-top: rem(20);
+    @include span(12);
+    padding-top: rem(30);
   }
 }
 
@@ -74,10 +43,16 @@
 
 .features-list--col {
   float: left;
+  margin-right: 5%;
   
-  &:first-child{
-    margin-right: rem(55);
+  &:last-child{
+    margin-right: 0;
+    padding-top: rem(60);
   }
+}
+
+.features-list--col .btn {
+  width: rem(164);
 }
 
 .features-list li {
@@ -97,5 +72,4 @@
     background-position: center;
     vertical-align: baseline;
   }
-
 }

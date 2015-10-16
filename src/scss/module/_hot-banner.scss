@@ -1,12 +1,17 @@
 .hot-banner {
-  width: rem(357);
-  height: rem(116);
-  padding: rem(25);
+  width: rem(337);
+  height: rem(96);
+  padding: rem(15);
 
-  outline: rem(2) solid $section-bg-hot;
-  outline-offset: rem(-10);
+  outline: 10px solid #fff;
+  border: 2px solid $section-bg-hot;
 
   background-color: #fff;
+
+  @include breakpoint($xs) {
+    width: rem(280);
+    padding-top: rem(25);
+  }
 }
 
 .hot-banner--top {
@@ -28,6 +33,10 @@
   font-size: rem(48);
 
   @include font(opensans, extrabold);
+
+  @include breakpoint($xs) {
+    font-size: rem(38);
+  }
 }
 
 .hot-banner--price {
@@ -47,6 +56,10 @@
 
   font-size: rem(17);
   line-height: 1.3;
+
+  @include breakpoint($xs) {
+    font-size: rem(14);
+  }
 }
 
 .hot-banner--details p:first-child {
