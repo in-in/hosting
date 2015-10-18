@@ -1,6 +1,46 @@
-.newsletter--wrap {
-  padding-top: 100px;
-  padding-bottom: 100px;
+.newsletter {
+  background-color: $section-bg-light;
+}
 
-  background-color: palegreen;
+.newsletter--wrap {
+  padding-top: 5.43859649122807%;
+  padding-bottom: 7.017543859649122%;
+
+  @include container();
+}
+
+.newsletter--title {
+  @include span(2.4);
+  @include breakpoint($l) {
+    @include span(10);
+    @include push(1);
+  }
+  @include breakpoint($xs) {
+    @include span(full);
+  }
+}
+
+.newsletter--form {
+  padding-top: 2.631578947368421%;
+
+  @include span(9.6);
+  @include breakpoint($l) {
+    @include span(10);
+    @include push(1);
+  }
+  @include breakpoint($xs) {
+    @include span(full);
+  }
+}
+
+.newsletterForm--field:first-child {
+  float: left;
+
+  width: 78.83771929824562%;
+}
+
+.newsletterForm--field:last-child {
+  float: left;
+
+  width: 21.162280701754383%;
 }

@@ -35,7 +35,7 @@ body {
 
   @include font(opensans);
   @include breakpoint($s) {
-    font-size: rem(16);
+    font-size: rem(15);
     line-height: 1.5;
   }
 }
@@ -49,7 +49,7 @@ body {
 
   @include font(opensans, extrabold);
   @include breakpoint($s) {
-    font-size: rem(28);
+    font-size: rem(25);
   }
 }
 
@@ -90,7 +90,6 @@ select.textInput {
 
   width: 100%;
   height: rem(55);
-  padding: 0 rem(25);
 
   text-align: center;
   white-space: nowrap;
@@ -104,6 +103,9 @@ select.textInput {
   line-height: rem(55);
 
   @include font(opensans, bold);
+  @include breakpoint($s) {
+    font-size: rem(12);
+  }
 
   &:hover {
     background-color: darken($accent, 5%);

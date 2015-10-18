@@ -1,4 +1,17 @@
 section.newsletter
     .container
         .newsletter--wrap
-            h1 newsletter
+            .newsletter--title
+                +title-block([
+                    {
+                        'icon': 'mail',
+                        'high': 'Sign up your',
+                        'low': 'Newsletter'
+                    }
+                ])
+            .newsletter--form
+                form(method='get', action="").newsletterForm
+                    .newsletterForm--field
+                        input(type='email', placeholder='Enter your email').textInput
+                    .newsletterForm--field
+                        button(type='submit').btn Search
