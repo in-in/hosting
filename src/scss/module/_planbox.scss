@@ -1,0 +1,134 @@
+.plan-list {
+  @include container();
+}
+
+.plan-list--item {
+  @include span(3 of 12 1/2.3 after);
+  @include breakpoint($m) {
+    margin-right: 0;
+    margin-bottom: 5%;
+
+    @include span(6 of 12 1/2 inside);
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+  @include breakpoint($xs) {
+    @include span(12);
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.planBox {
+  width: 100%;
+  height: auto;
+  padding: 9.130891327%;
+
+  border: 1px solid $planbox-border;
+}
+
+.planBox--price h4 {
+  text-align: center;
+
+  color: $bold-text;
+
+  font-size: rem(50);
+
+  @include font(opensans, extrabold);
+  @include breakpoint($xm) {
+    font-size: rem(42);
+  }
+}
+
+.dollar-sign {
+  @include font(opensans, light);
+}
+
+.planBox--price h5 {
+  margin-bottom: 10.804452562%;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $bold-text;
+
+  font-size: rem(14);
+
+  @include font(opensans, semibold);
+  @include breakpoint($xm) {
+    font-size: rem(12);
+  }
+}
+
+.planBox--title {
+  overflow: hidden;
+
+  width: 85.965861688%;
+  height: rem(39);
+  margin: 0 auto;
+
+  text-align: center;
+  white-space: nowrap;
+  text-transform: uppercase;
+
+  color: #fff;
+
+  background-color: $active;
+
+  font-size: rem(14);
+  line-height: rem(39);
+
+  @include font(opensans, extrabold);
+  @include breakpoint($xm) {
+    width: 97%;
+    height: rem(33);
+
+    font-size: rem(12);
+    line-height: rem(33);
+  }
+}
+
+.planBox--details {
+  padding-top: 17.850834667%;
+}
+
+.planBox--details li {
+  text-align: center;
+
+  color: $planbox-text;
+  border-bottom: 1px solid $planbox-list-border;
+
+  font-size: rem(14);
+  line-height: rem(40);
+
+  @include font(opensans);
+  @include breakpoint($xm) {
+    font-size: rem(12);
+    line-height: rem(34);
+  }
+
+  &:last-child {
+    margin-bottom: 8.925417334%;
+
+    border-bottom: none;
+  }
+}
+
+.btn.btn__planBox {
+  width: 54.022262809%;
+  height: rem(43);
+  margin: 0 auto;
+  padding: 0;
+
+  line-height: rem(43);
+
+  @include breakpoint($xm) {
+    height: rem(36);
+
+    font-size: rem(12);
+    line-height: rem(36);
+  }
+}

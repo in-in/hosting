@@ -3,8 +3,8 @@
   height: rem(96);
   padding: rem(15);
 
-  outline: 10px solid #fff;
   border: 2px solid $section-bg-hot;
+  outline: 10px solid #fff;
 
   background-color: #fff;
 
@@ -33,7 +33,6 @@
   font-size: rem(48);
 
   @include font(opensans, extrabold);
-
   @include breakpoint($xs) {
     font-size: rem(38);
   }

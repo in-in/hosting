@@ -1,4 +1,76 @@
+mixin planBox(items)
+    each item in items
+        .plan-list--item
+            .planBox
+                .planBox--price
+                    h4
+                        i.dollar-sign $
+                        = item.price
+                    h5 Per Month
+                .planBox--title= item.title
+                ul.planBox--details
+                    li= item.details[0]
+                    li= item.details[1]
+                    li= item.details[2]
+                    li= item.details[3]
+                    li= item.details[4]
+                .js-modal-open
+                    a(href='#0').cd-signup.btn.btn__planBox Sign up
+
 section.home-hosting
     .container
         .home-hosting--wrap
-            h1 home-hosting
+            +title-block([
+                {
+                    'high': 'Our',
+                    'low': 'Hosting'
+                }
+            ])
+            .home-hosting--planbox
+                .plan-list
+                    +planBox([
+                        {
+                            'price': '5',
+                            'title': 'Standard plan',
+                            'details': [
+                                '10GB Disk Space',
+                                '1TB Bandwidth',
+                                'Free DDoS Protection',
+                                'Free Daily Backups',
+                                'Managed Hosting'
+                            ]
+                        },
+                        {
+                            'price': '6',
+                            'title': 'Advanced plan',
+                            'details': [
+                                '10GB Disk Space',
+                                '1TB Bandwidth',
+                                'Free DDoS Protection',
+                                'Free Daily Backups',
+                                'Managed Hosting'
+                            ]
+                        },
+                        {
+                            'price': '8',
+                            'title': 'Business plan',
+                            'details': [
+                                '10GB Disk Space',
+                                '1TB Bandwidth',
+                                'Free DDoS Protection',
+                                'Free Daily Backups',
+                                'Managed Hosting'
+                            ]
+                        },
+                        {
+                            'price': '9',
+                            'title': 'Gold plan',
+                            'details': [
+                                '10GB Disk Space',
+                                '1TB Bandwidth',
+                                'Free DDoS Protection',
+                                'Free Daily Backups',
+                                'Managed Hosting'
+                            ]
+                        }
+                    ])

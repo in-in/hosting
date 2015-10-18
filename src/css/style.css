@@ -24,6 +24,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 p,
 ol,
 ul {
@@ -34,7 +35,8 @@ ul {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   font-size: inherit;
 }
 
@@ -148,13 +150,13 @@ select.textInput {
   width: 100%;
   height: 3.4375rem;
   padding: 0 1.5625rem;
+  text-align: center;
+  white-space: nowrap;
   text-transform: uppercase;
   color: #fff;
   background-color: #ff8261;
-  text-align: center;
   font-size: 0.875rem;
   line-height: 3.4375rem;
-  white-space: nowrap;
   font-family: "Open Sans", san-serif;
   font-weight: 700;
   font-style: normal;
@@ -173,7 +175,6 @@ select.textInput {
   max-width: 73.125rem;
   margin: 0 auto;
   padding: 0 0.9375rem;
-  outline: 1px dotted red;
   max-width: 73.125rem;
   margin-left: auto;
   margin-right: auto;
@@ -430,13 +431,13 @@ select.textInput {
   }
 }
 
-#cd-login,
-#cd-signup {
+#js-login,
+#js-signup {
   display: none;
 }
 
-#cd-login.is-selected,
-#cd-signup.is-selected {
+#js-login.is-selected,
+#js-signup.is-selected {
   display: block;
 }
 
@@ -990,6 +991,14 @@ select.textInput {
 
 @media (max-width: 60rem) {
   .home-services--hot {
+    width: 83.3333333333%;
+    float: left;
+    margin-left: 8.3333333333%;
+  }
+}
+
+@media (max-width: 20rem) {
+  .home-services--hot {
     width: 100%;
     float: left;
     margin-left: 0;
@@ -1004,11 +1013,19 @@ select.textInput {
 
 @media (max-width: 60rem) {
   .home-services--features {
+    padding-top: 1.875rem;
+    width: 83.3333333333%;
+    float: left;
+    margin-left: 8.3333333333%;
+  }
+}
+
+@media (max-width: 20rem) {
+  .home-services--features {
     width: 100%;
     float: left;
     margin-left: 0;
     margin-right: 0;
-    padding-top: 1.875rem;
   }
 }
 
@@ -1035,33 +1052,33 @@ select.textInput {
 }
 
 .features-list li {
+  margin-bottom: 1.25rem;
+  color: #4c515b;
+  font-size: 0.875rem;
   font-family: "Open Sans", san-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 0.875rem;
-  color: #4c515b;
-  margin-bottom: 1.25rem;
 }
 
 .features-list li::before {
-  content: '';
   display: inline-block;
   width: 0.5rem;
   height: 0.6875rem;
   margin-right: 0.75rem;
+  content: '';
+  vertical-align: baseline;
   background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2228%22%20viewBox%3D%220%200%2020%2028%22%20style%3D%22fill%3A%234c515b%3B%22%3E%3Cpath%20d%3D%22M17.297%2013.703L5.703%2025.297q-.297.297-.703.297t-.703-.297l-2.594-2.594q-.297-.297-.297-.703t.297-.703L10%2013%201.703%204.703Q1.406%204.406%201.406%204t.297-.703L4.297.703Q4.594.406%205%20.406t.703.297l11.594%2011.594q.297.297.297.703t-.297.703z%22%2F%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
-  vertical-align: baseline;
+  background-size: cover;
 }
 
 .hot-banner {
   width: 21.0625rem;
   height: 6rem;
   padding: 0.9375rem;
-  outline: 10px solid #fff;
   border: 2px solid #fffbde;
+  outline: 10px solid #fff;
   background-color: #fff;
 }
 
@@ -1136,18 +1153,183 @@ select.textInput {
   font-style: normal;
 }
 
-.home-hosting {
-  background-color: hotpink;
-}
-
 .home-hosting--wrap {
-  padding-top: 50px;
-  padding-bottom: 100px;
+  padding-top: 5.614035088%;
+  padding-bottom: 8.771929825%;
 }
 
 .home-hosting--wrap::after {
   display: table;
   clear: both;
   content: '';
+}
+
+.home-hosting--planbox {
+  padding-top: 2.192982456%;
+}
+
+.plan-list {
+  max-width: 73.125rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.plan-list:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.plan-list--item {
+  width: 23.0569948187%;
+  float: left;
+  margin-right: 2.5906735751%;
+}
+
+@media (max-width: 40rem) {
+  .plan-list--item {
+    margin-right: 0;
+    margin-bottom: 5%;
+    width: 50%;
+    float: left;
+    padding-left: 1.3888888889%;
+    padding-right: 1.3888888889%;
+  }
+  .plan-list--item:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 20rem) {
+  .plan-list--item {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.plan-list--item:last-child {
+  margin-right: 0;
+}
+
+.planBox {
+  width: 100%;
+  height: auto;
+  padding: 9.130891327%;
+  border: 1px solid #e1eff4;
+}
+
+.planBox--price h4 {
+  text-align: center;
+  color: #556b72;
+  font-size: 3.125rem;
+  font-family: "Open Sans", san-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+@media (max-width: 50rem) {
+  .planBox--price h4 {
+    font-size: 2.625rem;
+  }
+}
+
+.dollar-sign {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.planBox--price h5 {
+  margin-bottom: 10.804452562%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #556b72;
+  font-size: 0.875rem;
+  font-family: "Open Sans", san-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@media (max-width: 50rem) {
+  .planBox--price h5 {
+    font-size: 0.75rem;
+  }
+}
+
+.planBox--title {
+  overflow: hidden;
+  width: 85.965861688%;
+  height: 2.4375rem;
+  margin: 0 auto;
+  text-align: center;
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #52cbf8;
+  font-size: 0.875rem;
+  line-height: 2.4375rem;
+  font-family: "Open Sans", san-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+@media (max-width: 50rem) {
+  .planBox--title {
+    width: 97%;
+    height: 2.0625rem;
+    font-size: 0.75rem;
+    line-height: 2.0625rem;
+  }
+}
+
+.planBox--details {
+  padding-top: 17.850834667%;
+}
+
+.planBox--details li {
+  text-align: center;
+  color: #8d9198;
+  border-bottom: 1px solid #f0f4f7;
+  font-size: 0.875rem;
+  line-height: 2.5rem;
+  font-family: "Open Sans", san-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media (max-width: 50rem) {
+  .planBox--details li {
+    font-size: 0.75rem;
+    line-height: 2.125rem;
+  }
+}
+
+.planBox--details li:last-child {
+  margin-bottom: 8.925417334%;
+  border-bottom: none;
+}
+
+.btn.btn__planBox {
+  width: 54.022262809%;
+  height: 2.6875rem;
+  margin: 0 auto;
+  padding: 0;
+  line-height: 2.6875rem;
+}
+
+@media (max-width: 50rem) {
+  .btn.btn__planBox {
+    height: 2.25rem;
+    font-size: 0.75rem;
+    line-height: 2.25rem;
+  }
+}
+
+.newsletter--wrap {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: palegreen;
 }
 /*# sourceMappingURL=style.css.map */

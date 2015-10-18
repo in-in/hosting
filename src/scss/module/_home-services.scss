@@ -12,18 +12,25 @@
 
 .home-services--hot {
   @include span(5);
-
   @include breakpoint($l) {
-    @include span(12);
+    @include span(10);
+    @include push(1);
+  }
+  @include breakpoint($xs) {
+    @include span(full);
   }
 }
 
 .home-services--features {
   @include span(7);
-
   @include breakpoint($l) {
-    @include span(12);
     padding-top: rem(30);
+
+    @include span(10);
+    @include push(1);
+  }
+  @include breakpoint($xs) {
+    @include span(full);
   }
 }
 
@@ -37,15 +44,14 @@
 
 
 //list
-.features-list {
 
-}
 
 .features-list--col {
   float: left;
+
   margin-right: 5%;
-  
-  &:last-child{
+
+  &:last-child {
     margin-right: 0;
     padding-top: rem(60);
   }
@@ -56,20 +62,26 @@
 }
 
 .features-list li {
-  @include font(opensans);
-  font-size: rem(14);
-  color: $text-hot;
   margin-bottom: rem(20);
+
+  color: $text-hot;
+
+  font-size: rem(14);
+
+  @include font(opensans);
   &::before {
-    content: '';
     display: inline-block;
+
     width: rem(8);
     height: rem(11);
     margin-right: rem(12);
-    background-image: svg("list-right.min", "[fill]: #4c515b");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+
+    content: '';
     vertical-align: baseline;
+
+    background-image: svg('list-right.min', '[fill]: #4c515b');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }

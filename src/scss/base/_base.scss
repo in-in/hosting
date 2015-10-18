@@ -92,16 +92,16 @@ select.textInput {
   height: rem(55);
   padding: 0 rem(25);
 
+  text-align: center;
+  white-space: nowrap;
   text-transform: uppercase;
 
   color: #fff;
 
   background-color: $accent;
-  text-align: center;
 
   font-size: rem(14);
   line-height: rem(55);
-  white-space: nowrap;
 
   @include font(opensans, bold);
 

@@ -1,7 +1,7 @@
 jQuery(document).ready(function($){
   var $form_modal = $('.login-form-modal'),
-    $form_login = $form_modal.find('#cd-login'),
-    $form_signup = $form_modal.find('#cd-signup'),
+    $form_login = $form_modal.find('#js-login'),
+    $form_signup = $form_modal.find('#js-signup'),
     $form_modal_tab = $('.form-switcher'),
     $tab_login = $form_modal_tab.children('li').eq(0).children('a'),
     $tab_signup = $form_modal_tab.children('li').eq(1).children('a'),

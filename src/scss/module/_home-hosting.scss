@@ -1,11 +1,11 @@
-.home-hosting {
-  background-color: hotpink;
-}
-
 .home-hosting--wrap {
-  padding-top: 50px;
-  padding-bottom: 100px;
+  padding-top: 5.614035088%;
+  padding-bottom: 8.771929825%;
   &::after {
     @include cf;
   }
+}
+
+.home-hosting--planbox {
+  padding-top: 2.192982456%;
 }

@@ -195,12 +195,12 @@
   }
 }
 
-#cd-login,
-#cd-signup {
+#js-login,
+#js-signup {
   display: none;
 }
 
-#cd-login.is-selected,
-#cd-signup.is-selected {
+#js-login.is-selected,
+#js-signup.is-selected {
   display: block;
 }
