@@ -1,4 +1,37 @@
-footer
+footer.footer
     .container
         .footer--wrap
-            h1 footer
+            .footer--col.footer-logo
+                include logo
+                p.copyright 2015 © Allright Reserved
+            .footer--col
+                h4.footer-title Quick links
+                ul.footer-list
+                    li: a.footer-list--link(href="index.html") Home
+                    li: a.footer-list--link(href="about.html") About Us
+                    li: a.footer-list--link(href="service.html") Service
+                    li: a.footer-list--link(href="hosting.html") Hosting plans
+                    li: a.footer-list--link(href="domain.html") Domains
+                    li: a.footer-list--link(href="faq.html") Faq
+                    li: a.footer-list--link(href="blog.html") Blog
+                    li: a.footer-list--link(href="support.html") Support
+                    li: a.footer-list--link(href="contact.html") Contact
+            .footer--col
+                h4.footer-title Contact us
+                ul.vcard
+                    li
+                        | Address :
+                        span 9867 lipsum text here
+                    li
+                        | Email :
+                        span info@hosting.com
+                    li
+                        | Call :
+                        span +87 7765 557 888
+            .footer--col
+                h4.footer-title Social media
+                .social
+                    a.social--link(href="https://www.facebook.com")
+                    a.social--link(href="https://twitter.com")
+                    a.social--link(href="https://www.linkedin.com")
+                    a.social--link(href="https://plus.google.com")

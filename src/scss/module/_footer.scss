@@ -1,3 +1,150 @@
+.footer {
+  background-color: $text-hot;
+}
+
 .footer--wrap {
-  padding: 30px 0;
+  @include container();
+  padding-top: 8.771929824561402%;
+  padding-bottom: 9%;
+}
+
+.footer--col:nth-child(1) {
+  @include span(3);
+
+  @include breakpoint($m) {
+    @include span(12);
+    margin-bottom: 10%;
+  }
+}
+
+.footer--col:nth-child(2) {
+  @include span(4);
+  @include pad(0.5, 0.5);
+
+  @include breakpoint($m) {
+    @include span(5);
+    @include pad(0, 0);
+  }
+
+  @include breakpoint($s) {
+    @include span(12);
+    margin-bottom: 10%;
+  }
+}
+
+.footer--col:nth-child(3) {
+  @include span(3);
+
+  @include breakpoint($m) {
+    @include span(5);
+  }
+
+  @include breakpoint($s) {
+    @include span(12);
+    margin-bottom: 10%;
+  }
+}
+
+.footer--col:nth-child(4) {
+  @include span(2);
+
+  @include breakpoint($m) {
+    @include span(2);
+  }
+
+  @include breakpoint($s) {
+    @include span(12);
+  }
+}
+
+.footer-logo {
+  padding-top: 5.263157894736842%;
+}
+
+.footer-title {
+  padding-bottom: rem(23);
+  @include font(opensans, extrabold);
+  font-size: rem(14);
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.footer .logo--text {
+  color: $section-bg-light;
+}
+
+.copyright {
+  margin-left: rem(58);
+  @include font(opensans);
+  font-size: rem(14);
+  color: $footer-text-color;
+}
+
+.footer-list {
+  column-count: 2;
+}
+
+.footer-list li {
+  margin-bottom: rem(12);
+}
+
+.footer-list--link {
+  @include font(opensans);
+  font-size: rem(14);
+  color: $footer-text-color;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+.vcard li {
+  margin-bottom: rem(14);
+  @include font(opensans);
+  font-size: rem(14);
+  color: $section-bg-light;
+}
+
+.vcard span {
+  color: $footer-text-color;
+}
+
+.social--link {
+  display: inline-block;
+  width: rem(24);
+  height: rem(24);
+  margin-right: 11%;
+  margin-bottom: 10%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.social--link:nth-child(1) {
+  background-image: svg("facebook.min", '[fill]: #909AAD');
+  &:hover {
+    background-image: svg("facebook.min", '[fill]: #ffffff');
+  }
+}
+
+.social--link:nth-child(2) {
+  background-image: svg("twitter.min", '[fill]: #909AAD');
+  &:hover {
+    background-image: svg("twitter.min", '[fill]: #ffffff');
+  }
+}
+
+.social--link:nth-child(3) {
+  background-image: svg("linkedin.min", '[fill]: #909AAD');
+  &:hover {
+    background-image: svg("linkedin.min", '[fill]: #ffffff');
+  }
+}
+
+.social--link:nth-child(4) {
+  background-image: svg("gplus.min", '[fill]: #909AAD');
+  margin-right: 0;
+  &:hover {
+    background-image: svg("gplus.min", '[fill]: #ffffff');
+  }
 }
