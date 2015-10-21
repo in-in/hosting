@@ -3,55 +3,52 @@
 }
 
 .footer--wrap {
-  @include container();
   padding-top: 8.771929824561402%;
   padding-bottom: 9%;
+
+  @include container();
 }
 
 .footer--col:nth-child(1) {
   @include span(3);
-
   @include breakpoint($m) {
-    @include span(12);
     margin-bottom: 10%;
+
+    @include span(12);
   }
 }
 
 .footer--col:nth-child(2) {
   @include span(4);
-  @include pad(0.5, 0.5);
-
+  @include pad(.5, .5);
   @include breakpoint($m) {
     @include span(5);
     @include pad(0, 0);
   }
-
   @include breakpoint($s) {
-    @include span(12);
     margin-bottom: 10%;
+
+    @include span(12);
   }
 }
 
 .footer--col:nth-child(3) {
   @include span(3);
-
   @include breakpoint($m) {
     @include span(5);
   }
-
   @include breakpoint($s) {
-    @include span(12);
     margin-bottom: 10%;
+
+    @include span(12);
   }
 }
 
 .footer--col:nth-child(4) {
   @include span(2);
-
   @include breakpoint($m) {
     @include span(2);
   }
-
   @include breakpoint($s) {
     @include span(12);
   }
@@ -63,10 +60,14 @@
 
 .footer-title {
   padding-bottom: rem(23);
-  @include font(opensans, extrabold);
-  font-size: rem(14);
-  color: #fff;
+
   text-transform: uppercase;
+
+  color: #fff;
+
+  font-size: rem(14);
+
+  @include font(opensans, extrabold);
 }
 
 .footer .logo--text {
@@ -75,9 +76,12 @@
 
 .copyright {
   margin-left: rem(58);
-  @include font(opensans);
-  font-size: rem(14);
+
   color: $footer-text-color;
+
+  font-size: rem(14);
+
+  @include font(opensans);
 }
 
 .footer-list {
@@ -89,9 +93,11 @@
 }
 
 .footer-list--link {
-  @include font(opensans);
-  font-size: rem(14);
   color: $footer-text-color;
+
+  font-size: rem(14);
+
+  @include font(opensans);
 
   &:hover {
     color: #fff;
@@ -100,9 +106,12 @@
 
 .vcard li {
   margin-bottom: rem(14);
-  @include font(opensans);
-  font-size: rem(14);
+
   color: $section-bg-light;
+
+  font-size: rem(14);
+
+  @include font(opensans);
 }
 
 .vcard span {
@@ -111,40 +120,43 @@
 
 .social--link {
   display: inline-block;
+
   width: rem(24);
   height: rem(24);
   margin-right: 11%;
   margin-bottom: 10%;
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 
 .social--link:nth-child(1) {
-  background-image: svg("facebook.min", '[fill]: #909AAD');
+  background-image: svg('facebook.min', '[fill]: #909AAD');
   &:hover {
-    background-image: svg("facebook.min", '[fill]: #ffffff');
+    background-image: svg('facebook.min', '[fill]: #ffffff');
   }
 }
 
 .social--link:nth-child(2) {
-  background-image: svg("twitter.min", '[fill]: #909AAD');
+  background-image: svg('twitter.min', '[fill]: #909AAD');
   &:hover {
-    background-image: svg("twitter.min", '[fill]: #ffffff');
+    background-image: svg('twitter.min', '[fill]: #ffffff');
   }
 }
 
 .social--link:nth-child(3) {
-  background-image: svg("linkedin.min", '[fill]: #909AAD');
+  background-image: svg('linkedin.min', '[fill]: #909AAD');
   &:hover {
-    background-image: svg("linkedin.min", '[fill]: #ffffff');
+    background-image: svg('linkedin.min', '[fill]: #ffffff');
   }
 }
 
 .social--link:nth-child(4) {
-  background-image: svg("gplus.min", '[fill]: #909AAD');
   margin-right: 0;
+
+  background-image: svg('gplus.min', '[fill]: #909AAD');
   &:hover {
-    background-image: svg("gplus.min", '[fill]: #ffffff');
+    background-image: svg('gplus.min', '[fill]: #ffffff');
   }
 }

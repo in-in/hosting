@@ -1,0 +1,7 @@
+.hero
+    .container
+        .hero--wrap(style='background-image: url(img/hero-#{thisPage.toLowerCase().split(" ").join("_")}.jpg)')
+            .hero--text
+                h1.hero-title= thisPage
+                h4.hero-subhead= pageSubhead
+
