@@ -3,6 +3,7 @@ module.exports = function (grunt) {
   require('time-grunt')(grunt);
   require('jit-grunt')(grunt);
 
+
   grunt.initConfig({
 
     watch: {
@@ -76,7 +77,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: 'src/jade/',
-          src: ['*.jade'],
+          src: '*.jade',
           dest: 'src/',
           ext: '.html'
         }]
