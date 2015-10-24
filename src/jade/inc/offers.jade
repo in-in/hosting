@@ -1,0 +1,55 @@
+mixin offer-card(items)
+    each item in items
+        .offer-card
+            .offer-card--img
+                img(src='img/#{item.img}' alt='image')
+            .offer-card--text
+                h4.offer-card--title
+                    = item.title
+                p.offer-card--description
+                    = item.description
+                ul.offer-card--list
+                    li= item.listItem[0]
+                    li= item.listItem[1]
+                    li= item.listItem[2]
+                    li= item.listItem[3]
+                a(href="#0").btn.offer-card--btn
+                    | Host today
+
+section.offers
+    .container
+        .offers--wrap
+            header.offers--header
+                +title-block([
+                    {
+                        'high': 'Special',
+                        'low': 'Offers'
+                    }
+                ])
+            .offers--content
+                +offer-card([
+                    {
+                        'img': 'offers2.jpeg',
+                        'title': 'Host your website',
+                        'description': 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.',
+                        'listItem': [
+                            'Lorem Ipsum is simply dummy.',
+                            'Discovered the undoubtab.',
+                            'Various versions have evolved.',
+                            'Discovered the undoubtab.'
+                        ]
+                    }
+                ])
+                +offer-card([
+                    {
+                        'img': 'offers1.jpeg',
+                        'title': 'Big offers for hosting',
+                        'description': 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.',
+                        'listItem': [
+                            'Lorem Ipsum is simply dummy.',
+                            'Discovered the undoubtab.',
+                            'Various versions have evolved.',
+                            'Discovered the undoubtab.'
+                        ]
+                    }
+                ])

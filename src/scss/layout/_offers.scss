@@ -1,0 +1,114 @@
+.offers {
+  background-color: $section-bg-light;
+}
+
+.offers--wrap {
+  padding-top: 5.964912280701754%;
+  padding-bottom: 10.526315789473683%;
+
+  @include container();
+}
+
+.offers--header {
+  padding-bottom: rem(33);
+}
+
+.offer-card {
+  @include container();
+  @include span(6 of 12 1/2 after);
+  @include breakpoint($s) {
+    margin-bottom: span(1);
+
+    @include span(12);
+  }
+
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+.offer-card--img {
+  padding-right: 2.167226834602666%;
+
+  @include span(6);
+  @include breakpoint($xm) {
+    margin-bottom: rem(30);
+    padding-right: 0;
+
+    @include span(12);
+  }
+}
+
+.offer-card--text {
+  padding-left: 3.250840251903999%;
+
+  @include span(6);
+  @include breakpoint($xm) {
+    padding: 0 5%;
+
+    @include span(12);
+  }
+}
+
+.offer-card--img img {
+  width: 100%;
+}
+
+.offer-card--title {
+  margin-bottom: rem(15);
+
+  text-transform: uppercase;
+
+  color: $bold-text;
+
+  font-size: rem(14);
+
+  @include font(opensans, extrabold);
+}
+
+.offer-card--description {
+  color: $light-text-color;
+
+  font-size: rem(13.5);
+  line-height: 178%;
+
+  @include font(opensans);
+}
+
+.offer-card--list {
+  padding-top: rem(25);
+  padding-bottom: rem(10);
+}
+
+.offer-card--list li {
+  margin-bottom: rem(15);
+  padding-left: rem(23);
+
+  color: $light-text-color;
+
+  background-image: svg('list-right.min', '[fill]: #4c515b');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: rem(8) rem(11);
+
+  font-size: rem(13.5);
+
+  @include font(opensans);
+}
+
+.offer-card--btn {
+  display: inline-block;
+
+  width: auto;
+  padding: 0 13.726141798269062%;
+
+  @include breakpoint($xm) {
+    width: 100%;
+    padding: 0;
+  }
+  @include breakpoint($s) {
+    height: rem(45);
+
+    line-height: rem(45);
+  }
+}
