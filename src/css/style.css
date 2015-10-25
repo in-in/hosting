@@ -180,6 +180,7 @@ select.textInput {
   max-width: 73.125rem;
   margin: 0 auto;
   padding: 0 0.9375rem;
+  outline: 1px dotted red;
   max-width: 73.125rem;
   margin-left: auto;
   margin-right: auto;
@@ -1713,6 +1714,179 @@ select.textInput {
     height: 2.8125rem;
     line-height: 2.8125rem;
   }
+}
+
+.team--wrap {
+  padding-top: 6.578947368421052%;
+}
+
+.team--header {
+  padding-bottom: 3.7719298245614032%;
+}
+
+.team-card {
+  margin-bottom: 5.263157894736842%;
+  width: 22.9946524064%;
+  float: left;
+  max-width: 73.125rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-card:nth-child(4n + 1) {
+  margin-left: 0;
+  margin-right: -100%;
+  clear: both;
+  margin-left: 0;
+}
+
+.team-card:nth-child(4n + 2) {
+  margin-left: 25.6684491979%;
+  margin-right: -100%;
+  clear: none;
+}
+
+.team-card:nth-child(4n + 3) {
+  margin-left: 51.3368983957%;
+  margin-right: -100%;
+  clear: none;
+}
+
+.team-card:nth-child(4n + 4) {
+  margin-left: 77.0053475936%;
+  margin-right: -100%;
+  clear: none;
+}
+
+.team-card:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+@media (max-width: 50rem) {
+  .team-card {
+    width: 31.550802139%;
+    float: left;
+  }
+  .team-card:nth-child(3n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+  }
+  .team-card:nth-child(3n + 2) {
+    margin-left: 34.2245989305%;
+    margin-right: -100%;
+    clear: none;
+  }
+  .team-card:nth-child(3n + 3) {
+    margin-left: 68.449197861%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+
+@media (max-width: 30rem) {
+  .team-card {
+    width: 48.6631016043%;
+    float: left;
+  }
+  .team-card:nth-child(2n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+  }
+  .team-card:nth-child(2n + 2) {
+    margin-left: 51.3368983957%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+
+.team-card--img {
+  margin-bottom: 1.25rem;
+}
+
+.team-card--img img {
+  width: 100%;
+}
+
+.team-card--status {
+  float: left;
+  margin-right: 0.625rem;
+  margin-bottom: 0.625rem;
+  padding-left: 0.3125rem;
+}
+
+.team-card--name {
+  text-transform: uppercase;
+  color: #556b72;
+  font-size: 0.875rem;
+  font-family: "Open Sans", san-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.team-card--post {
+  color: #a0a9b6;
+  font-size: 0.84375rem;
+  line-height: 135%;
+  font-family: "Open Sans", san-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.team-card--social {
+  float: right;
+}
+
+.team-card--social a {
+  display: inline-block;
+  width: 1.9375rem;
+  height: 1.9375rem;
+  margin-right: 0.3125rem;
+  outline: 1px solid #d8e6ea;
+  border: 0.25rem solid transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+@media (max-width: 30rem) {
+  .team-card--social a {
+    width: 1.5625rem;
+    height: 1.5625rem;
+  }
+}
+
+.team-card--social a:nth-child(1) {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2226%22%20height%3D%2228%22%20viewBox%3D%220%200%2026%2028%22%20style%3D%22fill%3A%238F9FA4%3B%22%3E%3Cpath%20d%3D%22M25.312%206.375q-1.047%201.53-2.53%202.61.015.218.015.655%200%202.03-.594%204.055t-1.805%203.883-2.883%203.29-4.03%202.28T8.436%2024q-4.234%200-7.75-2.266.547.063%201.22.063%203.515%200%206.265-2.156-1.64-.03-2.938-1.007t-1.78-2.492q.515.08.952.08.672%200%201.328-.173-1.75-.36-2.898-1.742t-1.148-3.21v-.064q1.062.595%202.28.642-1.03-.688-1.64-1.797t-.61-2.406q0-1.376.69-2.548%201.89%202.328%204.6%203.727t5.806%201.554q-.125-.594-.125-1.156%200-2.094%201.476-3.57T17.736%204q2.188%200%203.687%201.595%201.703-.328%203.203-1.22-.578%201.798-2.22%202.782%201.454-.156%202.907-.78z%22%2F%3E%3C%2Fsvg%3E");
+}
+
+.team-card--social a:nth-child(1):hover {
+  outline-color: #55acee;
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2226%22%20height%3D%2228%22%20viewBox%3D%220%200%2026%2028%22%20style%3D%22fill%3A%2355acee%3B%22%3E%3Cpath%20d%3D%22M25.312%206.375q-1.047%201.53-2.53%202.61.015.218.015.655%200%202.03-.594%204.055t-1.805%203.883-2.883%203.29-4.03%202.28T8.436%2024q-4.234%200-7.75-2.266.547.063%201.22.063%203.515%200%206.265-2.156-1.64-.03-2.938-1.007t-1.78-2.492q.515.08.952.08.672%200%201.328-.173-1.75-.36-2.898-1.742t-1.148-3.21v-.064q1.062.595%202.28.642-1.03-.688-1.64-1.797t-.61-2.406q0-1.376.69-2.548%201.89%202.328%204.6%203.727t5.806%201.554q-.125-.594-.125-1.156%200-2.094%201.476-3.57T17.736%204q2.188%200%203.687%201.595%201.703-.328%203.203-1.22-.578%201.798-2.22%202.782%201.454-.156%202.907-.78z%22%2F%3E%3C%2Fsvg%3E");
+}
+
+.team-card--social a:nth-child(2) {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2226%22%20height%3D%2228%22%20viewBox%3D%220%200%2026%2028%22%20style%3D%22fill%3A%238F9FA4%3B%22%3E%3Cpath%20d%3D%22M11.484%2012.437q0%20.562.5%201.102t1.21%201.06%201.415%201.15%201.202%201.624.5%202.22q0%201.405-.75%202.702-1.125%201.906-3.297%202.805T7.61%2026q-2.064%200-3.853-.65t-2.68-2.147Q.5%2022.265.5%2021.156q0-1.266.694-2.344t1.852-1.797q2.047-1.28%206.312-1.563-.5-.656-.742-1.156t-.242-1.14q0-.563.328-1.33-.72.064-1.062.064-2.312%200-3.898-1.508t-1.586-3.82q0-1.28.562-2.484T4.265%202.03Q5.468%201%207.117.5t3.398-.5h6.53L14.89%201.375h-2.047q1.156.984%201.75%202.078t.594%202.5q0%201.125-.383%202.023t-.922%201.453-1.086%201.015-.93.96-.383%201.032zm-2.28-1.5q.593%200%201.218-.257t1.03-.68q.83-.89.83-2.484%200-.906-.267-1.953t-.758-2.023-1.32-1.617-1.828-.64q-.657%200-1.29.304t-1.023.82q-.734.922-.734%202.5%200%20.72.156%201.523t.49%201.61.813%201.444%201.172%201.047%201.508.407zm.03%2013.64q.906%200%201.742-.202t1.547-.61%201.14-1.14.43-1.703q0-.39-.108-.766t-.227-.656-.422-.648-.46-.547-.603-.54-.57-.452-.648-.47-.57-.405q-.25-.03-.75-.03-.828%200-1.64.108t-1.68.39-1.517.72-1.07%201.164-.422%201.648q0%201.094.547%201.93t1.43%201.297%201.86.688%201.99.227zM21.89%2010.892h3.33v1.688h-3.33V16h-1.64v-3.422h-3.313V10.89h3.313V7.5h1.64v3.39z%22%2F%3E%3C%2Fsvg%3E");
+}
+
+.team-card--social a:nth-child(2):hover {
+  outline-color: #dc4e41;
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2226%22%20height%3D%2228%22%20viewBox%3D%220%200%2026%2028%22%20style%3D%22fill%3A%23dc4e41%3B%22%3E%3Cpath%20d%3D%22M11.484%2012.437q0%20.562.5%201.102t1.21%201.06%201.415%201.15%201.202%201.624.5%202.22q0%201.405-.75%202.702-1.125%201.906-3.297%202.805T7.61%2026q-2.064%200-3.853-.65t-2.68-2.147Q.5%2022.265.5%2021.156q0-1.266.694-2.344t1.852-1.797q2.047-1.28%206.312-1.563-.5-.656-.742-1.156t-.242-1.14q0-.563.328-1.33-.72.064-1.062.064-2.312%200-3.898-1.508t-1.586-3.82q0-1.28.562-2.484T4.265%202.03Q5.468%201%207.117.5t3.398-.5h6.53L14.89%201.375h-2.047q1.156.984%201.75%202.078t.594%202.5q0%201.125-.383%202.023t-.922%201.453-1.086%201.015-.93.96-.383%201.032zm-2.28-1.5q.593%200%201.218-.257t1.03-.68q.83-.89.83-2.484%200-.906-.267-1.953t-.758-2.023-1.32-1.617-1.828-.64q-.657%200-1.29.304t-1.023.82q-.734.922-.734%202.5%200%20.72.156%201.523t.49%201.61.813%201.444%201.172%201.047%201.508.407zm.03%2013.64q.906%200%201.742-.202t1.547-.61%201.14-1.14.43-1.703q0-.39-.108-.766t-.227-.656-.422-.648-.46-.547-.603-.54-.57-.452-.648-.47-.57-.405q-.25-.03-.75-.03-.828%200-1.64.108t-1.68.39-1.517.72-1.07%201.164-.422%201.648q0%201.094.547%201.93t1.43%201.297%201.86.688%201.99.227zM21.89%2010.892h3.33v1.688h-3.33V16h-1.64v-3.422h-3.313V10.89h3.313V7.5h1.64v3.39z%22%2F%3E%3C%2Fsvg%3E");
+}
+
+.team-card--social a:nth-child(3) {
+  margin-right: 0;
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2228%22%20viewBox%3D%220%200%2016%2028%22%20style%3D%22fill%3A%238F9FA4%3B%22%3E%3Cpath%20d%3D%22M14.984.187v4.125H12.53q-1.343%200-1.812.562t-.47%201.687v2.954h4.58l-.61%204.625h-3.97v11.858H5.47v-11.86H1.484V9.515h3.984V6.108q0-2.906%201.625-4.508T11.42-.002q2.298%200%203.564.187z%22%2F%3E%3C%2Fsvg%3E");
+}
+
+.team-card--social a:nth-child(3):hover {
+  outline-color: #3b5998;
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2228%22%20viewBox%3D%220%200%2016%2028%22%20style%3D%22fill%3A%233b5998%3B%22%3E%3Cpath%20d%3D%22M14.984.187v4.125H12.53q-1.343%200-1.812.562t-.47%201.687v2.954h4.58l-.61%204.625h-3.97v11.858H5.47v-11.86H1.484V9.515h3.984V6.108q0-2.906%201.625-4.508T11.42-.002q2.298%200%203.564.187z%22%2F%3E%3C%2Fsvg%3E");
 }
 
 .footer {

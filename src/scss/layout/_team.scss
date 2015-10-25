@@ -1,0 +1,108 @@
+.team--wrap {
+  padding-top: 6.578947368421052%;
+}
+
+.team--header {
+  padding-bottom: 3.7719298245614032%;
+}
+
+.team-card {
+  margin-bottom: 5.263157894736842%;
+
+  @include gallery(3 of 12 1/2.2 after);
+  @include container();
+  @include breakpoint($xm) {
+    @include gallery(4 of 12 1/2.2 after);
+  }
+  @include breakpoint($s) {
+    @include gallery(6 of 12 1/2.2 after);
+  }
+}
+
+.team-card--img {
+  margin-bottom: rem(20);
+}
+
+.team-card--img img {
+  width: 100%;
+}
+
+.team-card--status {
+  float: left;
+
+  margin-right: rem(10);
+  margin-bottom: rem(10);
+  padding-left: rem(5);
+}
+
+.team-card--name {
+  text-transform: uppercase;
+
+  color: $bold-text;
+
+  font-size: rem(14);
+
+  @include font(opensans, extrabold);
+}
+
+.team-card--post {
+  color: $light-text-color;
+
+  font-size: rem(13.5);
+  line-height: 135%;
+
+  @include font(opensans);
+}
+
+.team-card--social {
+  float: right;
+}
+
+.team-card--social a {
+  display: inline-block;
+
+  width: rem(31);
+  height: rem(31);
+  margin-right: rem(5);
+
+  outline: 1px solid $social-border;
+  border: rem(4) solid transparent;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  @include breakpoint($s) {
+    width: rem(25);
+    height: rem(25);
+  }
+}
+
+.team-card--social a:nth-child(1) {
+  background-image: svg('twitter.min', '[fill]: #8F9FA4');
+  &:hover {
+    outline-color: #55acee;
+
+    background-image: svg('twitter.min', '[fill]: #55acee');
+  }
+}
+
+.team-card--social a:nth-child(2) {
+  background-image: svg('gplus.min', '[fill]: #8F9FA4');
+  &:hover {
+    outline-color: #dc4e41;
+
+    background-image: svg('gplus.min', '[fill]: #dc4e41');
+  }
+}
+
+.team-card--social a:nth-child(3) {
+  margin-right: 0;
+
+  background-image: svg('facebook.min', '[fill]: #8F9FA4');
+  &:hover {
+    outline-color: #3b5998;
+
+    background-image: svg('facebook.min', '[fill]: #3b5998');
+  }
+}

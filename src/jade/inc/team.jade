@@ -1,0 +1,71 @@
+mixin team-card(items)
+    each item in items
+        .team-card
+            .team-card--img
+                img(src='img/#{item.img}' alt='image')
+            .team-card--status
+                h4.team-card--name
+                    = item.name
+                p.team-card--post
+                    = item.post
+            .team-card--social
+                a(href="#0")
+                a(href="#0")
+                a(href="#0")
+
+
+section.team
+   .container
+       .team--wrap
+           header.team--header
+               +title-block([
+                   {
+                       'high': 'Meet',
+                       'low': 'Our Team'
+                   }
+               ])
+           .team-content
+               +team-card([
+                   {
+                       'img': 'team-card.jpg',
+                       'name': 'Sana Nair',
+                       'post': 'CEO'
+                   },
+                   {
+                       'img': 'team-card.jpg',
+                       'name': 'Kiran Kumar',
+                       'post': 'Supporting staff'
+                   },
+                   {
+                       'img': 'team-card.jpg',
+                       'name': 'Shanker Dev',
+                       'post': 'Developer'
+                   },
+                   {
+                       'img': 'team-card.jpg',
+                       'name': 'Krishnanunni',
+                       'post': 'Hoster'
+                   },
+                   {
+                       'img': 'team-card.jpg',
+                       'name': 'Sunantha',
+                       'post': 'Supporting staff'
+                   },
+                   {
+                       'img': 'team-card.jpg',
+                       'name': 'Jaanaki',
+                       'post': 'Hoster'
+                   },
+                   {
+                       'img': 'team-card.jpg',
+                       'name': 'Aswathy Kripa',
+                       'post': 'Hoster'
+                   },
+                   {
+                       'img': 'team-card.jpg',
+                       'name': 'Mariya Devi',
+                       'post': 'Supporting staff'
+                   }
+               ])
+
+

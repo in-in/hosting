@@ -16,17 +16,14 @@ $asym: (
   gutter-position: after,
 );
 
-////BENEFITS
-//$gallery: (
-//
-//);
 
 .container {
   min-width: 20rem; //320
   max-width: 73.125rem; //1170
   margin: 0 auto;
   padding: 0 rem(15);
-  //outline: 1px dotted red;
+
+  outline: 1px dotted red;
 
   @include container();
 }
