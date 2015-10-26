@@ -1,0 +1,55 @@
+mixin services-item(items)
+    each item in items
+        .services-item
+            .services-item--icon
+                svg
+                    use(xlink:href="#icon-#{item.icon}")
+            .services-item--title
+                = item.title
+            .services-item--text
+                = item.text
+
+
+section.hosting-services
+    .container
+        .hosting-services--wrap
+            header.hosting-services--header
+                +title-block([
+                    {
+                        'high': 'Hosting',
+                        'low': 'Services'
+                    }
+                ])
+            .services-list
+                +services-item([
+                    {
+                        'icon': 'services1',
+                        'title': 'Unlimited disk space',
+                        'text': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the "
+                    },
+                    {
+                        'icon': 'services2',
+                        'title': 'Unlimite bandwidth',
+                        'text': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the "
+                    },
+                    {
+                        'icon': 'services3',
+                        'title': '24/7 customer support',
+                        'text': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the "
+                    },
+                    {
+                        'icon': 'services4',
+                        'title': 'High speed',
+                        'text': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the "
+                    },
+                    {
+                        'icon': 'services5',
+                        'title': 'Site protections',
+                        'text': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the "
+                    },
+                    {
+                        'icon': 'services6',
+                        'title': 'Ssd database storage',
+                        'text': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the "
+                    }
+                ])

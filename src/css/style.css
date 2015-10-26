@@ -1846,8 +1846,8 @@ select.textInput {
   width: 1.9375rem;
   height: 1.9375rem;
   margin-right: 0.3125rem;
-  outline: 1px solid #d8e6ea;
   border: 0.25rem solid transparent;
+  outline: 1px solid #d8e6ea;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -1886,6 +1886,97 @@ select.textInput {
 .team-card--social a:nth-child(3):hover {
   outline-color: #3b5998;
   background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2228%22%20viewBox%3D%220%200%2016%2028%22%20style%3D%22fill%3A%233b5998%3B%22%3E%3Cpath%20d%3D%22M14.984.187v4.125H12.53q-1.343%200-1.812.562t-.47%201.687v2.954h4.58l-.61%204.625h-3.97v11.858H5.47v-11.86H1.484V9.515h3.984V6.108q0-2.906%201.625-4.508T11.42-.002q2.298%200%203.564.187z%22%2F%3E%3C%2Fsvg%3E");
+}
+
+.hosting-services--wrap {
+  padding-top: 3.684210526315789%;
+  padding-bottom: 4.298245614035088%;
+  max-width: 73.125rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hosting-services--wrap:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.hosting-services--header {
+  padding-bottom: 4.035087719298246%;
+}
+
+.services-item {
+  margin-bottom: 4.56140350877193%;
+  width: 31.550802139%;
+  float: left;
+  padding-right: 2.7777777778%;
+}
+
+.services-item:nth-child(3n + 1) {
+  margin-left: 0;
+  margin-right: -100%;
+  clear: both;
+  margin-left: 0;
+}
+
+.services-item:nth-child(3n + 2) {
+  margin-left: 34.2245989305%;
+  margin-right: -100%;
+  clear: none;
+}
+
+.services-item:nth-child(3n + 3) {
+  margin-left: 68.449197861%;
+  margin-right: -100%;
+  clear: none;
+}
+
+@media (max-width: 40rem) {
+  .services-item {
+    width: 48.6631016043%;
+    float: left;
+  }
+  .services-item:nth-child(2n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+  }
+  .services-item:nth-child(2n + 2) {
+    margin-left: 51.3368983957%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+
+.services-item--icon {
+  padding-bottom: 7.784870659934606%;
+}
+
+.services-item--icon svg {
+  width: 2.8125rem;
+  height: 2.8125rem;
+  fill: #fb6b45;
+}
+
+.services-item--title {
+  padding-bottom: 7.011853080337545%;
+  text-transform: uppercase;
+  color: #556b72;
+  font-size: 0.875rem;
+  font-family: "Open Sans", san-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.services-item--text {
+  color: #a0a9b6;
+  font-size: 0.84375rem;
+  line-height: 175%;
+  font-family: "Open Sans", san-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .footer {
