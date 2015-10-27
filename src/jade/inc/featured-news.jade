@@ -1,0 +1,71 @@
+mixin featured-news-item(items)
+    each item in items
+        .featured-news-item
+            .featured-news-item--img
+                if item.img
+                    img(src='img/#{item.img}', alt='image')
+                else
+                    .date-circle
+                        .date-circle--inner
+                            p= item.number
+                            p jan-05
+            .featured-news-item--text
+                h4.featured-news-item--title
+                    = item.title
+                p.featured-news-item--description
+                    = item.desc
+
+section.featured-news
+    .container
+        .featured-news--wrap.vertline
+            .featured-services
+                +title-block([
+                    {
+                        'high': 'Featured',
+                        'low': 'Services'
+                    }
+                ])
+                .featured-news--list
+                    +featured-news-item([
+                        {
+                            'img': 'featured-services1.png',
+                            'title': 'Service name One',
+                            'desc': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make."
+                        },
+                        {
+                            'img': 'featured-services1.png',
+                            'title': 'Service name two',
+                            'desc': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make."
+                        },
+                        {
+                            'img': 'featured-services1.png',
+                            'title': 'Service name three',
+                            'desc': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make."
+                        }
+                    ])
+
+            .latest-news
+                +title-block([
+                    {
+                        'high': 'Latest',
+                        'low': 'News'
+                    }
+                ])
+                .featured-news--list
+                    +featured-news-item([
+                        {
+                            'number': '1',
+                            'title': 'News heading here',
+                            'desc': "Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown."
+                        },
+                        {
+                            'number': '2',
+                            'title': 'News heading here',
+                            'desc': "Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown."
+                        },
+                        {
+                            'number': '3',
+                            'title': 'News heading here',
+                            'desc': "Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown."
+                        }
+                    ])

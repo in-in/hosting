@@ -14,7 +14,6 @@
 
   @include gallery(4 of 12 1/2.2 after);
   @include suffix(1/3);
-
   @include breakpoint($m) {
     @include gallery(6 of 12 1/2.2 after);
   }

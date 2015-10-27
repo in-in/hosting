@@ -1,0 +1,163 @@
+.featured-news {
+  background-color: $section-bg-light;
+}
+
+.featured-news--wrap {
+  padding-top: 6.993006993006993%;
+  padding-bottom: 7.017543859649122%;
+
+  @include container();
+}
+
+.featured-services {
+  @include span(8 of 12 1/2.2 after);
+  @include breakpoint($xm) {
+    @include span(12);
+  }
+
+  .featured-news-item--text {
+    padding-right: 4.401009298132371%;
+  }
+}
+
+.latest-news {
+  @include span(4 of 12 at 9 1/2.2 after);
+  @include breakpoint($xm) {
+    @include span(12);
+  }
+  @include breakpoint($s) {
+    display: none;
+  }
+
+  .featured-news-item {
+    @include breakpoint($xm) {
+      @include span(4 of 12 1/2.2 inside);
+
+      .featured-news-item--img {
+        @include full();
+      }
+
+      .featured-news-item--text {
+        text-align: center;
+
+        @include full();
+      }
+    }
+  }
+}
+
+.featured-news--list {
+  padding-top: rem(25);
+}
+
+.featured-news-item {
+  min-height: rem(158);
+  margin-bottom: rem(40);
+
+  @include susy-clearfix;
+}
+
+.featured-news-item--img {
+  @include span(3 of 8 1/2.2 after);
+  @include breakpoint($s) {
+    @include full();
+
+    img {
+      width: 100%;
+    }
+  }
+
+  img {
+    display: block;
+
+    max-width: 100%;
+  }
+}
+
+.featured-news-item--text {
+  padding-top: rem(11);
+
+  @include span(5 of 8 at 4 1/2.2 after);
+  @include breakpoint($s) {
+    @include full();
+  }
+}
+
+.featured-news-item--title {
+  margin-bottom: rem(10);
+
+  text-transform: uppercase;
+
+  color: $bold-text;
+
+  font-size: rem(14);
+  line-height: 130%;
+
+  @include font(opensans, extrabold);
+}
+
+.featured-news-item--description {
+  color: $light-text-color;
+
+  font-size: rem(13.5);
+  line-height: 175%;
+
+  @include font(opensans);
+}
+
+.date-circle {
+  width: 77.9423226812159%;
+  max-width: rem(98);
+  margin: 0 auto;
+  padding: 4.77197893966628%;
+
+  border-radius: 50%;
+
+  background-color: $icon-bright;
+}
+
+.date-circle--inner {
+  width: 100%;
+  padding-top: 23.25581395348837%;
+  padding-bottom: 36.04651162790697%;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #fff;
+  border: rem(2) dotted #fff;
+  border-radius: 50%;
+
+  background-color: $icon-bright;
+
+  font-size: rem(14);
+
+  @include font(opensans);
+
+  p:first-child {
+    line-height: 125%;
+
+    @include font(opensans, extrabold);
+  }
+}
+
+.vertline {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 6.730769230769231%;
+    bottom: 6.730769230769231%;
+    left: 67%;
+
+    width: 1px;
+
+    content: ' ';
+
+    background-color: #fff;
+
+    @include breakpoint($xm) {
+      display: none;
+    }
+  }
+}
