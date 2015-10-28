@@ -1,0 +1,104 @@
+.service-clients--wrap {
+  padding-top: 7.017543859649122%;
+  padding-bottom: 9.649122807017543%;
+}
+
+.service-clients--header {
+  padding-bottom: 2.631578947368421%;
+}
+
+.clients-slide {
+  width: 100%;
+
+  @include container();
+}
+
+.clients-slide--img {
+  @include span(2 of 12 1/2.2 after);
+  @include breakpoint($xm) {
+    @include span(3 of 12 1/2.2 after);
+  }
+  @include breakpoint($s) {
+    @include span(4 of 12 1/2.2 after);
+  }
+  @include breakpoint($xs) {
+    display: none;
+  }
+
+  img {
+    max-width: 100%;
+
+    border-radius: 50%;
+  }
+}
+
+.clients-slide--text {
+  padding-top: rem(25);
+
+  @include span(10 of 12 at 3 1/2.2 after);
+  @include breakpoint($xm) {
+    @include span(9 of 12 at 4 1/2.2 after);
+  }
+  @include breakpoint($s) {
+    @include span(8 of 12 at 5 1/2.2 after);
+  }
+  @include breakpoint($xs) {
+    @include full();
+  }
+}
+
+.clients-slide--review {
+  margin-bottom: rem(15);
+
+  color: $light-text-color;
+
+  font-size: rem(13.5);
+  font-style: italic;
+  line-height: 180%;
+
+  @include font(opensans);
+}
+
+.clients-slide--author {
+  p {
+    text-transform: uppercase;
+
+    color: $bold-text;
+
+    font-size: rem(14);
+    line-height: 130%;
+  }
+
+  p:first-child {
+    @include font(opensans);
+  }
+
+  p:last-child {
+    @include font(opensans, extrabold);
+  }
+}
+
+.service-clients--slider .flickity-page-dots {
+  top: 0;
+  right: 0;
+  bottom: auto;
+
+  text-align: right;
+}
+
+.service-clients--slider .flickity-page-dots .dot {
+  width: rem(13);
+  height: rem(13);
+  margin: 0 rem(5);
+
+  opacity: 1;
+  border: 2px solid #ccdee3;
+
+  background-color: transparent;
+}
+
+.service-clients--slider .flickity-page-dots .dot.is-selected {
+  border: 2px solid $active;
+
+  background: inherit;
+}

@@ -2189,6 +2189,145 @@ select.textInput {
   }
 }
 
+.service-clients--wrap {
+  padding-top: 7.017543859649122%;
+  padding-bottom: 9.649122807017543%;
+}
+
+.service-clients--header {
+  padding-bottom: 2.631578947368421%;
+}
+
+.clients-slide {
+  width: 100%;
+  max-width: 73.125rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.clients-slide:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.clients-slide--img {
+  width: 14.4385026738%;
+  float: left;
+  margin-right: 2.6737967914%;
+}
+
+@media (max-width: 50rem) {
+  .clients-slide--img {
+    width: 22.9946524064%;
+    float: left;
+    margin-right: 2.6737967914%;
+  }
+}
+
+@media (max-width: 30rem) {
+  .clients-slide--img {
+    width: 31.550802139%;
+    float: left;
+    margin-right: 2.6737967914%;
+  }
+}
+
+@media (max-width: 20rem) {
+  .clients-slide--img {
+    display: none;
+  }
+}
+
+.clients-slide--img img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.clients-slide--text {
+  padding-top: 1.5625rem;
+  width: 82.8877005348%;
+  float: right;
+  margin-right: 0;
+}
+
+@media (max-width: 50rem) {
+  .clients-slide--text {
+    width: 74.3315508021%;
+    float: right;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 30rem) {
+  .clients-slide--text {
+    width: 65.7754010695%;
+    float: right;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 20rem) {
+  .clients-slide--text {
+    clear: both;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.clients-slide--review {
+  margin-bottom: 0.9375rem;
+  color: #a0a9b6;
+  font-size: 0.84375rem;
+  font-style: italic;
+  line-height: 180%;
+  font-family: "Open Sans", san-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.clients-slide--author p {
+  text-transform: uppercase;
+  color: #556b72;
+  font-size: 0.875rem;
+  line-height: 130%;
+}
+
+.clients-slide--author p:first-child {
+  font-family: "Open Sans", san-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.clients-slide--author p:last-child {
+  font-family: "Open Sans", san-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.service-clients--slider .flickity-page-dots {
+  top: 0;
+  right: 0;
+  bottom: auto;
+  text-align: right;
+}
+
+.service-clients--slider .flickity-page-dots .dot {
+  width: 0.8125rem;
+  height: 0.8125rem;
+  margin: 0 0.3125rem;
+  opacity: 1;
+  border: 2px solid #ccdee3;
+  background-color: transparent;
+}
+
+.service-clients--slider .flickity-page-dots .dot.is-selected {
+  border: 2px solid #52cbf8;
+  background: inherit;
+}
+
 .footer {
   background-color: #4c515b;
 }

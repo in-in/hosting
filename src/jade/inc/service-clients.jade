@@ -1,0 +1,45 @@
+mixin clients-slide(items)
+    each item in items
+        .clients-slide
+            .clients-slide--img
+                img(src='img/#{item.img}', alt='image')
+            .clients-slide--text
+                p.clients-slide--review
+                    = item.review
+                .clients-slide--author
+                    p by
+                    p= item.author
+
+section.service-clients
+    .container
+        .service-clients--wrap
+            header.service-clients--header
+                +title-block([
+                    {
+                        'high': 'Happy',
+                        'low': 'Clients'
+                    }
+                ])
+            .service-clients--slider
+                +clients-slide([
+                    {
+                        "img": "clients1.jpg",
+                        "review": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make. a type specimen book. It has survived not only five centuries. but also the leap into electronic typesetting, remaining essentially unchanged.",
+                        "author": "Akhil Designer"
+                    },
+                    {
+                        "img": "clients2.jpg",
+                        "review": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make. a type specimen book. It has survived not only five centuries. but also the leap into electronic typesetting, remaining essentially unchanged.",
+                        "author": "Nimisha John"
+                    },
+                    {
+                        "img": "clients3.jpg",
+                        "review": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make. a type specimen book. It has survived not only five centuries. but also the leap into electronic typesetting, remaining essentially unchanged.",
+                        "author": "Stubash Alpy"
+                    },
+                    {
+                        "img": "clients4.jpg",
+                        "review": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make. a type specimen book. It has survived not only five centuries. but also the leap into electronic typesetting, remaining essentially unchanged.",
+                        "author": "Aneesh Kumar"
+                    }
+                ])
