@@ -1,0 +1,73 @@
+.steps--wrap {
+  padding-top: 3.684210526315789%;
+  padding-bottom: 8.771929824561402%;
+}
+
+.step--title {
+  margin-bottom: rem(36);
+}
+
+.steps--list {
+  @include container();
+}
+
+.step {
+  @include container();
+  @include span(4 of 12 1/2.2 after);
+  @include breakpoint($s) {
+    margin-bottom: 1rem;
+
+    border: 1px solid $input-border;
+
+    @include full();
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.step--number {
+  @include span(1 of 4 1/2.2 after);
+}
+
+.step--text {
+  padding-top: rem(15);
+
+  @include span(3 of 4 at 2 1/2.2 after);
+  @include breakpoint($s) {
+    padding-top: 4.849884526558892%;
+  }
+}
+
+.square {
+  display: block;
+
+  width: 100%;
+  padding: 20.880874610347966% 0;
+
+  text-align: center;
+
+  color: #fff;
+
+  background-color: $icon-bright;
+
+  font-size: rem(30);
+
+  @include font(opensans, extrabold);
+  @include breakpoint($xm) {
+    font-size: rem(26);
+  }
+}
+
+.block-title__steps {
+  margin-bottom: rem(10);
+}
+
+.block-text__steps {
+  padding-right: 6.866952789699571%;
+
+  @include breakpoint($s) {
+    display: none;
+  }
+}

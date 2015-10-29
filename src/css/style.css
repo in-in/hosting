@@ -72,6 +72,25 @@ button {
 }
 
 /* RESET ends */
+.block-title {
+  text-transform: uppercase;
+  color: #556b72;
+  font-size: 0.875rem;
+  line-height: 130%;
+  font-family: "Open Sans", san-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.block-text {
+  color: #a0a9b6;
+  font-size: 0.84375rem;
+  line-height: 180%;
+  font-family: "Open Sans", san-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
   font-size: 16px;
 }
@@ -2326,6 +2345,110 @@ select.textInput {
 .service-clients--slider .flickity-page-dots .dot.is-selected {
   border: 2px solid #52cbf8;
   background: inherit;
+}
+
+.steps--wrap {
+  padding-top: 3.684210526315789%;
+  padding-bottom: 8.771929824561402%;
+}
+
+.step--title {
+  margin-bottom: 2.25rem;
+}
+
+.steps--list {
+  max-width: 73.125rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.steps--list:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.step {
+  max-width: 73.125rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 31.550802139%;
+  float: left;
+  margin-right: 2.6737967914%;
+}
+
+.step:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+@media (max-width: 30rem) {
+  .step {
+    margin-bottom: 1rem;
+    border: 1px solid #dfeef3;
+    clear: both;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.step:last-child {
+  margin-right: 0;
+}
+
+.step--number {
+  width: 18.6440677966%;
+  float: left;
+  margin-right: 8.4745762712%;
+}
+
+.step--text {
+  padding-top: 0.9375rem;
+  width: 72.8813559322%;
+  float: right;
+  margin-right: 0;
+}
+
+@media (max-width: 30rem) {
+  .step--text {
+    padding-top: 4.849884526558892%;
+  }
+}
+
+.square {
+  display: block;
+  width: 100%;
+  padding: 20.880874610347966% 0;
+  text-align: center;
+  color: #fff;
+  background-color: #fb6b45;
+  font-size: 1.875rem;
+  font-family: "Open Sans", san-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+@media (max-width: 50rem) {
+  .square {
+    font-size: 1.625rem;
+  }
+}
+
+.block-title__steps {
+  margin-bottom: 0.625rem;
+}
+
+.block-text__steps {
+  padding-right: 6.866952789699571%;
+}
+
+@media (max-width: 30rem) {
+  .block-text__steps {
+    display: none;
+  }
 }
 
 .footer {

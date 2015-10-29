@@ -52,3 +52,23 @@ $font-stack: (
 //@include font(opensans, semibold);
 //@include font(opensans, bold);
 //@include font(opensans, extrabold);
+
+.block-title {
+  text-transform: uppercase;
+
+  color: $bold-text;
+
+  font-size: rem(14);
+  line-height: 130%;
+
+  @include font(opensans, extrabold);
+}
+
+.block-text {
+  color: $light-text-color;
+
+  font-size: rem(13.5);
+  line-height: 180%;
+
+  @include font(opensans);
+}
