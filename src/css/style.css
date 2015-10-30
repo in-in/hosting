@@ -194,6 +194,10 @@ select.textInput {
   background-color: #ff5a2e;
 }
 
+.section-light-bg {
+  background-color: #e7f4f8;
+}
+
 .container {
   min-width: 20rem;
   max-width: 73.125rem;
@@ -1243,18 +1247,18 @@ select.textInput {
   font-style: normal;
 }
 
-.home-hosting--wrap {
+.hosting-plans--wrap {
   padding-top: 5.614035088%;
   padding-bottom: 8.771929825%;
 }
 
-.home-hosting--wrap::after {
-  display: table;
+.hosting-plans--wrap:after {
+  content: " ";
+  display: block;
   clear: both;
-  content: '';
 }
 
-.home-hosting--planbox {
+.hosting-plans--planbox {
   padding-top: 2.192982456%;
 }
 
@@ -1303,11 +1307,32 @@ select.textInput {
   margin-right: 0;
 }
 
+.plan-list--item__3col {
+  width: 31.4285714286%;
+  float: left;
+  margin-right: 2.8571428571%;
+}
+
+@media (max-width: 40rem) {
+  .plan-list--item__3col {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.plan-list--item__3col .planBox--details {
+  padding-right: 13.064030941125912%;
+  padding-left: 13.064030941125912%;
+}
+
 .planBox {
   width: 100%;
   height: auto;
   padding: 9.130891327%;
   border: 1px solid #e1eff4;
+  background-color: #fff;
 }
 
 .planBox--price h4 {
@@ -1393,6 +1418,12 @@ select.textInput {
   .planBox--details li {
     font-size: 0.75rem;
     line-height: 2.125rem;
+  }
+}
+
+@media (max-width: 20rem) {
+  .planBox--details li {
+    display: none;
   }
 }
 
@@ -2449,6 +2480,15 @@ select.textInput {
   .block-text__steps {
     display: none;
   }
+}
+
+.hosting-plans3--wrap {
+  padding-top: 6.666666666666667%;
+  padding-bottom: 8.771929824561402%;
+}
+
+.hosting-plans3--header {
+  padding-bottom: 30px;
 }
 
 .footer {

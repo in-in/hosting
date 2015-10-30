@@ -1,11 +1,10 @@
-.home-hosting--wrap {
+.hosting-plans--wrap {
   padding-top: 5.614035088%;
   padding-bottom: 8.771929825%;
-  &::after {
-    @include cf;
-  }
+
+  @include susy-clearfix;
 }
 
-.home-hosting--planbox {
+.hosting-plans--planbox {
   padding-top: 2.192982456%;
 }

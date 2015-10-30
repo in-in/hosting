@@ -1,6 +1,6 @@
 mixin planBox(items)
     each item in items
-        .plan-list--item
+        .plan-list--item(class=(item.class) ? '#{item.class}' : '')
             .planBox
                 .planBox--price
                     h4
@@ -17,16 +17,16 @@ mixin planBox(items)
                 .js-modal-open
                     a(href='#0').cd-signup.btn.btn__planBox Sign up
 
-section.home-hosting
+.hosting-plans
     .container
-        .home-hosting--wrap
+        .hosting-plans--wrap
             +title-block([
                 {
                     'high': 'Our',
                     'low': 'Hosting'
                 }
             ])
-            .home-hosting--planbox
+            .hosting-plans--planbox
                 .plan-list
                     +planBox([
                         {

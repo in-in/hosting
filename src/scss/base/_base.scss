@@ -115,3 +115,7 @@ select.textInput {
     background-color: darken($accent, 10%);
   }
 }
+
+.section-light-bg {
+  background-color: $section-bg-light;
+}

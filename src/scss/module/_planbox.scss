@@ -22,12 +22,27 @@
   }
 }
 
+.plan-list--item__3col {
+  @include span(4 of 12 1/2 after);
+  @include breakpoint($m) {
+    @include span(12 of 12 1/2 after);
+  }
+
+  .planBox--details {
+    padding-right: 13.064030941125912%;
+    padding-left: 13.064030941125912%;
+  }
+}
+
+
 .planBox {
   width: 100%;
   height: auto;
   padding: 9.130891327%;
 
   border: 1px solid $planbox-border;
+
+  background-color: #fff;
 }
 
 .planBox--price h4 {
@@ -108,6 +123,9 @@
   @include breakpoint($xm) {
     font-size: rem(12);
     line-height: rem(34);
+  }
+  @include breakpoint($xs) {
+    display: none;
   }
 
   &:last-child {
