@@ -1,7 +1,7 @@
 mixin list(items, liclass)
     ul
         each item in items
-            if (thisPage == item.title)
+            if (selected == item.title.toLowerCase())
                 li(class=liclass)
                     a(href=item.link, class=item.class + ' ' + item.class + '__active')
                         = item.title

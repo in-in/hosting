@@ -54,25 +54,8 @@
   width: 100%;
 }
 
-.offer-card--title {
+.block-title__offer-card {
   margin-bottom: rem(15);
-
-  text-transform: uppercase;
-
-  color: $bold-text;
-
-  font-size: rem(14);
-
-  @include font(opensans, extrabold);
-}
-
-.offer-card--description {
-  color: $light-text-color;
-
-  font-size: rem(13.5);
-  line-height: 178%;
-
-  @include font(opensans);
 }
 
 .offer-card--list {

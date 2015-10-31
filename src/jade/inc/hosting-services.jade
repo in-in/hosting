@@ -4,9 +4,9 @@ mixin services-item(items)
             .services-item--icon
                 svg
                     use(xlink:href="#icon-#{item.icon}")
-            .services-item--title
+            .block-title.block-title__services
                 = item.title
-            .services-item--text
+            .block-text.block-text__services
                 = item.text
 
 

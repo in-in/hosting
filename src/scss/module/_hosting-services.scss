@@ -30,23 +30,6 @@
   fill: $icon-bright;
 }
 
-.services-item--title {
+.block-title__services {
   padding-bottom: 7.011853080337545%;
-
-  text-transform: uppercase;
-
-  color: $bold-text;
-
-  font-size: rem(14);
-
-  @include font(opensans, extrabold);
-}
-
-.services-item--text {
-  color: $light-text-color;
-
-  font-size: rem(13.5);
-  line-height: 175%;
-
-  @include font(opensans);
 }

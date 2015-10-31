@@ -4,9 +4,9 @@ mixin offer-card(items)
             .offer-card--img
                 img(src='img/#{item.img}' alt='image')
             .offer-card--text
-                h4.offer-card--title
+                h4.block-title.block-title__offer-card
                     = item.title
-                p.offer-card--description
+                p.block-text
                     = item.description
                 ul.offer-card--list
                     li= item.listItem[0]
