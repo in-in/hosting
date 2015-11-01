@@ -1,0 +1,17 @@
+.register-domain
+    .container
+        .register-domain--wrap
+            header.register-domain--title
+                +title-block([
+                    {
+                        'high': 'Register',
+                        'low': 'Domain'
+                    }
+                ])
+            .register-domain--form
+                include search-domain-form
+            .register-domain--slider
+                .title-block--underscore
+                h3.register-domain--subtitle
+                    | Other domain charges per month
+                include domain-slider

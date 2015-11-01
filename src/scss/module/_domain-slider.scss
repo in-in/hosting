@@ -1,0 +1,19 @@
+.domain-slider {
+  @include susy-clearfix;
+  background-color: palegreen;
+}
+
+.domain-slide--img {
+  @include span(6 of 12 1/2.2 after);
+  background-color: deepskyblue;
+}
+
+.domain-slide--charges {
+  @include span(6 of 12 at 7 1/2.1 after);
+  background-color: deeppink;
+}
+
+td {
+  padding: 20px;
+  outline: 1px dotted black;
+}

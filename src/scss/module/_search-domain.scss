@@ -11,16 +11,14 @@
 
 .srh-domain--wrap {
   padding-top: rem(40);
-  &::after {
-    @include cf;
-  }
+
+  @include susy-clearfix;
 }
 
 .srh-domain--title {
   @include span(1.8);
   @include breakpoint($l) {
-    @include span(full);
-    @include push(1);
+    @include full();
   }
 }
 
@@ -29,59 +27,6 @@
 
   @include span(10.2);
   @include breakpoint($l) {
-    @include push(1);
-    @include span(10);
-  }
-}
-
-.domainSearch {
-  &::after {
-    @include cf;
-  }
-}
-
-.domainSearch--field {
-  @include span(1 of $asym first);
-  @include breakpoint($l) {
-    margin-bottom: rem(15);
-
-    @include span(full);
-  }
-}
-
-.domainSearch--field.domainSearch--select:nth-child(2) {
-  @include span(1 of $asym at 2);
-  @include breakpoint($l) {
-    margin-right: 0;
-    padding-right: rem(5);
-
-    @include span(6);
-  }
-  @include breakpoint($s) {
-    padding-right: 0;
-
-    @include span(full);
-  }
-}
-
-.domainSearch--field.domainSearch--select:nth-child(3) {
-  @include span(1 of $asym at 3);
-  @include breakpoint($l) {
-    padding-left: rem(5);
-
-    @include span(6 last);
-  }
-  @include breakpoint($s) {
-    padding-left: 0;
-
-    @include span(full);
-  }
-}
-
-.domainSearch--field.domainSearch--btn {
-  @include span(1 of $asym last);
-  @include breakpoint($l) {
-    @include push(3);
-    @include span(6);
+    @include full();
   }
 }

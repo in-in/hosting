@@ -1,0 +1,30 @@
+mixin domain-slide(items)
+    each item in items
+        .domain-slide
+            .domain-slide--img
+                img(src='img/#{item.img}', alt='image')
+            .domain-slide--charges
+                table
+                    tbody
+                        tr
+                            - for(i = 0; i < item.zone1.length; i++)
+                                td
+                                    p .#{item.zone1[i]}
+                                    p $#{item.price1[i]}
+                        tr
+                            - for(i = 0; i < item.zone2.length; i++)
+                                td
+                                    p .#{item.zone2[i]}
+                                    p $#{item.price2[i]}
+
+
+.domain-slider
+    +domain-slide([
+        {
+            "img": "domain-slide1.png",
+            "zone1": ["nyc", "wiki", "uk", "eng", "ml", "km"],
+            "price1": ["5", "5", "3", "7", "5", "8"],
+            "zone2": ["com", "in", "org", "net", "biz", "ap"],
+            "price2": ["5", "1", "2", "2", "4", "9"]
+        }
+    ])

@@ -1,0 +1,55 @@
+.search-domain-form {
+  width: 100%;
+}
+
+.domainSearch {
+  @include susy-clearfix;
+}
+
+.domainSearch--field {
+  float: left;
+
+  width: 48.68421052631579%;
+  margin-right: 1.8421052631578945%;
+
+  @include breakpoint($xm) {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+
+    &:nth-child(2) {
+      margin-right: 1.8421052631578945%;
+    }
+  }
+  @include breakpoint($s) {
+    &:nth-child(2) {
+      margin-right: 0;
+    }
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.domainSearch--field.domainSearch--select,
+.domainSearch--field.domainSearch--btn {
+  width: 15.263157894736842%;
+}
+
+.domainSearch--field.domainSearch--select {
+  width: 15.263157894736842%;
+
+  @include breakpoint($xm) {
+    width: 49.078947368421055%;
+  }
+  @include breakpoint($s) {
+    width: 100%;
+  }
+}
+
+.domainSearch--field.domainSearch--btn {
+  @include breakpoint($xm) {
+    width: 100%;
+  }
+}

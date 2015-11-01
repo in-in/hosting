@@ -9,14 +9,6 @@ $susy: (
   global-box-sizing: border-box,
 );
 
-//SEARCH DOMAIN
-$asym: (
-  columns: 2.606060606 1 1 1.145454545,
-  gutters: 1/17,
-  gutter-position: after,
-);
-
-
 .container {
   min-width: 20rem; //320
   max-width: 73.125rem; //1170
