@@ -2427,6 +2427,7 @@ select.textInput {
 
 .register-domain--wrap {
   padding-top: 3.684210526315789%;
+  padding-bottom: 8.771929824561402%;
 }
 
 .register-domain--title {
@@ -2434,10 +2435,11 @@ select.textInput {
 }
 
 .register-domain--form {
-  margin-bottom: 36px;
+  margin-bottom: 2.25rem;
 }
 
 .register-domain--subtitle {
+  padding-bottom: 1rem;
   text-transform: uppercase;
   color: #556b72;
   font-size: 0.875rem;
@@ -2447,8 +2449,14 @@ select.textInput {
   font-style: normal;
 }
 
-.domain-slider {
-  background-color: palegreen;
+@media (max-width: 30rem) {
+  .register-domain--subtitle {
+    padding-bottom: 1.625rem;
+  }
+}
+
+.register-domain--slider {
+  margin-bottom: 2rem;
 }
 
 .domain-slider:after {
@@ -2457,23 +2465,145 @@ select.textInput {
   clear: both;
 }
 
+.domain-slide {
+  width: 100%;
+}
+
 .domain-slide--img {
   width: 48.6631016043%;
   float: left;
   margin-right: 2.6737967914%;
-  background-color: deepskyblue;
+}
+
+@media (max-width: 40rem) {
+  .domain-slide--img {
+    margin-bottom: 2rem;
+    clear: both;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 20rem) {
+  .domain-slide--img {
+    display: none;
+  }
+}
+
+.domain-slide--img img {
+  width: 100%;
 }
 
 .domain-slide--charges {
   width: 48.6187845304%;
   float: right;
   margin-right: 0;
-  background-color: deeppink;
 }
 
-td {
-  padding: 20px;
-  outline: 1px dotted black;
+@media (max-width: 40rem) {
+  .domain-slide--charges {
+    clear: both;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.charges-table {
+  width: 100%;
+  border: 1px solid #d4e8ee;
+  border-collapse: collapse;
+}
+
+.charges-table tr {
+  border-bottom: 1px solid #d4e8ee;
+}
+
+@media (max-width: 20rem) {
+  .charges-table tr {
+    border-bottom: none;
+  }
+}
+
+.charges-table td {
+  height: 4.875rem;
+  padding: 0 0.5rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+@media (max-width: 30rem) {
+  .charges-table td {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 20rem) {
+  .charges-table td {
+    float: left;
+    width: 50%;
+    height: auto;
+    padding-bottom: 0.375rem;
+    border: 1px solid #d4e8ee;
+  }
+}
+
+.charges-table--domain {
+  text-transform: uppercase;
+  color: #556b72;
+  font-size: 0.875rem;
+  line-height: 200%;
+  font-family: "Open Sans", san-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.charges-table--price {
+  color: #556b72;
+  font-size: 1.875rem;
+  line-height: 100%;
+  font-family: "Open Sans", san-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+@media (max-width: 20rem) {
+  .charges-table--price {
+    font-size: 1.5625rem;
+  }
+}
+
+.domain-slider .flickity-page-dots {
+  top: -1.625rem;
+  right: 0;
+  bottom: auto;
+  text-align: right;
+}
+
+@media (max-width: 20rem) {
+  .domain-slider .flickity-page-dots {
+    top: auto;
+    bottom: -1.625rem;
+    text-align: center;
+  }
+}
+
+.domain-slider .flickity-page-dots .dot {
+  width: 0.8125rem;
+  height: 0.8125rem;
+  margin: 0 0.3125rem;
+  opacity: 1;
+  border: 2px solid #ccdee3;
+  background-color: transparent;
+}
+
+.domain-slider .flickity-page-dots .dot.is-selected {
+  border: 2px solid #52cbf8;
+  background: inherit;
 }
 
 .footer {

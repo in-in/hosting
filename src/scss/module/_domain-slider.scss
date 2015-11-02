@@ -1,19 +1,122 @@
 .domain-slider {
   @include susy-clearfix;
-  background-color: palegreen;
+}
+
+.domain-slide {
+  width: 100%;
 }
 
 .domain-slide--img {
   @include span(6 of 12 1/2.2 after);
-  background-color: deepskyblue;
+  @include breakpoint($m) {
+    margin-bottom: 2rem;
+
+    @include full();
+  }
+  @include breakpoint($xs) {
+    display: none;
+  }
+
+  img {
+    width: 100%;
+  }
 }
 
 .domain-slide--charges {
   @include span(6 of 12 at 7 1/2.1 after);
-  background-color: deeppink;
+  @include breakpoint($m) {
+    @include full();
+  }
 }
 
-td {
-  padding: 20px;
-  outline: 1px dotted black;
+.charges-table {
+  width: 100%;
+
+  border: 1px solid $table-border;
+  border-collapse: collapse;
+  tr {
+    border-bottom: 1px solid $table-border;
+
+    @include breakpoint($xs) {
+      border-bottom: none;
+    }
+  }
+}
+
+.charges-table td {
+  height: rem(78);
+  padding: 0 rem(8);
+
+  text-align: center;
+  vertical-align: middle;
+
+  @include breakpoint($s) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  @include breakpoint($xs) {
+    float: left;
+
+    width: 50%;
+    height: auto;
+    padding-bottom: rem(6);
+
+    border: 1px solid $table-border;
+  }
+}
+
+.charges-table--domain {
+  text-transform: uppercase;
+
+  color: $bold-text;
+
+  font-size: rem(14);
+  line-height: 200%;
+
+  @include font(opensans, semibold);
+}
+
+.charges-table--price {
+  color: $bold-text;
+
+  font-size: rem(30);
+  line-height: 100%;
+
+  @include font(opensans, extrabold);
+  @include breakpoint($xs) {
+    font-size: rem(25);
+  }
+}
+
+//dots
+.domain-slider .flickity-page-dots {
+  top: rem(-26);
+  right: 0;
+  bottom: auto;
+
+  text-align: right;
+
+  @include breakpoint($xs) {
+    top: auto;
+    bottom: rem(-26);
+
+    text-align: center;
+  }
+}
+
+.domain-slider .flickity-page-dots .dot {
+  width: rem(13);
+  height: rem(13);
+  margin: 0 rem(5);
+
+  opacity: 1;
+  border: 2px solid #ccdee3;
+
+  background-color: transparent;
+}
+
+.domain-slider .flickity-page-dots .dot.is-selected {
+  border: 2px solid $active;
+
+  background: inherit;
 }

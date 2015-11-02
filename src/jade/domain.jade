@@ -6,6 +6,13 @@ append var
     - var pageTitle = pageTitle.concat(' | ' + thisPage)
     - var selected = 'domain'
 
+prepend link
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.1/flickity.min.css')
+
 append main
     section
         include inc/register-domain
+
+append script
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.1/flickity.pkgd.min.js")
+    script(src="js/domain-slider.js", async='')

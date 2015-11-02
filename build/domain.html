@@ -26,6 +26,7 @@
     <meta name="msapplication-TileColor" content="#2b5797"/>
     <meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png"/>
     <meta name="theme-color" content="#ffffff"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.1/flickity.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -161,60 +162,182 @@
                 <h3 class="register-domain--subtitle">Other domain charges per month</h3>
                 <div class="domain-slider">
                                   <div class="domain-slide">
-                                    <div class="domain-slide--img"><img src="img/domain-slide1.png" alt="image"></div>
+                                    <div class="domain-slide--img"><img src="img/domain-slide1.jpg" alt="image"></div>
                                     <div class="domain-slide--charges">
-                                      <table>
+                                      <table class="charges-table">
                                         <tbody>
                                           <tr>
                                             <td>
-                                              <p>.nyc</p>
-                                              <p>$5</p>
+                                              <p class="charges-table--domain">.nyc</p>
+                                              <div class="charges-table--price"><span class="dollar-sign">$</span><span>5</span></div>
                                             </td>
                                             <td>
-                                              <p>.wiki</p>
-                                              <p>$5</p>
+                                              <p class="charges-table--domain">.wiki</p>
+                                              <div class="charges-table--price"><span class="dollar-sign">$</span><span>5</span></div>
                                             </td>
                                             <td>
-                                              <p>.uk</p>
-                                              <p>$3</p>
+                                              <p class="charges-table--domain">.uk</p>
+                                              <div class="charges-table--price"><span class="dollar-sign">$</span><span>3</span></div>
                                             </td>
                                             <td>
-                                              <p>.eng</p>
-                                              <p>$7</p>
+                                              <p class="charges-table--domain">.eng</p>
+                                              <div class="charges-table--price"><span class="dollar-sign">$</span><span>7</span></div>
                                             </td>
                                             <td>
-                                              <p>.ml</p>
-                                              <p>$5</p>
+                                              <p class="charges-table--domain">.ml</p>
+                                              <div class="charges-table--price"><span class="dollar-sign">$</span><span>5</span></div>
                                             </td>
                                             <td>
-                                              <p>.km</p>
-                                              <p>$8</p>
+                                              <p class="charges-table--domain">.km</p>
+                                              <div class="charges-table--price"><span class="dollar-sign">$</span><span>8</span></div>
                                             </td>
                                           </tr>
                                           <tr>
                                             <td>
-                                              <p>.com</p>
-                                              <p>$5</p>
+                                              <p class="charges-table--domain">.com</p>
+                                              <div class="charges-table--price"><span class="dollar-sign">$</span><span>5</span></div>
                                             </td>
                                             <td>
-                                              <p>.in</p>
-                                              <p>$1</p>
+                                              <p class="charges-table--domain">.in</p>
+                                              <div class="charges-table--price"><span class="dollar-sign">$</span><span>1</span></div>
                                             </td>
                                             <td>
-                                              <p>.org</p>
-                                              <p>$2</p>
+                                              <p class="charges-table--domain">.org</p>
+                                              <div class="charges-table--price"><span class="dollar-sign">$</span><span>2</span></div>
                                             </td>
                                             <td>
-                                              <p>.net</p>
-                                              <p>$2</p>
+                                              <p class="charges-table--domain">.net</p>
+                                              <div class="charges-table--price"><span class="dollar-sign">$</span><span>2</span></div>
                                             </td>
                                             <td>
-                                              <p>.biz</p>
-                                              <p>$4</p>
+                                              <p class="charges-table--domain">.biz</p>
+                                              <div class="charges-table--price"><span class="dollar-sign">$</span><span>4</span></div>
                                             </td>
                                             <td>
-                                              <p>.ap</p>
-                                              <p>$9</p>
+                                              <p class="charges-table--domain">.ap</p>
+                                              <div class="charges-table--price"><span class="dollar-sign">$</span><span>9</span></div>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                  </div>
+                                  <div class="domain-slide">
+                                    <div class="domain-slide--img"><img src="img/domain-slide2.jpg" alt="image"></div>
+                                    <div class="domain-slide--charges">
+                                      <table class="charges-table">
+                                        <tbody>
+                                          <tr>
+                                            <td>
+                                              <p class="charges-table--domain">.nyc</p>
+                                              <div class="charges-table--price"><span class="dollar-sign">$</span><span>5</span></div>
+                                            </td>
+                                            <td>
+                                              <p class="charges-table--domain">.wiki</p>
+                                              <div class="charges-table--price"><span class="dollar-sign">$</span><span>5</span></div>
+                                            </td>
+                                            <td>
+                                              <p class="charges-table--domain">.uk</p>
+                                              <div class="charges-table--price"><span class="dollar-sign">$</span><span>3</span></div>
+                                            </td>
+                                            <td>
+                                              <p class="charges-table--domain">.eng</p>
+                                              <div class="charges-table--price"><span class="dollar-sign">$</span><span>7</span></div>
+                                            </td>
+                                            <td>
+                                              <p class="charges-table--domain">.ml</p>
+                                              <div class="charges-table--price"><span class="dollar-sign">$</span><span>5</span></div>
+                                            </td>
+                                            <td>
+                                              <p class="charges-table--domain">.km</p>
+                                              <div class="charges-table--price"><span class="dollar-sign">$</span><span>8</span></div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>
+                                              <p class="charges-table--domain">.com</p>
+                                              <div class="charges-table--price"><span class="dollar-sign">$</span><span>5</span></div>
+                                            </td>
+                                            <td>
+                                              <p class="charges-table--domain">.in</p>
+                                              <div class="charges-table--price"><span class="dollar-sign">$</span><span>1</span></div>
+                                            </td>
+                                            <td>
+                                              <p class="charges-table--domain">.org</p>
+                                              <div class="charges-table--price"><span class="dollar-sign">$</span><span>2</span></div>
+                                            </td>
+                                            <td>
+                                              <p class="charges-table--domain">.net</p>
+                                              <div class="charges-table--price"><span class="dollar-sign">$</span><span>2</span></div>
+                                            </td>
+                                            <td>
+                                              <p class="charges-table--domain">.biz</p>
+                                              <div class="charges-table--price"><span class="dollar-sign">$</span><span>4</span></div>
+                                            </td>
+                                            <td>
+                                              <p class="charges-table--domain">.ap</p>
+                                              <div class="charges-table--price"><span class="dollar-sign">$</span><span>9</span></div>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                  </div>
+                                  <div class="domain-slide">
+                                    <div class="domain-slide--img"><img src="img/domain-slide3.jpg" alt="image"></div>
+                                    <div class="domain-slide--charges">
+                                      <table class="charges-table">
+                                        <tbody>
+                                          <tr>
+                                            <td>
+                                              <p class="charges-table--domain">.nyc</p>
+                                              <div class="charges-table--price"><span class="dollar-sign">$</span><span>5</span></div>
+                                            </td>
+                                            <td>
+                                              <p class="charges-table--domain">.wiki</p>
+                                              <div class="charges-table--price"><span class="dollar-sign">$</span><span>5</span></div>
+                                            </td>
+                                            <td>
+                                              <p class="charges-table--domain">.uk</p>
+                                              <div class="charges-table--price"><span class="dollar-sign">$</span><span>3</span></div>
+                                            </td>
+                                            <td>
+                                              <p class="charges-table--domain">.eng</p>
+                                              <div class="charges-table--price"><span class="dollar-sign">$</span><span>7</span></div>
+                                            </td>
+                                            <td>
+                                              <p class="charges-table--domain">.ml</p>
+                                              <div class="charges-table--price"><span class="dollar-sign">$</span><span>5</span></div>
+                                            </td>
+                                            <td>
+                                              <p class="charges-table--domain">.km</p>
+                                              <div class="charges-table--price"><span class="dollar-sign">$</span><span>8</span></div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>
+                                              <p class="charges-table--domain">.com</p>
+                                              <div class="charges-table--price"><span class="dollar-sign">$</span><span>5</span></div>
+                                            </td>
+                                            <td>
+                                              <p class="charges-table--domain">.in</p>
+                                              <div class="charges-table--price"><span class="dollar-sign">$</span><span>1</span></div>
+                                            </td>
+                                            <td>
+                                              <p class="charges-table--domain">.org</p>
+                                              <div class="charges-table--price"><span class="dollar-sign">$</span><span>2</span></div>
+                                            </td>
+                                            <td>
+                                              <p class="charges-table--domain">.net</p>
+                                              <div class="charges-table--price"><span class="dollar-sign">$</span><span>2</span></div>
+                                            </td>
+                                            <td>
+                                              <p class="charges-table--domain">.biz</p>
+                                              <div class="charges-table--price"><span class="dollar-sign">$</span><span>4</span></div>
+                                            </td>
+                                            <td>
+                                              <p class="charges-table--domain">.ap</p>
+                                              <div class="charges-table--price"><span class="dollar-sign">$</span><span>9</span></div>
                                             </td>
                                           </tr>
                                         </tbody>
@@ -296,5 +419,7 @@
     <script src="js/login.js" async=""></script>
     <script src="js/menu.js" async=""></script>
     <script src="js/analytics.js" async=""></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.1/flickity.pkgd.min.js"></script>
+    <script src="js/domain-slider.js" async=""></script>
   </body>
 </html>

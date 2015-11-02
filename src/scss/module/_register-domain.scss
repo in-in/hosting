@@ -1,5 +1,6 @@
 .register-domain--wrap {
   padding-top: 3.684210526315789%;
+  padding-bottom: 8.771929824561402%;
 }
 
 .register-domain--title {
@@ -7,10 +8,12 @@
 }
 
 .register-domain--form {
-  margin-bottom: 36px;
+  margin-bottom: rem(36);
 }
 
 .register-domain--subtitle {
+  padding-bottom: rem(16);
+
   text-transform: uppercase;
 
   color: $bold-text;
@@ -19,4 +22,11 @@
   line-height: 200%;
 
   @include font(opensans, extrabold);
+  @include breakpoint($s) {
+    padding-bottom: rem(26);
+  }
+}
+
+.register-domain--slider {
+  margin-bottom: 2rem;
 }
