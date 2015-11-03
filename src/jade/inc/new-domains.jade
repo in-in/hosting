@@ -1,0 +1,33 @@
+mixin domains-table(items)
+    each item in items
+        table.domains-table
+            -for(i=0; i<item.zone.length; i++)
+                tr
+                    td.domains-table--name .#{item.zone[i]}
+                    td.js-modal-open
+                        a(href="#0").cd-signup.btn.btn__register Register
+
+.new-domains
+    .container
+        .new-domains--wrap
+            header.new-domains--title
+                +title-block([
+                    {
+                        'high': 'New',
+                        'low': 'Domains'
+                    }
+                ])
+            .new-domains--table
+                .new-domains--table-col
+                    +domains-table([
+                        {
+                            "zone": ["ask","man","wiki","go","lip","zipo"]
+                        }
+                    ])
+                .new-domains--table-col
+                    +domains-table([
+                        {
+                            "zone": ["nk","bac","wiki","do","lip","zipo"]
+                        }
+                    ])
+

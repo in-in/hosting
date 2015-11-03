@@ -1,0 +1,78 @@
+.new-domains--wrap {
+  padding-top: 6.491228070175438%;
+  padding-bottom: 8.771929824561402%;
+}
+
+.new-domains--title {
+  padding-bottom: rem(25);
+}
+
+.new-domains--table {
+  @include susy-clearfix();
+}
+
+.new-domains--table-col {
+  @include breakpoint(min-width 30rem) {
+    @include span(6 of 12 1/2.2 after);
+
+    &:last-child {
+      @include span(6 of 12 at 7 1/2.2 after);
+    }
+  }
+  @include breakpoint($s) {
+    @include full();
+
+    &:last-child {
+      @include full();
+    }
+  }
+}
+
+.domains-table {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+.domains-table tr {
+  border-bottom: 1px solid #d5e7ed;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.new-domains--table-col:first-child .domains-table tr:last-child {
+  @include breakpoint($s) {
+    border-bottom: 1px solid #d5e7ed;
+  }
+}
+
+.domains-table td {
+  width: 50%;
+  height: rem(47);
+  padding: rem(6) 0;
+
+  &:last-child {
+    text-align: right;
+  }
+}
+
+.domains-table--name {
+  color: $planbox-text;
+
+  font-size: rem(14);
+
+  @include font(opensans);
+}
+
+.btn.btn__register {
+  display: inline-block;
+
+  width: rem(93);
+  height: rem(34);
+
+  text-transform: capitalize;
+
+  line-height: rem(34);
+}

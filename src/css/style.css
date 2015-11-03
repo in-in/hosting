@@ -2606,6 +2606,96 @@ select.textInput {
   background: inherit;
 }
 
+.new-domains--wrap {
+  padding-top: 6.491228070175438%;
+  padding-bottom: 8.771929824561402%;
+}
+
+.new-domains--title {
+  padding-bottom: 1.5625rem;
+}
+
+.new-domains--table:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+@media (min-width: 30rem) {
+  .new-domains--table-col {
+    width: 48.6631016043%;
+    float: left;
+    margin-right: 2.6737967914%;
+  }
+  .new-domains--table-col:last-child {
+    width: 48.6631016043%;
+    float: right;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 30rem) {
+  .new-domains--table-col {
+    clear: both;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .new-domains--table-col:last-child {
+    clear: both;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.domains-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.domains-table tr {
+  border-bottom: 1px solid #d5e7ed;
+}
+
+.domains-table tr:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 30rem) {
+  .new-domains--table-col:first-child .domains-table tr:last-child {
+    border-bottom: 1px solid #d5e7ed;
+  }
+}
+
+.domains-table td {
+  width: 50%;
+  height: 2.9375rem;
+  padding: 0.375rem 0;
+}
+
+.domains-table td:last-child {
+  text-align: right;
+}
+
+.domains-table--name {
+  color: #8d9198;
+  font-size: 0.875rem;
+  font-family: "Open Sans", san-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.btn.btn__register {
+  display: inline-block;
+  width: 5.8125rem;
+  height: 2.125rem;
+  text-transform: capitalize;
+  line-height: 2.125rem;
+}
+
 .footer {
   background-color: #4c515b;
 }
