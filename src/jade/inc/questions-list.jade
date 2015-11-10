@@ -1,0 +1,59 @@
+mixin squareIcon-list(items)
+    - var i = 1;
+    each item in items
+        .squareIcon--item
+            .squareIcon
+                i.squareIcon--icon
+                    if item.icon
+                        | q
+                    else
+                        | #{i++}
+            .squareIcon--text
+                h4.block-title.block-title__squareIcon= item.title
+                p.block-text.block-text__squareIcon= item.desc
+
+
+.questions-list
+    .questions-list--wrap
+        +squareIcon-list([
+            {
+                "icon": true,
+                "title": "Lorem Ipsum is simply dummy text of the print ?",
+                "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make. a type specimen book. It has survived not only five centuries. but also the leap into electronic typesetting, remaining essentially unchanged."
+            },
+            {
+                "icon": true,
+                "title": "opposed to using 'Content here, content here ?",
+                "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make. a type specimen book."
+            },
+            {
+                "icon": true,
+                "title": "There are many variations of passages of Lorem ?",
+                "desc": "Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words."
+            },
+            {
+                "icon": true,
+                "title": "making this the first true generator on the ?",
+                "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make. a type specimen book."
+            },
+            {
+                "icon": true,
+                "title": "standard chunk of Lorem Ipsum used since ?",
+                "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make. a type specimen book. It has survived not only five centuries. but also the leap into electronic typesetting, remaining essentially unchanged."
+            },
+            {
+                "icon": true,
+                "title": "opposed to using 'Content here, content here ?",
+                "desc": "Psum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make. a type specimen book. It has survived not only five centuries. but also the leap into electronic typesetting, remaining essentially unchanged."
+            },
+            {
+                "icon": true,
+                "title": "Lorem Ipsum is simply dummy text of the print ?",
+                "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make. a type specimen book. It has survived not only five centuries. but also the leap into electronic typesetting, remaining essentially unchanged."
+            },
+            {
+                "icon": true,
+                "title": "standard chunk of Lorem Ipsum used since ?",
+                "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make. a type specimen book."
+            }
+        ])

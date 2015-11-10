@@ -1,13 +1,3 @@
-mixin step(items)
-    each item in items
-        .step
-            .step--number
-                i.square
-                    = item.numb
-            .step--text
-                h4.block-title.block-title__steps= item.title
-                p.block-text.block-text__steps= item.desc
-
 section.steps
     .container
         .steps--wrap
@@ -21,17 +11,14 @@ section.steps
             .steps--list
                 +step([
                     {
-                        "numb": "1",
                         "title": "Choose your plan",
                         "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since."
                     },
                     {
-                        "numb": "2",
                         "title": "creative your account",
                         "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since."
                     },
                     {
-                        "numb": "3",
                         "title": "launch your hosting",
                         "desc": "Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since."
                     }

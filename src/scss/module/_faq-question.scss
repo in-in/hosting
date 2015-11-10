@@ -1,0 +1,19 @@
+.faq-question--wrap {
+  padding-top: rem(42);
+  padding-bottom: rem(82);
+  border-bottom: 2px solid $hr-border;
+}
+
+.faq-question--title {
+  margin-bottom: rem(53);
+}
+
+.faq-question--btn {
+  width: rem(379);
+  margin: 0 auto;
+  margin-top: rem(37);
+
+  @include breakpoint($s) {
+    width: 85%;
+  }
+}

@@ -40,3 +40,17 @@ mixin title-block(items)
 //-         'low': 'Domain'
 //-     }
 //- ])
+
+mixin step(items)
+    - var i = 1;
+    each item in items
+        .step
+            .step--number
+                i.square
+                    if item.icon
+                        | q
+                    else
+                        | #{i++}
+            .step--text
+                h4.block-title.block-title__steps= item.title
+                p.block-text.block-text__steps= item.desc

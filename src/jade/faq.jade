@@ -5,3 +5,21 @@ append var
     - var pageSubhead = 'Questions'
     - var pageTitle = pageTitle.concat(' | ' + thisPage)
     - var selected = 'faq'
+
+append main
+    section.faq-question
+        .container
+            .faq-question--wrap
+                header.faq-question--title
+                    +title-block([
+                        {
+                            'high': 'Question',
+                            'low': "Faq's"
+                        }
+                    ])
+                .faq-question--questions-list
+                    include inc/questions-list
+                .faq-question--btn
+                    a(href="mailto:info@example.com?subject=Mail from Hosting Site").btn Ask our questions through email
+            
+

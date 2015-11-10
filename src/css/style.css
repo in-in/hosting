@@ -2696,6 +2696,120 @@ select.textInput {
   line-height: 2.125rem;
 }
 
+.faq-question--wrap {
+  padding-top: 2.625rem;
+  padding-bottom: 5.125rem;
+  border-bottom: 2px solid #D3E5EB;
+}
+
+.faq-question--title {
+  margin-bottom: 3.3125rem;
+}
+
+.faq-question--btn {
+  width: 23.6875rem;
+  margin: 0 auto;
+  margin-top: 2.3125rem;
+}
+
+@media (max-width: 30rem) {
+  .faq-question--btn {
+    width: 85%;
+  }
+}
+
+.questions-list--wrap {
+  max-width: 73.125rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.questions-list--wrap:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.squareIcon--item {
+  max-width: 73.125rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 0.625rem;
+  margin-bottom: 2.8125rem;
+  width: 48.6631016043%;
+  float: left;
+}
+
+.squareIcon--item:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.squareIcon--item:nth-child(2n + 1) {
+  margin-left: 0;
+  margin-right: -100%;
+  clear: both;
+  margin-left: 0;
+}
+
+.squareIcon--item:nth-child(2n + 2) {
+  margin-left: 51.3368983957%;
+  margin-right: -100%;
+  clear: none;
+}
+
+@media (max-width: 30rem) {
+  .squareIcon--item {
+    width: 100%;
+    float: left;
+    padding-right: 0;
+    float: none;
+  }
+  .squareIcon--item:nth-child(1n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+
+.squareIcon {
+  background-color: royalblue;
+  width: 12.0879120879%;
+  float: left;
+  margin-right: 5.4945054945%;
+}
+
+.squareIcon--text {
+  width: 82.4175824176%;
+  float: right;
+  margin-right: 0;
+}
+
+.squareIcon--icon {
+  display: block;
+  width: 100%;
+  padding: 20.880874610347966% 0;
+  text-align: center;
+  color: #fff;
+  background-color: #fb6b45;
+  font-size: 1.875rem;
+  text-transform: uppercase;
+  font-family: "Open Sans", san-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+@media (max-width: 50rem) {
+  .squareIcon--icon {
+    font-size: 1.625rem;
+  }
+}
+
+.block-title__squareIcon {
+  padding-top: 1.25rem;
+}
+
 .footer {
   background-color: #4c515b;
 }

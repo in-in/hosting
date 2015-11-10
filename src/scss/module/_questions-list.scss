@@ -1,0 +1,50 @@
+.questions-list--wrap {
+  @include container();
+}
+
+.squareIcon--item {
+  @include container();
+  padding-right: rem(10);
+  margin-bottom: rem(45);
+  @include gallery(6 of 12 1/2.2 after);
+
+  @include breakpoint($s) {
+    @include gallery(12 of 12 1/2.2 after);
+    padding-right: 0;
+    float: none;
+  }
+}
+
+.squareIcon {
+  background-color: royalblue;
+  @include span(1 of 6 1/2.2 after);
+}
+
+.squareIcon--text {
+  @include span(5 of 6 at 2 1/2.2 after);
+}
+
+.squareIcon--icon {
+  display: block;
+
+  width: 100%;
+  padding: 20.880874610347966% 0;
+
+  text-align: center;
+
+  color: #fff;
+
+  background-color: $icon-bright;
+
+  font-size: rem(30);
+  text-transform: uppercase;
+
+  @include font(opensans, extrabold);
+  @include breakpoint($xm) {
+    font-size: rem(26);
+  }
+}
+
+.block-title__squareIcon {
+  padding-top: rem(20);
+}
