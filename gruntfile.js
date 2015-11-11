@@ -31,11 +31,11 @@ module.exports = function (grunt) {
           includePaths: [
             'node_modules/susy/sass',
             'node_modules/breakpoint-sass/stylesheets',
-            'src/scss/',
-            'src/scss/base/',
-            'src/scss/layout/',
-            'src/scss/module/',
-            'src/scss/utils/'
+            'src/scss',
+            'src/scss/utils',
+            'src/scss/base',
+            'src/scss/layout',
+            'src/scss/module'
           ],
           outputStyle: 'expanded',
           sourceMap: true

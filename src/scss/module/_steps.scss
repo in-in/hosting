@@ -13,7 +13,7 @@
 
 .step {
   @include container();
-  @include span(4 of 12 1/2.2 after);
+  @include span(4 of 12 .44 after);
   @include breakpoint($s) {
     margin-bottom: 1rem;
 
@@ -28,13 +28,13 @@
 }
 
 .step--number {
-  @include span(1 of 4 1/2.2 after);
+  @include span(1 of 4 .44 after);
 }
 
 .step--text {
   padding-top: rem(15);
 
-  @include span(3 of 4 at 2 1/2.2 after);
+  @include span(3 of 4 at 2 .44 after);
   @include breakpoint($s) {
     padding-top: 4.849884526558892%;
   }

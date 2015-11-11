@@ -5,3 +5,17 @@ append var
     - var pageSubhead = 'Happy clients'
     - var pageTitle = pageTitle.concat(' | ' + thisPage)
     - var selected = 'testimonials'
+
+append main
+    section.testimonials
+        .container
+            .testimonials--wrap
+                header.testimonials--title
+                    +title-block([
+                        {
+                            'high': 'Clients',
+                            'low': "Testimonial"
+                        }
+                    ])
+                .testimonials--list
+                    include testimonials-list

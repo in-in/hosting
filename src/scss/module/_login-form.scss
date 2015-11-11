@@ -48,9 +48,7 @@
 
 .form-switcher {
   margin-bottom: 1rem;
-  &::after {
-    @include cf;
-  }
+  @include susy-clearfix;
 }
 
 .form-switcher li {
@@ -87,9 +85,7 @@
 
 .login-form {
   padding: rem(20);
-  ::after {
-    @include cf;
-  }
+  @include susy-clearfix;
 }
 
 .login-form--fieldset {

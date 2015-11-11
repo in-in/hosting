@@ -14,12 +14,12 @@
 }
 
 .clients-slide--img {
-  @include span(2 of 12 1/2.2 after);
+  @include span(2 of 12 .44 after);
   @include breakpoint($xm) {
-    @include span(3 of 12 1/2.2 after);
+    @include span(3 of 12 .44 after);
   }
   @include breakpoint($s) {
-    @include span(4 of 12 1/2.2 after);
+    @include span(4 of 12 .44 after);
   }
   @include breakpoint($xs) {
     display: none;
@@ -35,12 +35,12 @@
 .clients-slide--text {
   padding-top: rem(25);
 
-  @include span(10 of 12 at 3 1/2.2 after);
+  @include span(10 of 12 at 3 .44 after);
   @include breakpoint($xm) {
-    @include span(9 of 12 at 4 1/2.2 after);
+    @include span(9 of 12 at 4 .44 after);
   }
   @include breakpoint($s) {
-    @include span(8 of 12 at 5 1/2.2 after);
+    @include span(8 of 12 at 5 .44 after);
   }
   @include breakpoint($xs) {
     @include full();
@@ -59,7 +59,7 @@
   @include font(opensans);
 }
 
-.clients-slide--author {
+.author {
   p {
     text-transform: uppercase;
 

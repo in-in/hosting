@@ -13,7 +13,7 @@
 
 .details-img,
 .details-text {
-  @include span(6 of 12 1/2 after);
+  @include span(6 of 12 .44 after);
   @include breakpoint($xm) {
     @include span(12);
   }
@@ -23,7 +23,7 @@
   text-align: center;
 
   @include breakpoint($xm) {
-    padding-bottom: span(1/2);
+    padding-bottom: span(.5);
   }
 }
 

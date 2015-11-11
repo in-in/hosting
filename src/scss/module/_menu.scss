@@ -2,9 +2,7 @@
   margin-right: rem(-15);
   margin-left: rem(-15);
 
-  &::after {
-    @include cf;
-  }
+  @include susy-clearfix;
 }
 
 .top-menu.is-visible {

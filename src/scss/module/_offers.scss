@@ -15,7 +15,7 @@
 
 .offer-card {
   @include container();
-  @include span(6 of 12 1/2 after);
+  @include span(6 of 12 .44 after);
   @include breakpoint($s) {
     margin-bottom: span(1);
 

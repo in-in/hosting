@@ -1,8 +1,6 @@
 .top-header--wrap,
 .top-header--menu {
-  &::after {
-    @include cf;
-  }
+  @include susy-clearfix;
 }
 
 .top-header--wrap {

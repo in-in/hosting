@@ -13,10 +13,10 @@
 
 .new-domains--table-col {
   @include breakpoint(min-width 30rem) {
-    @include span(6 of 12 1/2.2 after);
+    @include span(6 of 12 .44 after);
 
     &:last-child {
-      @include span(6 of 12 at 7 1/2.2 after);
+      @include span(6 of 12 at 7 .44 after);
     }
   }
   @include breakpoint($s) {

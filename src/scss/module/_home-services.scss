@@ -5,9 +5,7 @@
 .home-services--wrap {
   padding-top: rem(58);
   padding-bottom: rem(100);
-  &::after {
-    @include cf;
-  }
+  @include susy-clearfix;
 }
 
 .home-services--hot {

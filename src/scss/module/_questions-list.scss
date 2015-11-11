@@ -6,22 +6,22 @@
   @include container();
   padding-right: rem(10);
   margin-bottom: rem(45);
-  @include gallery(6 of 12 1/2.2 after);
+  @include gallery(6 of 12 .44 after);
 
   @include breakpoint($s) {
-    @include gallery(12 of 12 1/2.2 after);
+    @include gallery(12 of 12 .44 after);
     padding-right: 0;
     float: none;
   }
 }
 
 .squareIcon {
-  background-color: royalblue;
-  @include span(1 of 6 1/2.2 after);
+  @include span(1 of 6 .44 after);
+  outline: 1px dotted black;
 }
 
 .squareIcon--text {
-  @include span(5 of 6 at 2 1/2.2 after);
+  @include span(5 of 6 at 2 .44 after);
 }
 
 .squareIcon--icon {

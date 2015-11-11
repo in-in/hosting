@@ -1,0 +1,60 @@
+mixin testimonials(items)
+    each i in items
+        .testimonials-item
+            .testimonials-card
+                p.block-text
+                    = i.text
+                .testimonials--author-block
+                    img(src='img/#{i.img}', alt='image').testimonials--img
+                    .author.testimonials--author
+                        p by
+                        p= i.author
+
+.testimonials--list
+    +testimonials([
+        {
+            "img": "clients1.jpg",
+            "author": "nimisha john",
+            "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make."
+        },
+        {
+            "img": "clients2.jpg",
+            "author": "krishanunni",
+            "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make.  printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever"
+        },
+        {
+            "img": "clients3.jpg",
+            "author": "ayizha nasreem",
+            "text": "industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make."
+        },
+        {
+            "img": "clients4.jpg",
+            "author": "subash alpy",
+            "text": "industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make."
+        },
+        {
+            "img": "clients5.jpg",
+            "author": "akhil",
+            "text": "industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make."
+        },
+        {
+            "img": "clients6.jpg",
+            "author": "abdhulkalam",
+            "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make.  printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever"
+        },
+        {
+            "img": "clients7.jpg",
+            "author": "sonanair",
+            "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make."
+        },
+        {
+            "img": "clients8.jpg",
+            "author": "aneesh kumar",
+            "text": "industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make."
+        },
+        {
+            "img": "clients9.jpg",
+            "author": "mercy john",
+            "text": "industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make."
+        }
+    ])

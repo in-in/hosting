@@ -9,13 +9,13 @@
 .team-card {
   margin-bottom: 5.263157894736842%;
 
-  @include gallery(3 of 12 1/2.2 after);
+  @include gallery(3 of 12 .44 after);
   @include container();
   @include breakpoint($xm) {
-    @include gallery(4 of 12 1/2.2 after);
+    @include gallery(4 of 12 .44 after);
   }
   @include breakpoint($s) {
-    @include gallery(6 of 12 1/2.2 after);
+    @include gallery(6 of 12 .44 after);
   }
 }
 

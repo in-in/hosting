@@ -1,6 +1,10 @@
 /* RESET */
-* {
+html {
   box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 html {
@@ -77,7 +81,7 @@ button {
   color: #556b72;
   font-size: 0.875rem;
   line-height: 130%;
-  font-family: "Open Sans", san-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 800;
   font-style: normal;
 }
@@ -86,7 +90,7 @@ button {
   color: #a0a9b6;
   font-size: 0.84375rem;
   line-height: 180%;
-  font-family: "Open Sans", san-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -113,7 +117,7 @@ body {
   color: #859aa1;
   font-size: 1.125rem;
   line-height: 1.875rem;
-  font-family: "Open Sans", san-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -129,7 +133,7 @@ body {
   text-transform: uppercase;
   color: #556b72;
   font-size: 1.875rem;
-  font-family: "Open Sans", san-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 800;
   font-style: normal;
 }
@@ -155,7 +159,7 @@ body {
   background-color: #fff;
   font-size: 0.875rem;
   line-height: 3.4375rem;
-  font-family: "Open Sans", san-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -175,7 +179,7 @@ select.textInput {
   background-color: #ff8261;
   font-size: 0.875rem;
   line-height: 3.4375rem;
-  font-family: "Open Sans", san-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
@@ -214,11 +218,11 @@ select.textInput {
   clear: both;
 }
 
-.top-header--wrap::after,
-.top-header--menu::after {
-  display: table;
+.top-header--wrap:after,
+.top-header--menu:after {
+  content: " ";
+  display: block;
   clear: both;
-  content: '';
 }
 
 .top-header--wrap {
@@ -285,14 +289,14 @@ select.textInput {
   width: 100%;
   height: 100%;
   cursor: pointer;
-  transition: opacity 0.3s, visibility 0.3s;
+  transition: opacity .3s, visibility .3s;
   opacity: 0;
   background: rgba(0, 0, 0, 0.3);
 }
 
 .login-form-modal.is-visible {
   visibility: visible;
-  transition: opacity 0.3s, visibility 0.3s;
+  transition: opacity .3s, visibility .3s;
   opacity: 1;
 }
 
@@ -322,10 +326,10 @@ select.textInput {
   margin-bottom: 1rem;
 }
 
-.form-switcher::after {
-  display: table;
+.form-switcher:after {
+  content: " ";
+  display: block;
   clear: both;
-  content: '';
 }
 
 .form-switcher li {
@@ -343,7 +347,7 @@ select.textInput {
   background: rgba(85, 107, 114, 0.7);
   font-size: 1.25rem;
   line-height: 3.125rem;
-  font-family: "Open Sans", san-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 800;
   font-style: normal;
 }
@@ -357,10 +361,10 @@ select.textInput {
   padding: 1.25rem;
 }
 
-.login-form ::after {
-  display: table;
+.login-form:after {
+  content: " ";
+  display: block;
   clear: both;
-  content: '';
 }
 
 .login-form--fieldset {
@@ -385,7 +389,7 @@ select.textInput {
   outline: none;
   font-size: 0.875rem;
   line-height: 2.875rem;
-  font-family: "Open Sans", san-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -398,7 +402,7 @@ select.textInput {
 .checkbox-title a {
   color: #a0a9b6;
   font-size: 0.875rem;
-  font-family: "Open Sans", san-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -419,7 +423,7 @@ select.textInput {
   background-color: #fb6b45;
   font-size: 0.8125rem;
   line-height: 2.75rem;
-  font-family: "Open Sans", san-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 800;
   font-style: normal;
   -webkit-appearance: none;
@@ -492,7 +496,7 @@ select.textInput {
   color: #484e57;
   font-size: 0.875rem;
   line-height: 2.875rem;
-  font-family: "Open Sans", san-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -526,7 +530,7 @@ select.textInput {
 .user-links--item a {
   color: #9ba4b0;
   font-size: 0.875rem;
-  font-family: "Open Sans", san-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -536,17 +540,17 @@ select.textInput {
   margin-left: -0.9375rem;
 }
 
-.top-menu::after {
-  display: table;
+.top-menu:after {
+  content: " ";
+  display: block;
   clear: both;
-  content: '';
 }
 
 @media (max-width: 60rem) {
   .top-menu.is-visible .menu-link {
     visibility: visible;
     height: 2.5rem;
-    transition: height 0.2s ease;
+    transition: height .2s ease;
   }
 }
 
@@ -583,13 +587,13 @@ select.textInput {
 .menu-link {
   display: block;
   height: 3.5rem;
-  transition: background-color 0.2s ease;
+  transition: background-color .2s ease;
   text-transform: uppercase;
   color: #fff;
   background-color: #ff8261;
   font-size: 0.8125rem;
   line-height: 3.5rem;
-  font-family: "Open Sans", san-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -624,7 +628,7 @@ select.textInput {
   background-color: #ff8261;
   font-size: 0.8125rem;
   line-height: 2.5rem;
-  font-family: "Open Sans", san-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -643,7 +647,7 @@ select.textInput {
   color: #161920;
   font-size: 1.25rem;
   line-height: 220%;
-  font-family: "Open Sans", san-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 800;
   font-style: normal;
 }
@@ -676,7 +680,7 @@ select.textInput {
   color: #fff;
   text-shadow: 1px 1px 1px #333;
   font-size: 2.5rem;
-  font-family: "Open Sans", san-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 800;
   font-style: normal;
 }
@@ -760,7 +764,7 @@ select.textInput {
   color: #fff;
   text-shadow: 1px 1px 1px #333;
   font-size: 2.5rem;
-  font-family: "Open Sans", san-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 800;
   font-style: normal;
 }
@@ -944,7 +948,7 @@ select.textInput {
 
 .benefits-item {
   margin-bottom: 4.375rem;
-  width: 32.2033898305%;
+  width: 33.3333333333%;
   float: left;
   padding-right: 2.0833333333%;
 }
@@ -957,20 +961,20 @@ select.textInput {
 }
 
 .benefits-item:nth-child(3n + 2) {
-  margin-left: 33.8983050847%;
+  margin-left: 33.3333333333%;
   margin-right: -100%;
   clear: none;
 }
 
 .benefits-item:nth-child(3n + 3) {
-  margin-left: 67.7966101695%;
+  margin-left: 66.6666666667%;
   margin-right: -100%;
   clear: none;
 }
 
 @media (max-width: 60rem) {
   .benefits-item {
-    width: 49.1525423729%;
+    width: 50%;
     float: left;
   }
   .benefits-item:nth-child(2n + 1) {
@@ -980,7 +984,7 @@ select.textInput {
     margin-left: 0;
   }
   .benefits-item:nth-child(2n + 2) {
-    margin-left: 50.8474576271%;
+    margin-left: 50%;
     margin-right: -100%;
     clear: none;
   }
@@ -1029,7 +1033,7 @@ select.textInput {
   color: #556b72;
   font-size: 1rem;
   line-height: 1.9375rem;
-  font-family: "Open Sans", san-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
@@ -1038,7 +1042,7 @@ select.textInput {
   color: #a0a9b6;
   font-size: 0.875rem;
   line-height: 1.5rem;
-  font-family: "Open Sans", san-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -1052,10 +1056,10 @@ select.textInput {
   padding-bottom: 6.25rem;
 }
 
-.home-services--wrap::after {
-  display: table;
+.home-services--wrap:after {
+  content: " ";
+  display: block;
   clear: both;
-  content: '';
 }
 
 .home-services--hot {
@@ -1129,7 +1133,7 @@ select.textInput {
   margin-bottom: 1.25rem;
   color: #4c515b;
   font-size: 0.875rem;
-  font-family: "Open Sans", san-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -1167,7 +1171,7 @@ select.textInput {
   text-transform: uppercase;
   color: #97947f;
   font-size: 0.875rem;
-  font-family: "Open Sans", san-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 800;
   font-style: normal;
 }
@@ -1177,7 +1181,7 @@ select.textInput {
   margin-right: 0.75rem;
   text-transform: uppercase;
   font-size: 3rem;
-  font-family: "Open Sans", san-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 800;
   font-style: normal;
 }
@@ -1222,7 +1226,7 @@ select.textInput {
 
 .hot-banner--details p:last-child {
   color: #4c515b;
-  font-family: "Open Sans", san-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 800;
   font-style: normal;
 }
@@ -1255,9 +1259,9 @@ select.textInput {
 }
 
 .plan-list--item {
-  width: 23.0569948187%;
+  width: 23.0403800475%;
   float: left;
-  margin-right: 2.5906735751%;
+  margin-right: 2.6128266033%;
 }
 
 @media (max-width: 40rem) {
@@ -1266,8 +1270,8 @@ select.textInput {
     margin-bottom: 5%;
     width: 50%;
     float: left;
-    padding-left: 1.3888888889%;
-    padding-right: 1.3888888889%;
+    padding-left: 1.2731481481%;
+    padding-right: 1.2731481481%;
   }
   .plan-list--item:nth-child(2n) {
     margin-right: 0;
@@ -1288,9 +1292,9 @@ select.textInput {
 }
 
 .plan-list--item__3col {
-  width: 31.4285714286%;
+  width: 31.5914489311%;
   float: left;
-  margin-right: 2.8571428571%;
+  margin-right: 2.6128266033%;
 }
 
 @media (max-width: 40rem) {
@@ -1319,7 +1323,7 @@ select.textInput {
   text-align: center;
   color: #556b72;
   font-size: 3.125rem;
-  font-family: "Open Sans", san-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 800;
   font-style: normal;
 }
@@ -1342,7 +1346,7 @@ select.textInput {
   text-transform: uppercase;
   color: #556b72;
   font-size: 0.875rem;
-  font-family: "Open Sans", san-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-style: normal;
 }
@@ -1365,7 +1369,7 @@ select.textInput {
   background-color: #52cbf8;
   font-size: 0.875rem;
   line-height: 2.4375rem;
-  font-family: "Open Sans", san-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 800;
   font-style: normal;
 }
@@ -1389,7 +1393,7 @@ select.textInput {
   border-bottom: 1px solid #f0f4f7;
   font-size: 0.875rem;
   line-height: 2.5rem;
-  font-family: "Open Sans", san-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -1524,9 +1528,9 @@ select.textInput {
 
 .details-img,
 .details-text {
-  width: 48.5714285714%;
+  width: 48.6935866983%;
   float: left;
-  margin-right: 2.8571428571%;
+  margin-right: 2.6128266033%;
 }
 
 @media (max-width: 50rem) {
@@ -1561,7 +1565,7 @@ select.textInput {
   color: #a0a9b6;
   font-size: 0.84375rem;
   line-height: 172%;
-  font-family: "Open Sans", san-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -1594,7 +1598,7 @@ select.textInput {
   font-size: 0.84375rem;
   font-style: italic;
   line-height: 172%;
-  font-family: "Open Sans", san-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -1625,9 +1629,9 @@ select.textInput {
   max-width: 73.125rem;
   margin-left: auto;
   margin-right: auto;
-  width: 48.5714285714%;
+  width: 48.6935866983%;
   float: left;
-  margin-right: 2.8571428571%;
+  margin-right: 2.6128266033%;
 }
 
 .offer-card:after {
@@ -1705,7 +1709,7 @@ select.textInput {
   background-position: left center;
   background-size: 0.5rem 0.6875rem;
   font-size: 0.84375rem;
-  font-family: "Open Sans", san-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -1740,7 +1744,7 @@ select.textInput {
 
 .team-card {
   margin-bottom: 5.263157894736842%;
-  width: 22.9946524064%;
+  width: 23.0403800475%;
   float: left;
   max-width: 73.125rem;
   margin-left: auto;
@@ -1755,19 +1759,19 @@ select.textInput {
 }
 
 .team-card:nth-child(4n + 2) {
-  margin-left: 25.6684491979%;
+  margin-left: 25.6532066508%;
   margin-right: -100%;
   clear: none;
 }
 
 .team-card:nth-child(4n + 3) {
-  margin-left: 51.3368983957%;
+  margin-left: 51.3064133017%;
   margin-right: -100%;
   clear: none;
 }
 
 .team-card:nth-child(4n + 4) {
-  margin-left: 77.0053475936%;
+  margin-left: 76.9596199525%;
   margin-right: -100%;
   clear: none;
 }
@@ -1780,7 +1784,7 @@ select.textInput {
 
 @media (max-width: 50rem) {
   .team-card {
-    width: 31.550802139%;
+    width: 31.5914489311%;
     float: left;
   }
   .team-card:nth-child(3n + 1) {
@@ -1790,12 +1794,12 @@ select.textInput {
     margin-left: 0;
   }
   .team-card:nth-child(3n + 2) {
-    margin-left: 34.2245989305%;
+    margin-left: 34.2042755344%;
     margin-right: -100%;
     clear: none;
   }
   .team-card:nth-child(3n + 3) {
-    margin-left: 68.449197861%;
+    margin-left: 68.4085510689%;
     margin-right: -100%;
     clear: none;
   }
@@ -1803,7 +1807,7 @@ select.textInput {
 
 @media (max-width: 30rem) {
   .team-card {
-    width: 48.6631016043%;
+    width: 48.6935866983%;
     float: left;
   }
   .team-card:nth-child(2n + 1) {
@@ -1813,7 +1817,7 @@ select.textInput {
     margin-left: 0;
   }
   .team-card:nth-child(2n + 2) {
-    margin-left: 51.3368983957%;
+    margin-left: 51.3064133017%;
     margin-right: -100%;
     clear: none;
   }
@@ -1838,7 +1842,7 @@ select.textInput {
   text-transform: uppercase;
   color: #556b72;
   font-size: 0.875rem;
-  font-family: "Open Sans", san-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 800;
   font-style: normal;
 }
@@ -1847,7 +1851,7 @@ select.textInput {
   color: #a0a9b6;
   font-size: 0.84375rem;
   line-height: 135%;
-  font-family: "Open Sans", san-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -1923,7 +1927,7 @@ select.textInput {
 
 .services-item {
   margin-bottom: 4.56140350877193%;
-  width: 31.550802139%;
+  width: 31.5914489311%;
   float: left;
   padding-right: 2.7777777778%;
 }
@@ -1936,20 +1940,20 @@ select.textInput {
 }
 
 .services-item:nth-child(3n + 2) {
-  margin-left: 34.2245989305%;
+  margin-left: 34.2042755344%;
   margin-right: -100%;
   clear: none;
 }
 
 .services-item:nth-child(3n + 3) {
-  margin-left: 68.449197861%;
+  margin-left: 68.4085510689%;
   margin-right: -100%;
   clear: none;
 }
 
 @media (max-width: 40rem) {
   .services-item {
-    width: 48.6631016043%;
+    width: 48.6935866983%;
     float: left;
   }
   .services-item:nth-child(2n + 1) {
@@ -1959,7 +1963,7 @@ select.textInput {
     margin-left: 0;
   }
   .services-item:nth-child(2n + 2) {
-    margin-left: 51.3368983957%;
+    margin-left: 51.3064133017%;
     margin-right: -100%;
     clear: none;
   }
@@ -1998,9 +2002,9 @@ select.textInput {
 }
 
 .featured-services {
-  width: 65.7754010695%;
+  width: 65.7957244656%;
   float: left;
-  margin-right: 2.6737967914%;
+  margin-right: 2.6128266033%;
 }
 
 @media (max-width: 50rem) {
@@ -2017,7 +2021,7 @@ select.textInput {
 }
 
 .latest-news {
-  width: 31.550802139%;
+  width: 31.5914489311%;
   float: right;
   margin-right: 0;
 }
@@ -2041,8 +2045,8 @@ select.textInput {
   .latest-news .featured-news-item {
     width: 33.3333333333%;
     float: left;
-    padding-left: 1.3020833333%;
-    padding-right: 1.3020833333%;
+    padding-left: 1.2731481481%;
+    padding-right: 1.2731481481%;
   }
   .latest-news .featured-news-item .featured-news-item--img {
     clear: both;
@@ -2077,9 +2081,9 @@ select.textInput {
 }
 
 .featured-news-item--img {
-  width: 34.9593495935%;
+  width: 35.0180505415%;
   float: left;
-  margin-right: 4.0650406504%;
+  margin-right: 3.9711191336%;
 }
 
 @media (max-width: 30rem) {
@@ -2102,7 +2106,7 @@ select.textInput {
 
 .featured-news-item--text {
   padding-top: 0.6875rem;
-  width: 60.9756097561%;
+  width: 61.0108303249%;
   float: right;
   margin-right: 0;
 }
@@ -2141,14 +2145,14 @@ select.textInput {
   border-radius: 50%;
   background-color: #fb6b45;
   font-size: 0.875rem;
-  font-family: "Open Sans", san-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
 .date-circle--inner p:first-child {
   line-height: 125%;
-  font-family: "Open Sans", san-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 800;
   font-style: normal;
 }
@@ -2196,24 +2200,24 @@ select.textInput {
 }
 
 .clients-slide--img {
-  width: 14.4385026738%;
+  width: 14.4893111639%;
   float: left;
-  margin-right: 2.6737967914%;
+  margin-right: 2.6128266033%;
 }
 
 @media (max-width: 50rem) {
   .clients-slide--img {
-    width: 22.9946524064%;
+    width: 23.0403800475%;
     float: left;
-    margin-right: 2.6737967914%;
+    margin-right: 2.6128266033%;
   }
 }
 
 @media (max-width: 30rem) {
   .clients-slide--img {
-    width: 31.550802139%;
+    width: 31.5914489311%;
     float: left;
-    margin-right: 2.6737967914%;
+    margin-right: 2.6128266033%;
   }
 }
 
@@ -2230,14 +2234,14 @@ select.textInput {
 
 .clients-slide--text {
   padding-top: 1.5625rem;
-  width: 82.8877005348%;
+  width: 82.8978622328%;
   float: right;
   margin-right: 0;
 }
 
 @media (max-width: 50rem) {
   .clients-slide--text {
-    width: 74.3315508021%;
+    width: 74.3467933492%;
     float: right;
     margin-right: 0;
   }
@@ -2245,7 +2249,7 @@ select.textInput {
 
 @media (max-width: 30rem) {
   .clients-slide--text {
-    width: 65.7754010695%;
+    width: 65.7957244656%;
     float: right;
     margin-right: 0;
   }
@@ -2267,26 +2271,26 @@ select.textInput {
   font-size: 0.84375rem;
   font-style: italic;
   line-height: 180%;
-  font-family: "Open Sans", san-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-.clients-slide--author p {
+.author p {
   text-transform: uppercase;
   color: #556b72;
   font-size: 0.875rem;
   line-height: 130%;
 }
 
-.clients-slide--author p:first-child {
-  font-family: "Open Sans", san-serif;
+.author p:first-child {
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-.clients-slide--author p:last-child {
-  font-family: "Open Sans", san-serif;
+.author p:last-child {
+  font-family: "Open Sans", sans-serif;
   font-weight: 800;
   font-style: normal;
 }
@@ -2337,9 +2341,9 @@ select.textInput {
   max-width: 73.125rem;
   margin-left: auto;
   margin-right: auto;
-  width: 31.550802139%;
+  width: 31.5914489311%;
   float: left;
-  margin-right: 2.6737967914%;
+  margin-right: 2.6128266033%;
 }
 
 .step:after {
@@ -2365,14 +2369,14 @@ select.textInput {
 }
 
 .step--number {
-  width: 18.6440677966%;
+  width: 18.7969924812%;
   float: left;
-  margin-right: 8.4745762712%;
+  margin-right: 8.2706766917%;
 }
 
 .step--text {
   padding-top: 0.9375rem;
-  width: 72.8813559322%;
+  width: 72.9323308271%;
   float: right;
   margin-right: 0;
 }
@@ -2391,7 +2395,7 @@ select.textInput {
   color: #fff;
   background-color: #fb6b45;
   font-size: 1.875rem;
-  font-family: "Open Sans", san-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 800;
   font-style: normal;
 }
@@ -2444,7 +2448,7 @@ select.textInput {
   color: #556b72;
   font-size: 0.875rem;
   line-height: 200%;
-  font-family: "Open Sans", san-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 800;
   font-style: normal;
 }
@@ -2470,9 +2474,9 @@ select.textInput {
 }
 
 .domain-slide--img {
-  width: 48.6631016043%;
+  width: 48.6935866983%;
   float: left;
-  margin-right: 2.6737967914%;
+  margin-right: 2.6128266033%;
 }
 
 @media (max-width: 40rem) {
@@ -2497,7 +2501,7 @@ select.textInput {
 }
 
 .domain-slide--charges {
-  width: 48.6187845304%;
+  width: 48.6935866983%;
   float: right;
   margin-right: 0;
 }
@@ -2557,7 +2561,7 @@ select.textInput {
   color: #556b72;
   font-size: 0.875rem;
   line-height: 200%;
-  font-family: "Open Sans", san-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-style: normal;
 }
@@ -2566,7 +2570,7 @@ select.textInput {
   color: #556b72;
   font-size: 1.875rem;
   line-height: 100%;
-  font-family: "Open Sans", san-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 800;
   font-style: normal;
 }
@@ -2623,12 +2627,12 @@ select.textInput {
 
 @media (min-width: 30rem) {
   .new-domains--table-col {
-    width: 48.6631016043%;
+    width: 48.6935866983%;
     float: left;
-    margin-right: 2.6737967914%;
+    margin-right: 2.6128266033%;
   }
   .new-domains--table-col:last-child {
-    width: 48.6631016043%;
+    width: 48.6935866983%;
     float: right;
     margin-right: 0;
   }
@@ -2683,7 +2687,7 @@ select.textInput {
 .domains-table--name {
   color: #8d9198;
   font-size: 0.875rem;
-  font-family: "Open Sans", san-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -2736,7 +2740,7 @@ select.textInput {
   margin-right: auto;
   padding-right: 0.625rem;
   margin-bottom: 2.8125rem;
-  width: 48.6631016043%;
+  width: 48.6935866983%;
   float: left;
 }
 
@@ -2754,7 +2758,7 @@ select.textInput {
 }
 
 .squareIcon--item:nth-child(2n + 2) {
-  margin-left: 51.3368983957%;
+  margin-left: 51.3064133017%;
   margin-right: -100%;
   clear: none;
 }
@@ -2774,14 +2778,14 @@ select.textInput {
 }
 
 .squareIcon {
-  background-color: royalblue;
-  width: 12.0879120879%;
+  width: 12.1951219512%;
   float: left;
-  margin-right: 5.4945054945%;
+  margin-right: 5.3658536585%;
+  outline: 1px dotted black;
 }
 
 .squareIcon--text {
-  width: 82.4175824176%;
+  width: 82.4390243902%;
   float: right;
   margin-right: 0;
 }
@@ -2795,7 +2799,7 @@ select.textInput {
   background-color: #fb6b45;
   font-size: 1.875rem;
   text-transform: uppercase;
-  font-family: "Open Sans", san-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 800;
   font-style: normal;
 }
@@ -2819,6 +2823,77 @@ select.textInput {
   padding-bottom: 2.1875rem;
 }
 
+.testimonials {
+  padding-top: 2.625rem;
+}
+
+.testimonials--title {
+  padding-bottom: 3.9375rem;
+}
+
+.testimonials-item {
+  width: 31.5914489311%;
+  float: left;
+  margin-right: 2.6128266033%;
+  margin-bottom: 3.375rem;
+}
+
+.testimonials-item:nth-child(3n) {
+  width: 31.5914489311%;
+  float: right;
+  margin-right: 0;
+}
+
+.testimonials-card {
+  padding: 0 2.25rem;
+  padding-top: 3.3125rem;
+  padding-bottom: 2.625rem;
+  border: 1px solid #D3E5EB;
+  position: relative;
+}
+
+.testimonials-card::after {
+  position: absolute;
+  top: -1.5625rem;
+  left: 9.023360091066527%;
+  display: block;
+  border: 1px solid #D3E5EB;
+  width: 3.375rem;
+  height: 2.875rem;
+  content: '';
+  background-color: #fff;
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%2222.001%22%20width%3D%2226.001%22%20viewBox%3D%220%200%2026.000999%2022.000999%22%20style%3D%22fill%3A%23ff8261%3B%22%3E%3Cpath%20d%3D%22M12%2013v6q0%201.25-.875%202.126T9%2022H3q-1.25%200-2.125-.874T0%2019V8q0-1.624.633-3.1t1.71-2.556T4.9.634%208%200h1q.407%200%20.704.297T10%201v2q0%20.406-.296.703T9%204H8Q6.346%204%205.174%205.172T4%208v.5q0%20.625.44%201.062T5.5%2010H9q1.25%200%202.126.875T12%2013zm14%200v6q0%201.25-.875%202.126T23%2022h-6q-1.25%200-2.125-.874T14%2019V8q0-1.624.633-3.1t1.71-2.556T18.9.634%2022%200h1q.407%200%20.704.297T24%201v2q0%20.406-.296.703T23%204h-1q-1.655%200-2.827%201.172T18%208v.5q0%20.625.44%201.062T19.5%2010H23q1.25%200%202.126.875T26%2013z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-size: 1.4375rem 1.1875rem;
+  background-position: center;
+}
+
+.testimonials--author-block {
+  margin-top: 1.9375rem;
+}
+
+.testimonials--author-block:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.testimonials--img {
+  display: block;
+  float: left;
+  width: 3.5rem;
+  height: 3.5rem;
+  max-width: 100%;
+  margin-right: 0.6875rem;
+  border-radius: 50%;
+}
+
+.testimonials--author {
+  display: block;
+  float: left;
+  padding: 0.625rem 0;
+}
+
 .field-feedback {
   display: block;
   position: relative;
@@ -2832,9 +2907,9 @@ select.textInput {
 }
 
 .feedback-form .field-feedback:nth-child(1) {
-  width: 48.6631016043%;
+  width: 48.6935866983%;
   float: left;
-  margin-right: 2.6737967914%;
+  margin-right: 2.6128266033%;
 }
 
 @media (max-width: 50rem) {
@@ -2848,7 +2923,7 @@ select.textInput {
 }
 
 .feedback-form .field-feedback:nth-child(2) {
-  width: 48.6631016043%;
+  width: 48.6935866983%;
   float: right;
   margin-right: 0;
 }
@@ -2884,7 +2959,7 @@ select.textInput {
   position: absolute;
   left: 1.125rem;
   top: 0;
-  font-family: "Open Sans", san-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 0.875rem;
@@ -3051,7 +3126,7 @@ select.textInput {
   text-transform: uppercase;
   color: #fff;
   font-size: 0.875rem;
-  font-family: "Open Sans", san-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 800;
   font-style: normal;
 }
@@ -3064,7 +3139,7 @@ select.textInput {
   margin-left: 3.625rem;
   color: #909aad;
   font-size: 0.875rem;
-  font-family: "Open Sans", san-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -3082,7 +3157,7 @@ select.textInput {
 .footer-list--link {
   color: #909aad;
   font-size: 0.875rem;
-  font-family: "Open Sans", san-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -3095,7 +3170,7 @@ select.textInput {
   margin-bottom: 0.875rem;
   color: #e7f4f8;
   font-size: 0.875rem;
-  font-family: "Open Sans", san-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
