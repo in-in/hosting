@@ -1,0 +1,16 @@
+form(method="POST", action='').feedback-form
+    .field-feedback
+        input(id="inputName", type='text', maxlength='100', required).textInput.textInput__feedback
+        label(for='inputName').textInput-label Name
+    .field-feedback
+        input(id="inputEmail", type='email', name='_replyto', maxlength='100', required).textInput.textInput__feedback
+        label(for='inputEmail').textInput-label Email
+    .field-feedback
+        input(id="inputSubject", type='text',name='_subject', maxlength='100', required).textInput.textInput__feedback
+        label(for='inputSubject').textInput-label Subject
+    .field-feedback
+        textarea(id='inputMessage', name='message', maxlength='1000', required).textInput.textInput__feedback.feedback-textarea
+        label(for='inputMessage').textInput-label Ask your questions here
+    input(type="hidden", name="_next", value="")
+    .feedback-form--btn
+        button(type="submit").btn Submit

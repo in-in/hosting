@@ -21,5 +21,19 @@ append main
                     include inc/questions-list
                 .faq-question--btn
                     a(href="mailto:info@example.com?subject=Mail from Hosting Site").btn Ask our questions through email
-            
+    section.faq-feedback
+        .container
+            .faq-feedback--wrap
+                header.faq-feedback--title
+                    +title-block([
+                        {
+                            'high': 'Submit your',
+                            'low': "Questions"
+                        }
+                    ])
+                .faq-feedback--form
+                    include inc/feedback
+
+append script
+    script(src="js/feedback.js", async='')
 
