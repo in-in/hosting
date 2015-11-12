@@ -2844,6 +2844,48 @@ select.textInput {
   margin-right: 0;
 }
 
+@media (max-width: 50rem) {
+  .testimonials-item {
+    width: 48.6935866983%;
+    float: left;
+    margin-right: 2.6128266033%;
+  }
+  .testimonials-item:nth-child(3n) {
+    width: 48.6935866983%;
+    float: left;
+    margin-right: 2.6128266033%;
+  }
+  .testimonials-item:nth-child(2n) {
+    width: 48.6935866983%;
+    float: right;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 30rem) {
+  .testimonials-item {
+    clear: both;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .testimonials-item:nth-child(3n) {
+    clear: both;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .testimonials-item:nth-child(2n) {
+    clear: both;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 .testimonials-card {
   padding: 0 2.25rem;
   padding-top: 3.3125rem;
@@ -2892,6 +2934,15 @@ select.textInput {
   display: block;
   float: left;
   padding: 0.625rem 0;
+}
+
+.testimonials-feedback--wrap {
+  padding-top: 4.385964912280701%;
+  padding-bottom: 8.771929824561402%;
+}
+
+.testimonials-feedback--title {
+  padding-bottom: 2.1875rem;
 }
 
 .field-feedback {

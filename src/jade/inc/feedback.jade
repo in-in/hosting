@@ -10,7 +10,8 @@ form(method="POST", action='').feedback-form
         label(for='inputSubject').textInput-label Subject
     .field-feedback
         textarea(id='inputMessage', name='message', maxlength='1000', required).textInput.textInput__feedback.feedback-textarea
-        label(for='inputMessage').textInput-label Ask your questions here
+        label(for='inputMessage').textInput-label
+            = (feedbackTextareaLabel) ? feedbackTextareaLabel : "Ask your questions here"
     input(type="hidden", name="_next", value="")
     .feedback-form--btn
         button(type="submit").btn Submit

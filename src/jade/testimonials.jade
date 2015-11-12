@@ -5,6 +5,7 @@ append var
     - var pageSubhead = 'Happy clients'
     - var pageTitle = pageTitle.concat(' | ' + thisPage)
     - var selected = 'testimonials'
+    - var feedbackTextareaLabel = 'Comments'
 
 append main
     section.testimonials
@@ -19,3 +20,19 @@ append main
                     ])
                 .testimonials--list
                     include testimonials-list
+    section.testimonials-feedback
+        .container
+            .testimonials-feedback--wrap
+                header.testimonials-feedback--title
+                    +title-block([
+                        {
+                            'high': 'Submit your',
+                            'low': "Testimonial"
+                        }
+                    ])
+                .testimonials-feedback--form
+                    include inc/feedback
+
+append script
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/packery/1.4.3/packery.pkgd.min.js')
+    script(src="js/packery.js", async='')

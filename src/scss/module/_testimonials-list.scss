@@ -5,6 +5,30 @@
   &:nth-child(3n) {
     @include span(4 of 12 at 9 .44 after);
   }
+
+  @include breakpoint($xm) {
+    @include span(6 of 12 .44 after);
+
+    &:nth-child(3n) {
+      @include span(6 of 12 .44 after);
+    }
+
+    &:nth-child(2n) {
+      @include span(6 of 12 at 7 .44 after);
+    }
+  }
+
+  @include breakpoint($s) {
+    @include full();
+
+    &:nth-child(3n) {
+      @include full();
+    }
+
+    &:nth-child(2n) {
+      @include full();
+    }
+  }
 }
 
 .testimonials-card {
